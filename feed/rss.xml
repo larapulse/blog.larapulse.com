@@ -1,0 +1,2527 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>Larapulse Technology blog</title>
+        <link>https://blog.larapulse.com/feed/rss.xml</link>
+        <description><![CDATA[Information Technology blog about web development and solving problems we come across day to day when we haven't been able to find good solution elsewhere]]></description>
+        <atom:link href="https://blog.larapulse.com/feed/rss.xml" rel="self" type="application/rss+xml" />
+                                                <webfeeds:logo>https://larapulse.com/static/images/logo_400x400.jpg</webfeeds:logo>
+        <image>
+            <url>https://larapulse.com/static/images/logo_400x400.jpg</url>
+            <title>Larapulse Technology blog</title>
+            <link>https://blog.larapulse.com/feed/rss.xml</link>
+        </image>
+                                <language>en</language>
+        <lastBuildDate>Mon, 26 Mar 2018 22:29:43 +0000</lastBuildDate>
+                <item>
+            <title><![CDATA[Updating JetBrains PhpStorm to newer version on Ubuntu]]></title>
+                        <link>https://blog.larapulse.com/dev-tools/reinstall-phpstorm-on-ubuntu</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/dev-tools/reinstall-phpstorm-on-ubuntu</guid>
+            <description><![CDATA[Unfortunately there is not possible to easy update JetBrains IDE to newer version on GNU/Linux without reinstalling. In this article described step by step instructions how to completely uninstall PhpStorm from your machine and install new version.]]></description>
+                        <content:encoded><![CDATA[<p>Unfortunately there is not possible to easy update JetBrains IDE to newer version on GNU/Linux without reinstalling. In this article will be described whole process uninstalling <code>PhpStorm 2017.2</code> (later <code>*</code>) and upgrading to <code>PhpStorm 2017.3</code> (later <code>**</code>).</p>
+<h3>Export your IDE preferences (optionally)</h3>
+<p>In case you wish your updated version of your IDE has the same settings as you are using right now, you can easily export them to <code>.jar</code> file, which could be import at any time to JetBrains IDE. This could be very useful for you to do this, because spending time for this action (it's 20 seconds maximum) could save a lot of time in future customizing your IDE. All you need to do is:</p>
+<ul>
+<li>Press <code>File</code> &gt; <code>Export Settings...</code></li>
+<li>Choose location where <code>.jar</code> file should be stored </li>
+</ul>
+<h3>Uninstalling IDE</h3>
+<p>At the first blush it sounds very easy to uninstall software, but let's go step by step to completely uninstall everything which refers to IDE on our system. Follow this instruction:</p>
+<ol>
+<li>
+<p>Enter your home directory</p>
+<ul>
+<li>Here you see <code>.PhpStorm2017.2</code>&ast; (if it is hidden click <code>Ctrl + H</code> to show hidden file)</li>
+<li>There open terminal and delete this folder the command is <code>sudo rm -rf .PhpStorm2017.2/</code>&ast;</li>
+</ul>
+</li>
+<li>
+<p>Check if executable file exists somewhere else.</p>
+<ul>
+<li>Run <code>sudo find / -name "phpstorm*"</code>.</li>
+<li>Sometimes it locates in <code>/opt/PhpStorm-172.4155.41/bin/phpstorm.sh</code>&ast; or in <code>~/Downloads/PhpStorm-172.4155.41/bin/phpstorm.sh</code>&ast;.</li>
+<li>Remove <code>PhpStorm-172.4155.41</code>&ast; folder.</li>
+</ul>
+</li>
+<li>
+<p>Find script of previous version</p>
+<ul>
+<li>Run <code>whereis pstorm</code>.</li>
+<li>If you it still exists, delete it. Usually, it should be <code>sudo rm /usr/local/bin/pstorm</code></li>
+</ul>
+</li>
+<li>
+<p>If it was stored in launch, delete it.</p>
+<ul>
+<li>Check <code>~/.local/share/applications</code> and <code>/usr/share/applications</code>.</li>
+<li>If you see <code>jetbrains-phpstorm.desktop</code> or other JatBrains files, remove them.</li>
+</ul>
+</li>
+</ol>
+<h3>Install any version you like</h3>
+<p>Now you need to download version of PhpStorm you want to install. Visit <a href="https://www.jetbrains.com/phpstorm/download/#section=linux">JetBrains official website</a> and download current version. If you would like to install some of previous version, refers to <em>Previous versions</em>.</p>
+<ul>
+<li>
+<p>Download archive and unzip it.</p>
+<ol>
+<li>If you don't want to leave executable file in <code>Downloads</code> folder, move it to <code>/opt</code>, it's totally safe.</li>
+<li>Inside folder with PhpStorm, that should be installed, go to <code>bin/</code> folder and run <code>./phpstrom.sh</code> (without sudo, just with your current user).</li>
+<li>In your home folder should be created hidden folder <code>.PhpStorm2017.3</code>&ast;&ast;</li>
+</ol>
+</li>
+</ul>
+<h5>Configure your IDE</h5>
+<p>After first run of your newly installed IDE, you will be asked to import settings from the previous version. If you saved settings in <code>.jar</code> file, just import them. Of course, it will be available to export settings also later (Press <code>File</code> &gt; <code>Import settings...</code>).</p>
+<p>You can also add PhpStorm to launch bar. If there is no icon or by clicking on icon nothing heppend (or previous version is starting), you need to configure <code>.desktop</code> file of your user. Browse to <code>~/.local/share/applications</code> and find <code>jetbrains-phpstorm.desktop</code>. Open it and change path in <code>Icon</code> to set program icon, and in <code>Exec</code> to set executable file path.</p>
+<p><strong>Enjoy and happy coding!</strong></p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-03-26 22:29:43</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Use AWS S3 with Laravel 5]]></title>
+                        <link>https://blog.larapulse.com/laravel/aws-s3-with-laravel-5</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/laravel/aws-s3-with-laravel-5</guid>
+            <description><![CDATA[Amazon Simple Storage Service (Amazon S3) is great for data storage due to the fact that there is quite cheap and very stable. Let's walk step by step to properly and safely work with the data storage.]]></description>
+                        <content:encoded><![CDATA[<p>Despite the fact that Amazon S3 is an excellent storage for static data for our application, many find it quite difficult to configure and customize it. So let's walk step by step through the actions that need to be taken to properly and safely work with the data storage.</p>
+<h2>AWS setup</h2>
+<p>Let's create and configure everything we need to work with Amazon S3.</p>
+<h4>Step 1: Create S3 bucket</h4>
+<p>You can skip this step, if you already has a bucket you need.</p>
+<p>This is the easiest part. Log into AWS Management Console and navigate to S3.</p>
+<p><img src="/files/original/images/35/6f/356f1eb4d62c34b498a8b62c7a49400f4ab47b63.png" alt="S3 location in AWS navigation bar" /></p>
+<p>Press &quot;Create bucket&quot; button. Set bucket name, that must be unique across all existing bucket names in Amazon S3, and region where it should be located. You can choose any region, but then you’ll need to use the corresponding region ID in the config file. Amazon keeps a <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region">list of region names here</a>. Then set properties and permissions.</p>
+<p><img src="/files/original/images/5c/b4/5cb4580b270f29c3ad2ea82f574d5bb98050b482.png" alt="Create new AWS bucket" /></p>
+<h4>Step 2: Create IAM Policy</h4>
+<p>Navigate to IAM and create new policy from <em>Policy</em> tab.</p>
+<p><img src="/files/original/images/9a/5e/9a5e8c7c8babb089bdb72d78fa983892aa3af7bc.png" alt="IAM location in AWS navigation bar" /></p>
+<p><img src="/files/original/images/4a/c7/4ac73241e45b2738c7308aa390fc53217749a92e.png" alt="Create new policy" /></p>
+<p>Select JSON tab to insert the following configuration:</p>
+<pre><code class="language-json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws:s3:::bucket-name"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": "arn:aws:s3:::bucket-name/*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*"
+        }
+    ]
+}
+</code></pre>
+<p><strong>Note</strong> that you must change the name of your S3 bucket in the <em><strong>Resource</strong></em> key.</p>
+<p>Then you can return back to <em>Visual editor</em> tab to check if there is no errors or warnings. If everything is fine, press <em>Review policy</em> button.</p>
+<p><img src="/files/original/images/9d/d9/9dd9c562597e04aafc161449a02b1e930e9fd0d0.png" alt="AWS permissions setup with visual editor" /></p>
+<p>Insert unique policy name and optionally some descriptive description, that can be helpful, if you have a lot of custom policies.</p>
+<p><img src="/files/original/images/11/d5/11d5c39db7fee2ad6265040cbc79d0544958d8af.png" alt="Review policy and saving with descriptive name" /></p>
+<h4>Step 3: Create IAM user</h4>
+<p>In IAM select tab <strong>User</strong> and press button <strong>Add user</strong>.</p>
+<p><img src="/files/original/images/42/d1/42d110f0a6e66c89721fae81c0503991b8cf8ffe.png" alt="Add new IAM user" /></p>
+<p>Make sure the <strong>Programmatic Access</strong> is ticked, so the system generates a <em>Key</em> and <em>Secret</em>.</p>
+<p><img src="/files/original/images/b5/20/b520c4cf0bc7ccd930ccb6135c7e9cd284f2cc8f.png" alt="Select AWS IAM access type" /></p>
+<p>Then we need to assign permissions to our user. AWS offers a few template policies we’ll completely ignore, since they grant far too much access. We need our user to only be able to access the specific bucket we created. For that, we’ll opt to attach existing policies directly and search for policy we created before. In case you missed that step, you can create during this process by clicking <strong>Create policy</strong>. This will open new tab in browser to create new policy.</p>
+<p><img src="/files/original/images/e1/76/e1762a96b06cce040ca6ca4817d0663280d9bf29.png" alt="Attach existing AWS policy directly" /></p>
+<p>Select policy from list by ticking the checkbox and proceed next, clicking <strong>Next: Review</strong>, and then <strong>Create user</strong>. It’ll give you the <strong>Access key ID</strong> and <strong>Secret access key</strong> like so:</p>
+<p><img src="/files/original/images/81/76/81765f2486d02ef624a8f8a2880589903a87d55d.png" alt="Access key ID and Secret access key" /></p>
+<p>The Access Key ID (key) and Secret access key (secret) will be plugged into the config file.</p>
+<h2>Configure Laravel</h2>
+<p>We need to edit our <code>AWS_*</code> environment variables from <code>.env</code>, that will be used by configuration file <code>config/filesystems.php</code>.</p>
+<p><img src="/files/original/images/29/5d/295d85d3bcbe787c6e9078eb5e190d6a0bafc0d3.png" alt="AWS environment variables" /></p>
+<p><img src="/files/original/images/ec/9b/ec9b74c863f73f2235f8f493279ee6b2a817cbe4.png" alt="Setup AWS storage Laravel config" /></p>
+<p><strong>Note:</strong> Make sure that <code>composer.json</code> dependencies require <code>"league/flysystem-aws-s3-v3": "~1.0"</code> package.</p>
+<p>And done! The filesystem is now configured. Let's test it with <code>Tinker</code> console tool.</p>
+<p><img src="/files/original/images/8b/12/8b12c8a69cda7284b68f1cb2c731df762dd9a1fc.png" alt="Testing storage using tinker tool" /></p>
+<p>Perfect! Now your S3 storage properly configured and you can use it!</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-04-19 19:17:43</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[When refactoring is useless]]></title>
+                        <link>https://blog.larapulse.com/clean-code/when-refactoring-is-useless</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/clean-code/when-refactoring-is-useless</guid>
+            <description><![CDATA[Refactoring is a great thing every developer should care about. But I found some cases when it could be useless.]]></description>
+                        <content:encoded><![CDATA[<p>I heard a lot of time about unnecessary refactoring: &quot;we don't need it right now&quot; or &quot;why did you change that, if it worked before also&quot;. Personally, for me, clean code and refactoring are the same part of the development process, as working on a new feature. As Robert C. Martin wrote in his book &quot;Clean Code: A Handbook of Agile Software Craftsmanship&quot;:</p>
+<blockquote>
+<p>If you see something that could be fixed/refactored now, do not leave these fixes for future or for someone else. Just do it!</p>
+</blockquote>
+<p>I remember this phrase very well when I read his book and I try to take care of such thinking. Nevertheless, I determined for myself when refactoring is really unnecessary. Here is my listing:</p>
+<ul>
+<li>
+<p>Code already perfect (of course, it's utopia)</p>
+</li>
+<li>
+<p>You are not enough experienced in technologies or in project structure to do that, so better do nothing</p>
+</li>
+</ul>
+<p>Ask someone more experienced as you could be an option, but you need to find this person first.</p>
+<ul>
+<li>Your employer requires you to do only what he/she says</li>
+</ul>
+<p>This is a bad option for your further career as you become a monkey that is doing what is requested. Professionals always know how to do their job and understand which problems missing refactoring or fixes can be caused in future.</p>
+<ul>
+<li>Deadlines</li>
+</ul>
+<p>If you are very limited in time and have not enough time to test your changes, this could be also an option to avoid some refactoring.</p>
+<ul>
+<li>The project is completely bull-shit</li>
+</ul>
+<p>If you see that you are working on legacy code and there is absolutely no chance to improve it, then do not waste your time and nerves. If it's possible, I suggest you switch to another project/company. If you do not have such an opportunity, I regret you very much.</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-07-24 16:35:41</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Tips to write clean React code]]></title>
+                        <link>https://blog.larapulse.com/react-js/tips-to-write-clean-react-code</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/react-js/tips-to-write-clean-react-code</guid>
+            <description><![CDATA[Working on various projects written on the React, I noticed that many people do not write React code in the proper way. Since for me writing a clean structure and a well-styled code is very important, I would like to share my experience.]]></description>
+                        <content:encoded><![CDATA[<p>Clean code is a consistent style of programming that makes your code easier to write, read, and maintain. Below I'll give you hints on how to structure and format React code, will describe how different components can be written, will explain the differences between class-based and functional components.</p>
+<h3>React is just a view library</h3>
+<p>Let's get the basics out of the way. It's just a library for rendering your views. If you're coming from the MVC world, you need to realise that React is just the <code>V</code>. Probably one of the main goals of React is manipulation of VirtualDOM to speed up real DOM. React was designed so to make changes to your DOM when it's actually needed. That's the main reason do not make any changes to the DOM outside of React, neither through native JavaScript nor through other libraries like <code>jQuery</code> (<strong>Do not use it with React</strong>, that's very bad practice).</p>
+<hr />
+<h3>Code style</h3>
+<p>Let's start with the simplest - how you style and format your code? To avoid writing code in a different code style (which further complicate the work of the entire team), you should decide which rules to follow for formatting your code. The most popular is <a href="https://github.com/airbnb/javascript/tree/master/react">Airbnb React/JSX Style Guide</a> and I personally recommend you to follow this guide, as it describes a pretty well-styled way to write code and most of the developers already use it in projects.</p>
+<hr />
+<h3>Naming should be descriptive</h3>
+<p>Most of these things are self-evident (and even described in the documentation), but nevertheless, many programmers do not pay attention to them.</p>
+<ul>
+<li>Use <code>.jsx</code> extension for React components.</li>
+<li>Use <code>PascalCase</code> for filenames (e.g. <code>AcmeComponent.jsx</code>).</li>
+<li>Use the filename as the component name.</li>
+<li>React events are named using camelCase (also custom event props), and starts with <code>on...</code> (e.g., <code>onRedButtonClick</code>).</li>
+<li>Event handlers should start with <code>handle...</code> (e.g., <code>handleRedButtonClicked</code>).</li>
+<li>Variables (or constants) which contains boolean value should start with <code>is...</code> or with <code>has...</code> (e.g., <code>isLoggedIn</code> and not <code>loggedIn</code>; <code>hasChildren</code> and not <code>children</code>).</li>
+<li>Do not name your methods with underscore prefixes for properties and methods.</li>
+</ul>
+<p>Just an addition I would like to add, that better use almost always (99%) <code>const</code> instead of <code>let</code>. If you assign to object (yes, just a reminder, in JavaScript everything is an object) completely another value, would be more clear to assign this value to separate variable. If you just modify the value of an object, <code>const</code> should be enough, as a reference to this object did not change. Your data should be immutable as much as possible and <code>let</code> can be used for iterator in a loop.</p>
+<hr />
+<h3>Put state as high up as possible</h3>
+<p>If a component has <code>state</code>, nothing above it in the tree of components should care about that state. This means that most of your state should live in your top-level component (or inside your flux store if you use some sort of flux library). There are cases where the <code>state</code> might be kept in components, not at the top level, but the state should be entirely internal.</p>
+<p><strong>Note</strong>, that you should split up the usage of <code>props</code> and <code>state</code>. If you have the <code>state</code> that needs to get updated when <code>props</code> change then that is clearly not <code>state</code> internal to this component. The state should live further up in the component tree (and it apparently already does to some degree since it keeps getting reset from <code>props</code>).</p>
+<h4>Passing setState a function</h4>
+<p>Here's the dirty secret about <code>setState</code> — it's actually asynchronous. React batches state changes for performance reasons, so the state may not change immediately after <code>setState</code> is called.</p>
+<p>That means you should not rely on the current <code>state</code> when calling <code>setState</code> — since you can't be sure what that <code>state</code> will be!</p>
+<p>The solution is to pass a function to <code>setState</code> with the previous state as an argument:</p>
+<pre><code class="language-js">    this.setState(prevState =&gt; ({ expanded: !prevState.expanded }));</code></pre>
+<hr />
+<h3>Keep your components small</h3>
+<p>This might seem like an obvious one, but it's worth calling out. Every good developer knows that small classes/modules/whatever are easier to understand, test, and maintain, and the same is true of React components. Making each of your components smaller leads to easier reuse and easier understanding. If you split your code into multiple smaller files and each file contains only one logic, then it becomes very easy for the reviewer to review that file. Remember, only one level of abstraction per component.</p>
+<h4>Only <code>render</code> should return components</h4>
+<p>JSX components should be returned only in <code>render()</code>. If you have inside your component other methods which return components (e.g., <code>renderStepOne()</code>, <code>renderStepTwo()</code> etc.), you should split them up to separate <code>React.Component</code>s.</p>
+<hr />
+<h3>Split your code into multiple smaller functions</h3>
+<p>Splitting your bigger functions into multiple smaller functions will make the smaller functions more reusable. They will also become much easier to test.</p>
+<p>You can also create many utility files which can help you remove the duplicate code from multiple files.</p>
+<p>After creating multiple files, look at them and you will see that there are many duplicated lines of code. You can take these lines are create a utility file. You can then reuse the same utility file across multiple files.</p>
+<p>The one level of abstraction rule gives other developers, who read your code an option to ignore implementation details if he/she does not care. Overall, the logic is much more explicit, making the code less error-prone. After refactoring, some bugs become pretty obvious. So remember, only one level of abstraction per function.</p>
+<hr />
+<h3>Use <code>classnames</code> package</h3>
+<p><a href="https://www.npmjs.com/package/classnames"><code>classnames</code></a> is a great package to generate component class names. In practice, there are many cases when different classes should be applied to the component. To avoid conditions in your code, which are almost always is very messy, you can prepare class names using this package. It's very easy to use, just let package knows in which cases which classes should be added.</p>
+<pre><code class="language-jsx">    const btnClass = classNames('btn', {
+      'btn-pressed': isPressed,
+      'btn-over': !isPressed &amp;&amp; isHovered
+    });
+    return &lt;button className={ btnClass }&gt;{ label }&lt;/button&gt;;</code></pre>
+<hr />
+<h3>Destructure when applicable</h3>
+<p>ES6 introduced the concept of destructuring, which really is your best friend. Destructuring allows you to “pull apart” properties of an object or elements of an array.</p>
+<p>Most of the time you'll need to destructure <code>props</code> and <code>state</code> to use constants in your component:</p>
+<pre><code class="language-js">    const { title, attributes } = this.props;
+    const { isLoggedIn } = this.state;</code></pre>
+<p>An often overlooked ES6 feature is array destructuring. Take the following code for example.</p>
+<pre><code class="language-js">    Object.entries(obj).map(entry =&gt; {
+        const [key, value] = entry;
+
+        // Processing ...
+    });</code></pre>
+<p>Destructuring array is a much more clean way to access array item, as trying to get them by key.</p>
+<hr />
+<h3>Use stateless functional components</h3>
+<p>Stateless functional components (SFCs) were introduced in React v0.14.0, and they are used to greatly simplify a render-only component. But some developers haven’t let go of the past. These components have no <code>state</code> and no methods. They’re pure and easy to reason about. Use them as often as possible.</p>
+<pre><code class="language-jsx">const HoverLoader = () =&gt; (
+    &lt;div className="hover-loader"&gt;
+        &lt;div className="auto-spinner blue" /&gt;
+    &lt;/div&gt;
+);
+
+export default HoverLoader;</code></pre>
+<p>This is by far my favourite method for defining React components. Apart from the more concise syntax, this approach can really help make it obvious when a component needs to be split up.</p>
+<p>It's important to note that functional components have a few 'limitations', which I consider to be their greatest strengths. The first is that you may not use the <code>ref</code> attribute on functional components because they don’t have instances. <code>ref</code>s encourage a very imperative, almost <code>jQuery</code>-like way of writing components, taking us away from the functional, one-way data flow philosophy for which we chose React in the first place!</p>
+<p>The other big difference is that functional components cannot have <code>state</code> attached to them, which is also can be a huge advantage, as it's much easier to test.</p>
+<p><strong>Note</strong>: ES6 feature, which a lot of developers don't want to understand, that <code>{}</code> return nothing by default, but <code>[]</code> and <code>()</code> return its content by default.</p>
+<p><strong>Note</strong>: If you are using <code>ref</code>s in your code, create them as React requires them to be created: <code>this.myRef = React.createRef();</code> <a href="https://reactjs.org/docs/refs-and-the-dom.html#creating-refs">Read more...</a>.</p>
+<hr />
+<h3>Conditionals in JSX</h3>
+<p>Nested ternaries are usually not a good idea. Use curly braces wrapping an IIFE, and then put your <code>if</code> statements inside, returning whatever you want to render. Note that IIFE’s like this can cause a performance hit, but in most cases, it will not be significant enough to warrant losing the readability factor.</p>
+<pre><code class="language-jsx">&lt;div&gt;
+    {
+        (() =&gt; {
+            if (isLoggedIn) {
+                return &lt;GreatingsUser /&gt;;
+            } else if (hasEmail) {
+                return &lt;GreatingsEmail /&gt;;
+            } else {
+                return &lt;GreatingsGuest /&gt;;
+            }
+        })()
+    }
+&lt;/div&gt;</code></pre>
+<p>Splitting up your components as much as possible is always a good call. But keep the IIFE approach in mind as a fallback for quick conditionals.</p>
+<h4>Booleans, Null, and Undefined Are Ignored</h4>
+<p><code>false</code>, <code>null</code>, <code>undefined</code>, and <code>true</code> are valid children. They simply don't render. This can be useful to conditionally render React elements.</p>
+<pre><code class="language-jsx">&lt;div&gt;
+    {
+        messages.length &gt; 0 &amp;&amp;
+        &lt;MessageList messages={messages} /&gt;
+    }
+&lt;/div&gt;</code></pre>
+<hr />
+<h3>Use <code>propTypes</code> and <code>defaultProps</code></h3>
+<p><code>propTypes</code> and <code>defaultProps</code> are static properties, declared as high as possible within the component code. They should be immediately visible to other developers reading the file, since they serve as documentation.</p>
+<p><strong>All your components should have <code>propTypes</code></strong> (as soon as the component has <code>props</code>)</p>
+<p><code>propTypes</code> will help you check if the desired type of <code>prop</code> is getting passed into your component or not. If the proper type of a specific <code>prop</code> is not passed into your component, then the package will throw a warning in the console of your browser.</p>
+<p><strong>All properties which are not required must have <code>defaultProps</code></strong>.</p>
+<p>To avoid reassigning <code>props</code> inside of component and be aware all your <code>props</code> is set, you need to define them as <code>defaultProps</code>. This object will be merged with <code>props</code> you set while initializing component.</p>
+<h4>Define them outside the component</h4>
+<p>As <code>propTypes</code> and <code>defaultProps</code> are static properties you can define them dynamically outside the class. This will help make your component more compact and their definition will be identical for both class-based and functional components.</p>
+<pre><code class="language-jsx">export default class RatingStars extends React.Component {
+    // Logic goes here
+}
+
+RatingStars.defaultProps = {
+    enlarged: true,
+    isSelectable: false
+};
+
+RatingStars.propTypes = {
+    count: PropTypes.number.isRequired,
+    enlarged: PropTypes.bool,
+    isSelectable: PropTypes.bool
+};</code></pre>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-07-24 18:28:37</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[React Component lifecycle has changed]]></title>
+                        <link>https://blog.larapulse.com/react-js/react-component-lifecycle-changed</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/react-js/react-component-lifecycle-changed</guid>
+            <description><![CDATA[React Component lifecycle methods have changed since React 16.3 released. To prevent you to write legacy code I recommend to pay attention to it.]]></description>
+                        <content:encoded><![CDATA[<p>A release of React 16.3 gave us new lifecycle methods which are recommended to use in your code. Some of the methods were deprecated, because of their insecurity. But also a few methods were added. So let's go step by step to learn more about these changes.</p>
+<h3>Legacy methods</h3>
+<p>Some of our legacy component lifecycles tend to encourage unsafe coding practices. These lifecycle methods have often been misunderstood and subtly misused. Furthermore, their potential misuse may be more problematic with async rendering. They still work, but it is not recommended using them in the new code.</p>
+<ul>
+<li><code>componentWillMount</code></li>
+</ul>
+<p>It is invoked just before mounting occurs. Avoid introducing any side-effects or subscriptions in this method. </p>
+<ul>
+<li><code>componentWillReceiveProps</code></li>
+</ul>
+<p>Using this lifecycle method often leads to bugs and inconsistencies, and for that reason it is going to be deprecated in the future.</p>
+<p>If you need to perform a side effect in response to a change in <code>props</code>, use <code>componentDidUpdate</code> lifecycle instead. In very rare cases, you might want to use the <code>getDerivedStateFromProps</code> lifecycle as a last resort.</p>
+<ul>
+<li><code>componentWillUpdate</code></li>
+</ul>
+<p>It is invoked just before rendering when new <code>props</code> or <code>state</code> are being received. Typically, this method can be replaced by <code>componentDidUpdate()</code>.</p>
+<p><strong>Note</strong>: Deprecation warnings will be enabled with a future 16.x release, but the legacy lifecycles will continue to work until version 17. Even in version 17, it will still be possible to use them, but they will be aliased with an <code>UNSAFE_</code> prefix to indicate that they might cause issues.</p>
+<hr />
+<h3>New methods</h3>
+<p>In addition to deprecating unsafe lifecycles, it was also added two new lifecycle methods:</p>
+<ul>
+<li><code>getDerivedStateFromProps</code> is being added as a safer alternative to the legacy <code>componentWillReceiveProps</code>.</li>
+</ul>
+<p>Here is a comparisson how code could looks like with <code>componentWillReceiveProps</code> and <code>getDerivedStateFromProps</code>:</p>
+<pre><code class="language-jsx">import React from 'react';
+
+// Using componentWillReceiveProps
+class ExampleComponent extends React.Component {
+    state = {
+        isScrollingDown: false,
+    };
+
+    componentWillReceiveProps(nextProps) {
+        if (this.props.currentRow !== nextProps.currentRow) {
+            this.setState({
+                isScrollingDown: nextProps.currentRow &gt; this.props.currentRow,
+            });
+        }
+    }
+
+    // Rest part of the component
+}
+
+// Using getDerivedStateFromProps
+class ExampleComponent extends React.Component {
+    state = {
+        isScrollingDown: false,
+        lastRow: null,
+    };
+
+    static getDerivedStateFromProps(nextProps, prevState) {
+        if (nextProps.currentRow !== prevState.lastRow) {
+            return {
+                isScrollingDown: nextProps.currentRow &gt; prevState.lastRow,
+                lastRow: nextProps.currentRow,
+            };
+        }
+
+        // If no changes made
+        return null;
+    }
+
+    // Rest part of the component
+}</code></pre>
+<p><strong>Pay attention</strong>, that your <code>state</code> should always have default values, so new changes came to the <code>getDerivedStateFromProps</code> method could be compared with them.</p>
+<ul>
+<li><code>getSnapshotBeforeUpdate</code> is being added to support safely reading properties from e.g. the DOM before updates are made.</li>
+</ul>
+<p>This lifecycle isn’t often needed, but can be useful in cases like manually preserving scroll position during rerenders.</p>
+<p>Even though the function is not static, it is recommended to return the value, not update the component. The returned value will be passed to <code>componentDidUpdate</code> as the 3rd parameter.</p>
+<hr />
+<p>The new life-cycle tree right now looks like this:</p>
+<p><img src="/files/original/images/09/19/0919a813a4bc70d8ef6a7928ba24bca7f3247496.png" alt="React 16.3 lifecycle diagram" /></p>
+<p><strong>Note</strong> that if you’re a React application developer, you don’t have to do anything about the legacy methods yet. The primary purpose of the upcoming version 16.3 release is to enable open source project maintainers to update their libraries in advance of any deprecation warnings. Those warnings will not be enabled until a future 16.x release.</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-07-27 17:08:57</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[GitHub as static website hosting]]></title>
+                        <link>https://blog.larapulse.com/web/github-as-static-website-hosting</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/web/github-as-static-website-hosting</guid>
+            <description><![CDATA[]]></description>
+                        <content:encoded><![CDATA[<p>GitHub Pages (aka <code>gh-pages</code>) is a great feature introduced by GitHub to host your personal, organization, or project pages directly from a GitHub repository. Follow step by step guide below to enable your website on GitHub Pages.</p>
+<h3>Step 1: Enable GitHub Pages</h3>
+<p>First you need to do is enable GitHub to host code from your repository. Under your repository name, click <strong>Settings</strong> and navigate to GitHub Pages block.</p>
+<p><img src="/files/original/images/1b/b6/1bb66d7b79f4f8ae852568020a61faee2cadb9f3.png" alt="GitHub Pages on repository settings" /></p>
+<p>From drop-down menu select source branch which should be hosted.</p>
+<p><img src="/files/original/images/13/88/1388783deee01c1cec0dad6e6f7ae7c8a57b2b38.png" alt="GitHub Pages drop-down menu to select source branch" /></p>
+<p>A Project pages site is available at <code>http://&lt;username&gt;.github.io/&lt;projectname&gt;</code> for a personal account and at <code>http://&lt;orgname&gt;.github.io/&lt;projectname&gt;</code> for an organization account.</p>
+<h3>Step 2: Set up custom domain</h3>
+<p>To set up a custom domain for your GitHub Pages site, you'll need to choose your custom domain and registering it with a DNS provider (like <a href="https://uniregistry.com">Uniregistry</a>, <a href="https://www.hostinger.com/domain-checker">Hostinger</a>, <a href="https://uk.godaddy.com/domains/domain-name-search">GoDaddy</a> or any other), configure your domain with your DNS provider, and add your custom domain to your GitHub Pages site on GitHub.</p>
+<h3>Step 2.1: Add CNAME file</h3>
+<p>To let GitHub know which website should be servered, just add your full website name without protocol to <code>CNAME</code> file, which should be located in core of your project.</p>
+<p><img src="/files/original/images/e3/ff/e3ff757560d36b3cb717f8630d0e6418fcdf19ae.png" alt="CNAME file content" /></p>
+<h3>Step 2.2: Add custom domain to GitHub Pages</h3>
+<p>Go back to repository settings and provide your website full name as in <code>CNAME</code> file.</p>
+<p><img src="/files/original/images/02/af/02af11d6bca74c97e70e58996ccf35293e28dd58.png" alt="Choosing custom domain" /></p>
+<h3>Step 2.3: Add <code>A</code> records to your DNS provider</h3>
+<p>Follow your DNS provider's instructions to create <code>A</code> records that point your custom domain to the following GitHub IP addresses:</p>
+<pre><code>185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153</code></pre>
+<p><img src="/files/original/images/e0/ab/e0abcc96c5c74f50de8ff84338b834c0fcd1af66.png" alt="Configure A records with your DNS provider" /></p>
+<h3>Step 3: Enable <code>HTTPS</code></h3>
+<p>Enforcing usage of HTTPS it has never been so easy, you just need to select <strong>Enforce HTTPS</strong> and that's all.</p>
+<p><img src="/files/original/images/14/2a/142adf96058715ba0101ee87852e456c33e91f94.png" alt="Enforcing HTTPS on your GitHub pages" /></p>
+<p><strong>Note</strong>, that GitHub Pages sites shouldn't be used for sensitive transactions like sending passwords or credit card numbers.</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-08-15 16:57:11</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Creating Chart.js plugins]]></title>
+                        <link>https://blog.larapulse.com/javascript/creating-chart-js-plugins</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/javascript/creating-chart-js-plugins</guid>
+            <description><![CDATA[Step-by-step instructions for creating a plug-in for Chart.js library.]]></description>
+                        <content:encoded><![CDATA[<p>Chart.js library gives us the opportunity to write our own plug-ins, using the Plugin Core API life-cycle methods, but unfortunately, the documentation does not give a detailed description of how and in what order they should be used. Let's go through step-by-step to learn how plugins should be written.</p>
+<p>To create a plugin for Chart.js library, first you need to create a JavaScript object with appropriate named functions for any chart state you wish to modify. Chart.js calls all plugins you registered at the following chart order:</p>
+<ul>
+<li>
+<p>Initialization</p>
+<ul>
+<li><code>beforeInit</code>: Start of initialization </li>
+<li><code>afterInit</code>: End of initialization</li>
+</ul>
+</li>
+<li>
+<p>Update</p>
+<ul>
+<li><code>beforeUpdate</code>: Start of update</li>
+<li><code>beforeLayout</code>: Before layout update. <em>If <code>false</code> returned, layout will not be updated</em></li>
+<li><code>afterLayout</code>: After layout update</li>
+<li><code>beforeDatasetsUpdate</code>: Start of datasets update. <em>If <code>false</code> returned, datasets will not be updated</em></li>
+<li><code>beforeDatasetUpdate</code>: Start of dataset update. <em>If <code>false</code> returned, dataset will not be updated</em></li>
+<li><code>afterDatasetsUpdate</code>: End of datasets update</li>
+<li><code>afterUpdate</code>: End of update</li>
+</ul>
+</li>
+<li>
+<p>Render:</p>
+<ul>
+<li><code>beforeRender</code>: This is called at the start of a render, before render occurs. It is only called once (except <code>resize</code> or other <code>events</code>), even if the animation will run for a number of frames. Use <code>beforeDraw</code> to do something on each animation frame. <em>If <code>false</code> returned, chart will not be rendered</em></li>
+<li><code>beforeDraw</code>: Start of draw. <em>If <code>false</code> returned, chart will not be drawn</em></li>
+<li><code>beforeDatasetsDraw</code>: Before datasets draw. <em>If <code>false</code> returned, datasets will not be drawn</em></li>
+<li><code>beforeDatasetDraw</code>: Start of dataset drawing. <em>If <code>false</code> returned, dataset will not be drawn</em></li>
+<li><code>afterDatasetDraw</code>: End of dataset drawing</li>
+<li><code>afterDatasetsDraw</code>: After datasets draw</li>
+<li><code>afterDraw</code>: End of draw</li>
+<li><code>afterRender</code>: After render occurs</li>
+</ul>
+</li>
+<li>
+<p><code>beforeEvent</code>: Before event handle</p>
+</li>
+<li>
+<p><code>afterEvent</code>: After event handle</p>
+</li>
+<li>
+<p><code>resize</code>: Resize</p>
+</li>
+<li>
+<p><code>destroy</code>: Destroy canvas</p>
+</li>
+</ul>
+<p><img src="/files/original/images/7e/5d/7e5dc5f1c8e2be853411be73ae31e38dd24bfb85.png" alt="Chart.js plugin Core Api lifecycle" /></p>
+<p>After you configure your plugin object, pass it to <code>Chart.pluginService.register(&lt;Plugin_Object&gt;);</code> to let Chart.js know to register the plugin.</p>
+<p>Example object with all lifecycle functions and their attributes to create plugin would be looks like:</p>
+<pre><code class="language-js">import Chart from "chart.js";
+
+// Create the plugin object with lifecycle methods
+const customPlugin = {
+  beforeInit: chartInstance =&gt; {},
+  afterInit: chartInstance =&gt; {},
+
+  beforeUpdate: chartInstance =&gt; {},
+  beforeLayout: chartInstance =&gt; {},
+  afterLayout: chartInstance =&gt; {},
+  beforeDatasetsUpdate: chartInstance =&gt; {},
+  beforeDatasetUpdate: (chartInstance, { index, meta }) =&gt; {},
+  afterDatasetUpdate: (chartInstance, { index, meta }) =&gt; {},
+  afterDatasetsUpdate: chartInstance =&gt; {},
+  afterUpdate: chartInstance =&gt; {},
+
+  beforeRender: chartInstance =&gt; {},
+  afterRender: chartInstance =&gt; {},
+
+  beforeDraw: (chartInstance, easingValue) =&gt; {},
+  afterDraw: (chartInstance, easingValue) =&gt; {},
+
+  beforeDatasetsDraw: (chartInstance, easingValue) =&gt; {},
+  beforeDatasetDraw: (chartInstance, { index, meta, easingValue }) =&gt; {},
+  afterDatasetDraw: (chartInstance, { index, meta, easingValue }) =&gt; {},
+  afterDatasetsDraw: (chartInstance, easingValue) =&gt; {},
+
+  beforeEvent: (chartInstance, { chart, native, type, x, y }) =&gt; {},
+  afterEvent: (chartInstance, { chart, native, type, x, y }) =&gt; {},
+
+  resize: (chartInstance, newChartSize) =&gt; {},
+
+  destroy: chartInstance =&gt; {}
+};
+
+// Register plugin to enable it in Chart.js
+Chart.pluginService.register(customPlugin);</code></pre>
+<p>Current plugin will not affect chart as functions has empty body. To make this plugin useful one would need to add code to the functions that modifies the chart. </p>
+<p><em>Example plugin to change background color on chart could be written as follows:</em></p>
+<pre><code class="language-js">const changeBackgroundPlugin = {
+    beforeDraw: chart =&gt; {
+        const { chartStyles = {} } = chart.config.options;
+        if (chartStyles &amp;&amp; chartStyles.backgroundColor) {
+            const { ctx } = chart.chart;
+            const { chartArea : area } = chart;
+
+            ctx.save();
+            ctx.fillStyle = chartStyles.backgroundColor;
+            ctx.fillRect(area.left, area.top, area.right - area.left, area.bottom - area.top);
+            ctx.restore();
+        }
+    }
+};</code></pre>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-08-16 16:33:06</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Symfony Request validation]]></title>
+                        <link>https://blog.larapulse.com/symfony/symfony-request-validation</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/symfony/symfony-request-validation</guid>
+            <description><![CDATA[Validation is an important task every web developer should care when working with data coming to server. Symfony has Validator component for that, but let's build request auto-validation structure to be sure that data came to our appliction is alread...]]></description>
+                        <content:encoded><![CDATA[<p>Data sent to the server always have to be validated. For that, validation should be applied for every single request that comes to server to aware about data which we expect to have in request. As data needs to be validated before it is written into a database or passed to a web service, we should validate request before it comes to Controller.</p>
+<p>In this article, we will share with you how we implemented the validation of request in the Symfony, in the likeness of Laravel <code>FormRequest</code>. To validate data from request we will have a separate class which is an extra level over the original request, but with functionalities to validate incoming data and throw an exception, if data in the request is invalid.</p>
+<h3>Accessing request properties and methods</h3>
+<p>In order to give the validator the ability to validate our data, we will merge them and make them accessible through method <code>all()</code>. All other properties of the original request will also be available to us. For that we can implement the following trait:</p>
+<p><details><summary>Code example</summary></p>
+<pre><code class="language-php">&lt;?php
+
+namespace AppTraits;
+
+use SymfonyComponentHttpFoundationRequest;
+
+trait ValidationAwareTrait
+{
+    /** @var Request */
+    protected $httpRequest;
+
+    public function __get($property)
+    {
+        if (property_exists($this-&gt;httpRequest, $property)) {
+            return $this-&gt;httpRequest-&gt;$property;
+        }
+
+        $trace = debug_backtrace();
+        $fileName = $trace[0]['file'] ?? __FILE__;
+        $line = $trace[0]['line'] ?? __LINE__;
+        trigger_error("Undefined property {$property} in {$fileName} on line {$line}");
+
+        return null;
+    }
+
+    public function __set($property, $value)
+    {
+        if (property_exists($this-&gt;httpRequest, $property)) {
+            $this-&gt;httpRequest-&gt;$property = $value;
+        }
+
+        return $this;
+    }
+
+    public function __isset($property)
+    {
+        return isset($this-&gt;httpRequest-&gt;$property);
+    }
+
+    public function __unset($property)
+    {
+        unset($this-&gt;httpRequest-&gt;$property);
+    }
+
+    public function __call($name, $arguments)
+    {
+        if (method_exists($this-&gt;httpRequest, $name)) {
+            return $this-&gt;httpRequest-&gt;$name(...$arguments);
+        }
+
+        $trace = debug_backtrace();
+        $fileName = $trace[0]['file'] ?? __FILE__;
+        $line = $trace[0]['line'] ?? __LINE__;
+        trigger_error(sprintf(
+            'Attempted to call an undefined method named "%s" of class "%s" in %s on line %d',
+            $name,
+            get_class($this),
+            $fileName,
+            $line
+        ));
+
+        return null;
+    }
+}</code></pre>
+<p></details></p>
+<p>This trait will be used in our validation class. It implements core magic methods <code>__get()</code> and <code>__set()</code> to access properties from original request. As <code>__set()</code> should have pair method <code>__isset</code> we implemented it also there. To access native methods from original request class (such as <code>getClientIp()</code>, <code>getPathInfo()</code> etc.) we implemented <code>__call()</code> method.</p>
+<h3>Handle exception</h3>
+<p>Also we need a separate <code>Exception</code> class, which we will throw out in case the data is not valid. To access all error messages we implemented <code>getResponseData()</code> method. Let's have a look on Exception we will throw for the invalid request:</p>
+<p><details><summary>Code example</summary></p>
+<pre><code class="language-php">&lt;?php
+
+namespace AppException;
+
+use SymfonyComponentPropertyAccessPropertyAccess;
+use SymfonyComponentValidatorConstraintViolation;
+use SymfonyComponentValidatorConstraintViolationList;
+use SymfonyComponentValidatorValidatorValidatorInterface;
+
+/**
+ * Class ValidationException
+ */
+class ValidationException extends RuntimeException
+{
+    /** @var ValidatorInterface */
+    private $validator;
+
+    /** @var ConstraintViolationList|null */
+    private $violations;
+
+    /** @var SymfonyComponentPropertyAccessPropertyAccessor */
+    private $propertyAccessor;
+
+    public function __construct(ValidatorInterface $validator, ConstraintViolationList $violations = null)
+    {
+        $message = 'The given data failed to pass validation.';
+
+        parent::__construct($message);
+
+        $this-&gt;validator = $validator;
+        $this-&gt;violations = $violations;
+        $this-&gt;propertyAccessor = PropertyAccess::createPropertyAccessor();
+    }
+
+    public function getValidator() : ValidatorInterface
+    {
+        return $this-&gt;validator;
+    }
+
+    public function getResponseData() : array
+    {
+        $errors = [];
+
+        if ($this-&gt;violations instanceof ConstraintViolationList) {
+            $iterator = $this-&gt;violations-&gt;getIterator();
+
+            /** @var ConstraintViolation $violation */
+            foreach ($iterator as $key =&gt; $violation) {
+                $entryErrors = (array) $this-&gt;propertyAccessor-&gt;getValue($errors, $violation-&gt;getPropertyPath());
+                $entryErrors[] = $violation-&gt;getMessage();
+
+                $this-&gt;propertyAccessor-&gt;setValue($errors, $violation-&gt;getPropertyPath(), $entryErrors);
+            }
+        }
+
+        return $errors;
+    }
+}</code></pre>
+<p></details></p>
+<p><code>ValidationException</code> receive validator instance <code>$validator</code> and validation violations <code>$violations</code> as parameters. As Symfony validator implements <code>IteratorAggregate</code> interface for violation list, in constructor we define <code>$propertyAccessor</code>, which gives us an oppportunity to access properties from <code>$violations</code> iterator.</p>
+<p>While handling <code>ValidationException</code> in kernel of our application, we can access violation list via <code>$exception-&gt;getResponseData()</code>.</p>
+<h3>Validation class</h3>
+<p>And now we can proceed with writing our validation class to auto-validate incoming requests:</p>
+<p><details><summary>Code example</summary></p>
+<pre><code class="language-php">&lt;?php
+
+namespace AppRequests;
+
+use AppExceptionValidationException;
+use AppTraitsValidationAwareTrait;
+use SymfonyComponentHttpFoundationFileBag;
+use SymfonyComponentHttpFoundationHeaderBag;
+use SymfonyComponentHttpFoundationParameterBag;
+use SymfonyComponentHttpFoundationRequestStack;
+use SymfonyComponentHttpFoundationServerBag;
+use SymfonyComponentHttpKernelExceptionAccessDeniedHttpException;
+use SymfonyComponentValidatorConstraintsCollection;
+use SymfonyComponentValidatorConstraintViolationList;
+use SymfonyComponentValidatorValidation;
+use SymfonyComponentValidatorValidatorValidatorInterface;
+
+/**
+ * Class BaseValidation
+ *
+ * @property ParameterBag   $attributes
+ * @property ParameterBag   $request
+ * @property ParameterBag   $query
+ * @property ServerBag      $server
+ * @property FileBag        $files
+ * @property ParameterBag   $cookies
+ * @property HeaderBag      $headers
+ *
+ * @method   duplicate(array $query, array $request, array $attributes, array $cookies, array $files, array $server)
+ * @method   overrideGlobals()
+ */
+abstract class BaseValidation
+{
+    use ValidationAwareTrait;
+
+    /** @var ValidatorInterface */
+    private $validator;
+
+    final public function __construct(RequestStack $request)
+    {
+        $this-&gt;httpRequest = $request-&gt;getCurrentRequest();
+        $this-&gt;validator = Validation::createValidator();
+
+        $this-&gt;initialize();
+    }
+
+    final public function initialize() : void
+    {
+        if (!$this-&gt;passesAuthorization()) {
+            $this-&gt;failedAuthorization();
+        }
+
+        $this-&gt;validate();
+    }
+
+    /**
+     * Get all request parameters
+     *
+     * @return array
+     */
+    final public function all() : array
+    {
+        return $this-&gt;httpRequest-&gt;attributes-&gt;all()
+            + $this-&gt;httpRequest-&gt;query-&gt;all()
+            + $this-&gt;httpRequest-&gt;request-&gt;all()
+            + $this-&gt;httpRequest-&gt;files-&gt;all();
+    }
+
+    /**
+     * Returns list of constraints for validation
+     *
+     * @return Collection
+     */
+    abstract public function rules() : Collection;
+
+    /**
+     * Determine if the request passes the authorization check.
+     *
+     * @return bool
+     */
+    final protected function passesAuthorization() : bool
+    {
+        if (method_exists($this, 'authorize')) {
+            return $this-&gt;authorize();
+        }
+
+        return true;
+    }
+
+    /**
+     * Handle a failed authorization attempt.
+     *
+     * @return void
+     * @throws AccessDeniedHttpException
+     */
+    final protected function failedAuthorization() : void
+    {
+        throw new AccessDeniedHttpException();
+    }
+
+    /**
+     * @return bool
+     * @throws ValidationException
+     */
+    final protected function validate() : bool
+    {
+        /** @var ConstraintViolationList $violations */
+        $violations = $this-&gt;validator-&gt;validate($this-&gt;all(), $this-&gt;rules());
+
+        if ($violations-&gt;count()) {
+            throw new ValidationException($this-&gt;validator, $violations);
+        }
+
+        return true;
+    }
+}</code></pre>
+<p></details></p>
+<p>When instance of <code>BaseValidation</code> will be created, auto-validation will be fired. Constructor get current request and create <code>ValidatorInterface</code> instance. Then it tries to validate data from request.</p>
+<p>Since our application can request not only the verification of incoming data, but also the verification of the permissions to use this data, we will add an optional <code>authorize()</code> method in case we want to verify the user's permissions to send this request. This method should return <code>boolean</code> value. If this method returns <code>false</code>, <code>AccessDeniedHttpException</code> will be thrown.</p>
+<p><strong>NOTE</strong>: This implementation is incorrect according <code>SRP</code>, so you can split permissions check and validation of the data. To simplify the example, we show the implementation of both checks simultaneously.</p>
+<p>If authorization passed successfully, we start validate request data according to validation rules, which we get from <code>rules()</code> method. This method should return <code>SymfonyComponentValidatorConstraintsCollection</code> to be used with Symfony validator. If any violations will occur, <code>ValidationException</code> will be thrown. If not, then we will have access to valid data in Controller (or any other place we initialize instance of <code>BaseValidation</code>).</p>
+<h3>Let's write request class with auto-validation</h3>
+<p>Well done! Now we have all we need to write custom request class. Let's write some request validation class to test how well it works.</p>
+<p><details open="open"><summary>Code example</summary></p>
+<pre><code class="language-php">&lt;?php
+
+namespace AppRequests;
+
+use SymfonyComponentValidatorConstraints{
+    Collection, File, Image, Required
+};
+use SymfonyComponentValidatorException{
+    ConstraintDefinitionException,
+    InvalidOptionsException,
+    MissingOptionsException
+};
+
+class ImageUploadRequest extends BaseValidation
+{
+    private const ALLOW_EXTRA_FIELDS = true;
+    private const ALLOW_MISSING_FIELDS = false;
+    private const EXTRA_FIELDS_MESSAGE = 'This field was not expected.';
+    private const MISSING_FIELDS_MESSAGE = 'This field is missing.';
+
+    /**
+     * @return Collection
+     * @throws MissingOptionsException
+     * @throws InvalidOptionsException
+     * @throws ConstraintDefinitionException
+     */
+    public function rules() : Collection
+    {
+        return new Collection([
+            'fields'                =&gt; $this-&gt;getFields(),
+            'allowExtraFields'      =&gt; self::ALLOW_EXTRA_FIELDS,
+            'allowMissingFields'    =&gt; self::ALLOW_MISSING_FIELDS,
+            'extraFieldsMessage'    =&gt; self::EXTRA_FIELDS_MESSAGE,
+            'missingFieldsMessage'  =&gt; self::MISSING_FIELDS_MESSAGE,
+        ]);
+    }
+
+    /**
+     * @return array
+     * @throws MissingOptionsException
+     * @throws InvalidOptionsException
+     * @throws ConstraintDefinitionException
+     */
+    private function getFields() : array
+    {
+        return [
+            'image'   =&gt; new Required([
+                new File(),
+                new Image([
+                    'detectCorrupted'   =&gt; true,
+                ]),
+            ]),
+        ];
+    }
+}</code></pre>
+<p></details></p>
+<p>This example class uses to validate request, that contains an image to be uploaded to server. As you can see above, <code>SymfonyComponentValidatorConstraintsCollection</code> except field rules also accept setting how to handle this fields.</p>
+<h3>Use custom request</h3>
+<p>And now just see how easy and simple it is to use the data from the request in the Controller and be sure that we are working with the valid data. Now we do not need to do checks in the Controller.</p>
+<p><details><summary>Code example</summary></p>
+<pre><code class="language-php">&lt;?php
+
+namespace AppControllerImageUpload;
+
+use AppRequestsImageUploadRequest;
+use AppServiceImageUploadUserImageManager;
+use LiipImagineBundleModelFileBinary;
+use SymfonyBundleFrameworkBundleControllerController;
+use SymfonyComponentHttpFoundationFileUploadedFile;
+use SymfonyComponentHttpFoundationJsonResponse;
+
+class UserImageController extends Controller
+{
+    /**
+     * Upload user image
+     *
+     * @param UserFileManager     $fileManager
+     * @param UserImageManager    $uploadManager
+     * @param ImageUploadRequest  $request
+     * @param int                 $userId
+     *
+     * @return JsonResponse
+     */
+    public function __invoke(
+        UserFileManager $fileManager,
+        UserImageManager $uploadManager,
+        ImageUploadRequest $request,
+        int $userId
+    ) : JsonResponse {
+        $filename = $fileManager-&gt;getFileName($userId);
+
+        /** @var UploadedFile $image */
+        $image = $request-&gt;files-&gt;get('image');
+        $uploadManager-&gt;save(
+            new FileBinary($image-&gt;getRealPath(), $image-&gt;getMimeType(), $image-&gt;guessExtension()),
+            $filename
+        );
+
+        return $this-&gt;json([
+            'message'   =&gt; sprintf('User image %s successfully uploaded', $filename),
+            'fileName'  =&gt; $filename,
+        ]);
+    }
+}</code></pre>
+<p></details></p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-08-20 14:29:05</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Datastructures in PHP]]></title>
+                        <link>https://blog.larapulse.com/php/datastructures-in-php</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/php/datastructures-in-php</guid>
+            <description><![CDATA[The development process in PHP is mostly related to the receipt and processing of data from different sources. Usage of the Standard PHP Library, SPL and knowledge of its composition is an area whose possession can confirm the competence of the PHP d...]]></description>
+                        <content:encoded><![CDATA[<p>The development process in PHP is mostly related to the receipt and processing of data from different sources, such as databases, local files, remote APIs, etc. Developers spend a lot of time organizing data, getting, moving and processing it. The most used structure for representing data in PHP is an <code>array</code>. However, in some cases, arrays are not suitable for solving problems due to insufficient performance and excessive memory consumption, and therefore more appropriate data structures are required.</p>
+<p>Usage of the <strong>Standard PHP Library, SPL</strong> and knowledge of its composition is an area whose possession can confirm the competence of the PHP developer. </p>
+<p>SPL is like patterns, but purely for data. Mostly it doesn't simplify writing of code, but simplify its understanding by others (or by yourself after a while). Of course, if you used it well and right.</p>
+<h3>Doubly-linked lists</h3>
+<p><code>SplDoublyLinkedList</code> - Doubly-linked lists are a variation on &quot;standard&quot; linked lists where each node has a pointer to the previous node as well as a pointer to the next node. </p>
+<p>Imagine that you are in the queue at the bank and at the same time you can see only the person in front of you and behind you. This is an analogy of the relationship between the elements in the <code>SplDoublyLinkedList</code>. Inserting an item into the list corresponds to the situation when someone climbed into the queue, and you suddenly forgot who was standing in front of you (and this someone forgot about you). A doubly-linked list allows you to efficiently bypass and add large data sets without re-hashing.</p>
+<p><img src="/files/original/images/26/53/2653ecfc03744252e8673f04f78b15f6bacd8305.png" alt="Linked list types, single-listed and doubly-linked lists" /></p>
+<ul>
+<li><code>SplDoublyLinkedList</code>
+<ul>
+<li><code>SplStack</code></li>
+<li><code>SplQueue</code></li>
+</ul></li>
+</ul>
+<p><code>SplQueue</code> and <code>SplStack</code> are very similar to <code>SplDoublyLinkedList</code>. Both these structures, in fact, are doubly linked lists with different iterator flags (<code>IT_MODE_LIFO</code> - Last In First Out, and <code>IT_MODE_FIFO</code> - First In First Out), which regulate the order of node processing and what to do with these elements after they have been processed. Another difference between these structures is that the <code>SplQueue</code> interface contains more intuitive <code>enqueue()</code> and <code>dequeue()</code> methods, unlike the <code>push()</code> and <code>pop()</code> methods of <code>SplStack</code>.</p>
+<pre><code class="language-php">    $stack = new SplStack();
+
+    // add items to the stack
+    $stack-&gt;push('1'); 
+    $stack-&gt;push('2');
+    $stack-&gt;push('3');
+
+    echo $stack-&gt;count();       // 3
+    echo $stack-&gt;top();         // 3
+    echo $stack-&gt;bottom();      // 1
+    echo $stack-&gt;serialize();   // i:6;:s:1:"1";:s:1:"2";:s:1:"3";
+
+    // retrieve items from the stack
+    echo $stack-&gt;pop(); // 3
+    echo $stack-&gt;pop(); // 2
+    echo $stack-&gt;pop(); // 1</code></pre>
+<pre><code class="language-php">    $queue = new SplQueue();
+
+    $queue-&gt;setIteratorMode(SplQueue::IT_MODE_DELETE);
+
+    $queue-&gt;enqueue('one');
+    $queue-&gt;enqueue('two');
+    $queue-&gt;enqueue('three');
+
+    $queue-&gt;dequeue();
+    $queue-&gt;dequeue();
+
+    echo $queue-&gt;top(); // three</code></pre>
+<p>Stacks are widely used in the analysis or processing of nested data structures, in particular in the calculation of mathematical expressions.
+Queues could be used when processing the lists of &quot;jobs&quot; or some tasks, as parsing the text input in the form of a list of individual elements, normalizing it in one cycle, and then process the normalized list in the other.</p>
+<h3>Heaps</h3>
+<p>Heaps are complete binary tree structures, that should satisfy heap-order property: each node is greater than or equal to the data stored in its children. Each level of a tree is completely filled, except possibly the bottom level (at this level it is filled from left to right).</p>
+<p><img src="/files/original/images/1f/46/1f46e1027578149886dd5e7e4eaeabb05231e0ce.png" alt="A properly constructed heap binary tree" /></p>
+<ul>
+<li><code>SplHeap</code>
+<ul>
+<li><code>SplMaxHeap</code></li>
+<li><code>SplMinHeap</code></li>
+</ul></li>
+<li><code>SplPriorityQueue</code></li>
+</ul>
+<p><code>SplHeap</code> is a heap represented as a binary tree, each node of which has no more than two child nodes. This is an abstract class that requires an implementation of the <code>compare()</code> method, which allows real-time sorting while inserting new nodes into a tree.</p>
+<p><img src="/files/original/images/bc/6f/bc6fc7be57736752c6b16f798ebc4eb62a4744f8.gif" alt="Read heap tree" /></p>
+<pre><code class="language-php">    $heap = new SplMaxHeap();
+    $heap-&gt;insert('111');
+    $heap-&gt;insert('222');
+    $heap-&gt;insert('333');
+
+    echo $heap-&gt;extract(); // 333
+    echo $heap-&gt;extract(); // 222
+    echo $heap-&gt;extract(); // 111
+    echo $heap-&gt;extract(); // Exception: Can't extract from an empty heap
+
+    $heap = new SplMinHeap();
+    $heap-&gt;insert('111');
+    $heap-&gt;insert('222');
+    $heap-&gt;insert('333');
+
+    echo $heap-&gt;extract(); // 111
+    echo $heap-&gt;extract(); // 222
+    echo $heap-&gt;extract(); // 333
+    echo $heap-&gt;extract(); // Exception: Can't extract from an empty heap</code></pre>
+<p><code>SplMaxHeap</code> and <code>SplMinHeap</code> are concrete implementations of the abstract class <code>SplHeap</code>. <code>SplMaxHeap</code> implements the <code>compare()</code> method so that the tree is sorted in descending order of node values, and <code>SplMinHeap</code> is in ascending order of values.</p>
+<p><img src="/files/original/images/e0/bb/e0bb18f845f951a2a78349830090e551d94aefdd.png" alt="Min heap and Max heap" /></p>
+<p><code>SplPriorityQueue</code> is a queue similar to <code>SplHeap</code>, but unlike <code>SplHeap</code>, sorting based on the value of the <code>priority</code> property assigned to each node.</p>
+<pre><code class="language-php">    $queue = new SplPriorityQueue();
+    $queue-&gt;setExtractFlags(SplPriorityQueue::EXTR_DATA); // extract only values of elements
+
+    $queue-&gt;insert('Q', 1);
+    $queue-&gt;insert('W', 2);
+    $queue-&gt;insert('E', 3);
+    $queue-&gt;insert('R', 4);
+    $queue-&gt;insert('T', 5);
+    $queue-&gt;insert('Y', 6);
+
+    $queue-&gt;top(); 
+
+    while ($queue-&gt;valid()) { 
+        echo $queue-&gt;current(); 
+        $queue-&gt;next(); 
+    }
+    //YTREWQ</code></pre>
+<h3>Arrays</h3>
+<p><code>SplFixedArray</code> is an array of fixed length, the indixes of which can be only <strong>integers</strong> (which are greater than or equals 0). These restrictions provide a higher processing speed of the array, which is achieved, due to the fact that in <code>SplFixedArray</code> there <strong>is no hashing of the keys</strong> of the elements when they are added (in contrast to the usual arrays). The length could be changed, but this is a costly operation.</p>
+<h3>Map</h3>
+<p><code>SplObjectStorage</code> is an object storage, that provides an interface for mapping objects to data, or can be used as a container for multiple objects. Allows you to use an object as a key of associative array and associate it with some data.</p>
+<pre><code class="language-php">$storage = new SplObjectStorage();
+
+$o1 = new StdClass;
+$o2 = new StdClass;
+
+$storage-&gt;attach($o1);
+
+var_dump($storage-&gt;contains($o1)); // bool(true)
+var_dump($storage-&gt;contains($o2)); // bool(false)
+
+$storage-&gt;detach($o1);
+
+var_dump($storage-&gt;contains($o1)); // bool(false)
+var_dump($storage-&gt;contains($o2)); // bool(false)</code></pre>
+<pre><code class="language-php">$storage = new SplObjectStorage();
+$object = new StdClass;
+
+$storage[$object] = "data from object";
+
+echo $storage[$object]; // data from object</code></pre>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-08-22 14:49:41</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[The Importance of the Sprint Retrospective]]></title>
+                        <link>https://blog.larapulse.com/general-it/importance-of-sprint-retrospective</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/general-it/importance-of-sprint-retrospective</guid>
+            <description><![CDATA[No matter how good a Agile team is, there is always opportunity to improve. Although a good Agile team will be constantly looking for improvement opportunities, the team should set aside a brief, dedicated period at the end of each sprint to delibera...]]></description>
+                        <content:encoded><![CDATA[<h2>What is agile?</h2>
+<p>Agile is an iterative approach to software delivery that builds software incrementally from the start of the project, instead of trying to deliver it all at once near the end. Agile is an empowering process that helps teams provide quick and unpredictable responses to the feedback they receive on their project. It helps software companies analyze and improve their product throughout its development.</p>
+<p><img src="/files/original/images/68/92/68929e1a57df54de946acdc0b6332312e9231cfc.png" alt="Agile software development cycle" /></p>
+<h2>What is retrospective?</h2>
+<p>A sprint retrospective is a meeting that's held at the end of an iteration in Agile team. During the retrospective, the team reflects on what happened in the iteration and identifies actions for improvement going forward.</p>
+<p>Retrospective realizes the 12th principle of flexible methodology:</p>
+<blockquote>
+<ol start="12">
+<li>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.</li>
+</ol>
+</blockquote>
+<p><img src="/files/original/images/b9/a4/b9a4e41412e21c6a4596c0c585dcf638d0e6dfd5.png" alt="Agile retrospective format" /></p>
+<h3>What retrospective key things are?</h3>
+<p>Each member of the team members answers the following questions:</p>
+<ul>
+<li>What worked well for us?</li>
+<li>What did not work well for us?</li>
+<li>What actions can we take to improve our process going forward?</li>
+</ul>
+<p><img src="/files/original/images/80/aa/80aa2720df28c08a614d9bcbf953dc64259a44ca.jpeg" alt="Agile retrospective discussion" /></p>
+<p>Retrospective is an event where teams stops and analyse their way of working, look back and analyse how they performed, find improvements on their way of working. And last but not least, retrospective is a <strong>place where the teams learn</strong>.</p>
+<h2>Why it is important for project?</h2>
+<p>Many teams can work hard to accomplish a common goal, but the problem begins once they cannot find a way to improve, so working hard is great, but the key to major improvement is improving the process of <strong>How the team works...?</strong> The main goal of Retrospective meeting is to help the team gain an opportunity to make a process improvement after each iteration, and <strong>not just working harder</strong>.</p>
+<p><img src="/files/original/images/b7/de/b7de203520703b712dc1440a166f5708e6f75dff.png" alt="Workflow improvements" /></p>
+<p>In addition, every person on the team has a personality with their problems, preferences and desires. Discussing the problem gives the team an opportunity to see their shortcomings and start working on them. Ignoring the problem worsens its solution, and a member of your team can become a non-productive, or completely leave the project.</p>
+<p>Take care of your team members so that your team takes care of your project.</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-08-30 15:44:13</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Synchronous requests using fetch]]></title>
+                        <link>https://blog.larapulse.com/es-2015/synchronous-requests-using-fetch</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/es-2015/synchronous-requests-using-fetch</guid>
+            <description><![CDATA[Asynchronous functions allows us to program using asynchronous requests in a "synchronous" manner. They could be really useful with ajax calls, for example.]]></description>
+                        <content:encoded><![CDATA[<p>Writing code with huge nested structures in JavaScript is not a good idea anymore, as it can lead to the <em>&quot;callback hell&quot;</em>. Callback hell is caused by poor coding practices. To avoid callback hell you should break your code up into small and reusable modules instead of giant monolithic blobs that will make your life unendurable and miserable.</p>
+<pre><code class="language-js">var xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function() {
+    if (xhttp.readyState === 4) {  
+        if (xhttp.status === 200) {  
+            /* Handle response */
+        } else {  
+            /* Handle errors */
+        }  
+    }  
+};
+
+xhttp.open("GET", url, true);
+xhttp.send(); </code></pre>
+<h2>Using <code>fetch</code> and <code>Promises</code></h2>
+<p>You can use the <code>fetch</code> function, which makes it easy to work with asynchronous AJAX data retrieval, but then it becomes possible that you will have to replace callbacks hell with Promises hell.</p>
+<pre><code class="language-js">const options = {};
+
+fetch(url, options)
+    .then(response =&gt; response.json())
+    .then(body =&gt; { /* Handle response */ })
+    .catch(error =&gt; { /* Handle errors */ });</code></pre>
+<h2>Using asynchronous <code>fetch</code></h2>
+<p>You can also use asynchronous functions, that are a proposed ES7 feature that will further wrap generators and promises in a higher level syntax.</p>
+<p><strong>Note</strong> that these fancy things from ES7 may introduce performance and/or cross platform runtime compatibility issues, so make sure to do your research.</p>
+<p>Before we rewrite our code to asynchronous functions, let's learn how to deal with <code>async/await</code> construction. Defining a function, the keyword <code>async</code> should be placed before the <code>function</code> keyword.</p>
+<pre><code class="language-js">const requestData = async () =&gt; {
+    // async code goes here
+};</code></pre>
+<p>Keyword <code>await</code> should be placed in front of a promise call to pauses the execution of an <code>async</code> function and waits for the <code>promise</code> to resolve. Keep in mind, that it only works when used in an <code>async</code> function and only  when placed in front of a <code>Promise</code>. Our code example will now look like as follows:</p>
+<pre><code class="language-js">const requestData = async () =&gt; {
+    try {
+        const options = {};
+        const response = await fetch(url, options);
+
+        const json = await response.json();
+
+        if (response.status === 200 &amp;&amp; json.success === true) {
+            /* Handle response */
+        } else {
+            /* Handle responce errors */
+        }
+    } catch (error) {
+        /* Handle fetch errors */
+    }
+};</code></pre>
+<p>The other way to handle errors with async functions is by chaining a catch on to the function call.</p>
+<pre><code class="language-js">const requestData = async () =&gt; {
+    const response = await fetch(url);
+
+    const json = await response.json();
+
+    /* Handle response */
+};
+
+requestData().catch(error =&gt; { /* Handle errors */ });</code></pre>
+<h3>Requesting multiple sources</h3>
+<p>In case you need request multiple resources, we are faced with a problem that we lose the advantages of asynchronous code execution. In order to reasonable use <code>await</code> construction, we will apply it to the resolved promises with <code>Promise.all()</code>, not to the result of <code>fetch()</code> functions.</p>
+<pre><code class="language-js">const requestData = async () =&gt; {
+    // Fire both requests at the same time
+    const firstPromise = axion(firstUrl);
+    const secondPromise = axion(secondUrl);
+
+    // Wait for both requests to be resolved
+    const [firstResponse, secondResponse] = await Promise.all([ firstPromise, secondPromise ]);
+
+    /* Handle responses */
+};</code></pre>
+<p>In example above we used helper library <code>axion</code>, which parses the body of the response for us. Now we can write code which looks synchronous. As you can see, <code>async/await</code> could be very handy feature in your code, that helps to make it more readable and easier to understand.</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-09-03 16:07:08</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Fetch synchronous geolocation from browser]]></title>
+                        <link>https://blog.larapulse.com/es-2015/synchronous-fetch-browser-geolocation</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/es-2015/synchronous-fetch-browser-geolocation</guid>
+            <description><![CDATA[For some web application, you probably need to ask a user to share his/her location with you. Native web browser behaviour asks you to use an outdated approach to get it using callbacks. But we'll show you how to make this request synchronously using...]]></description>
+                        <content:encoded><![CDATA[<p>Native web browser behaviour asks you to use an outdated approach to get user geolocation data using callbacks. Since we have the ability to use <code>Promises</code> and an asynchronous functions, we'll show you an example how to request user's geolocation from a browser using the <code>async/await</code> functionality.</p>
+<p><strong>Note</strong> that asynchronous functions from ES7 may introduce performance and/or cross platform runtime compatibility issues, so make sure to do your research.</p>
+<p>Let's have a look first how to request user's geolocation:</p>
+<pre><code class="language-js">const getLocation = (showPosition, handleError) =&gt; {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, handleError);
+    } else {
+        // Handle browser support error
+    }
+}</code></pre>
+<p>Of course, this code is good enough to work, and if you don't care about callbacks usage. But when you prefer to write more synchronous code, you would need <code>async/await</code> syntax to handle it.</p>
+<p>Let's declare a <code>getCurrentPosition</code> function, that will return us a <code>Promise</code> with coordinates. Resolving this promise we will get the coordinates, that came to the callback function earlier.</p>
+<pre><code class="language-js">// utils.js
+
+export function getCurrentPosition(options = {}) {
+    return new Promise((resolve, reject) =&gt; {
+        navigator.geolocation.getCurrentPosition(resolve, reject, options);
+    });
+}</code></pre>
+<p>After creating that reusable function, we can use it as a helper function in different places of our application. To load coordinates from browser we have to implement <code>async</code> function now:</p>
+<pre><code class="language-js">import { getCurrentPosition } from "utils";
+
+const fetchCoordinates = async () =&gt; {
+    try {
+        const { coords } = await getCurrentPosition();
+        cosnt { latitude, longitude } = coords;
+
+        // Handle coordinates
+    } catch (error) {
+        // Handle error
+        console.error(error);
+    }
+};</code></pre>
+<p>Well done! We just created a synchronous function to get coordinates from browser instead of processing data inside callbacks. </p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-09-03 18:09:46</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Obtaining security class A+ with nginx and https]]></title>
+                        <link>https://blog.larapulse.com/network/security-class-a-with-nginx-https</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/network/security-class-a-with-nginx-https</guid>
+            <description><![CDATA[Learn how to configure HTTPS with nginx to get an A+ score when checking in SSL Labs and how secure yourself against the latest bugs by SSL encryption.]]></description>
+                        <content:encoded><![CDATA[<p>If your leave any of your pages insecure, all of your pages are insecure, because anyone in-between your users and you (like other people in a coffee shop) can easily intercept all of the traffic and replace <code>https://</code> links with <code>http://</code> links. They can then do whatever they want with any page on your site. If your site uses authentication then it must also use HTTPS for the life of the session. To secure our website we will force usage of HTTPS on every page in our nginx configuration file.</p>
+<pre><code class="language-nginx">server {
+    listen      80;
+    listen [::]:80 ipv6only=on;
+
+    server_name example.com;
+
+    return 301 https://$host$request_uri;
+}</code></pre>
+<p><img src="/files/original/images/3a/ec/3aec24677f5f6817ba2224082fad1f66fb574664.png" alt="Secure and not secure connection in browser preview" /></p>
+<p>An asymmetric system, as <code>SSL</code> (Secure Sockets Layer) or <code>TLS</code> (Transport Layer Security), uses a <strong>public</strong> key and a <strong>private</strong> key to encrypt communications. Anything encrypted with the public key can only be decrypted by the private key and vice-versa.</p>
+<h3>SSL certificates</h3>
+<p>When you request a HTTPS connection to a webpage, it will initially send its SSL certificate to your web browser. This certificate contains the public key needed to begin the secure session. Based on this initial exchange, your browser and the website then initiate the <em>SSL handshake</em>. It involves the generation of shared secrets to establish a uniquely secure connection between yourself and the website.</p>
+<p><img src="/files/original/images/ec/26/ec2613de0f5bea5569f47bcfd7379fe19883eff1.png" alt="HTTPS session handshake" /></p>
+<p>There are many companies that issue certificates for your company and are tied to a specific domain. If you want to use free services to get SSL certificate, only domain-validated certificates are being issued, since they can be fully automated.</p>
+<h2>Configure nginx</h2>
+<p>Fisrt, we need to define basic configuration to listen HTTPS port and turn on HTTP2:</p>
+<pre><code class="language-nginx">server {
+    server_tokens off;
+
+    server_name example.com;
+    root        /path/to/project;
+    index       index.php index.html index.htm;
+
+    listen      443 ssl http2;
+    listen [::]:443 ssl http2;
+
+    ssl on;
+
+    # rest config
+}</code></pre>
+<p>Directive <code>listen 443 ssl http2;</code> enables HTTP2 for us. The most crucial feature is complete multiplexing. It follows that multiple requests may occur in precisely the exact same time over a link that remains open for the length of the transport procedure.</p>
+<p><img src="/files/original/images/d6/25/d6257a17b4cde36916a071c5126acfa0c9be7376.png" alt="HTTP/1.1 vs HTTP/2" /></p>
+<h3>Indicate certificates</h3>
+<p>Further, specify paths to the certificates into directives <strong><code>ssl_certificate</code></strong> and <strong><code>ssl_certificate_key</code></strong>.</p>
+<pre><code class="language-nginx">server {
+    # ...
+
+    ssl_certificate /etc/nginx/ssl/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/key.pem;
+
+    # rest config
+}</code></pre>
+<p>Directive <strong><code>ssl_certificate</code></strong> refers to certificate path given for your host. Intermediate certificates have to be specified in addition to a primary certificate in the following order: the primary certificate comes first, then the intermediate certificates.</p>
+<p>If you do not have a full chain certificate, you must merge the certificate issued to your host with a CA certificate:</p>
+<pre><code class="language-bash">sudo cat host.crt server.ca.pem &gt; /etc/nginx/ssl/fullchain.pem</code></pre>
+<h4>OCSP stapling</h4>
+<p><strong>TLS Certificate Status Request</strong> extension presents a time-stamped OCSP response signed by the CA to the initial TLS handshake, thereby clients don't need to contact the CA.</p>
+<pre><code class="language-nginx">server {
+    # ...
+
+    ssl_stapling on;
+    ssl_stapling_verify on;
+    # resolver 127.0.0.1 [::1];
+    resolver 8.8.8.8 8.8.4.4 208.67.222.222 208.67.220.220 valid=300s;
+    resolver_timeout 10;
+
+    # rest config
+}</code></pre>
+<p>OCSP Stapling is controlled by the <strong><code>ssl_stapling</code></strong> directive and can be enabled independently of OCSP Stapling Verification. If verification is disabled, the server simply forwards to the client the OCSP response it received from the CA, without performing any validation. Directive <strong><code>ssl_stapling_verify</code></strong> enables verification of OCSP responses by the server.</p>
+<p>SSL Stapling allows the server to attach OCSP responses, thereby reducing the time for clients to load pages. The certificate chain (domain - intermediate authorization center - root authorization center) can contain 3-4 levels. And for each level, the browser must establish a connection and receive a certificate. You can send all the certificates (including the intermediate one, so that the certificate chain is guaranteed to fit into one package transfer) at once, then the browser will check the whole chain locally, and request only the root certificate (which in most cases is already on the client).</p>
+<p>To make it works, it is necessary to describe the <strong><code>resolver</code></strong> directive. If you have your own DNS server raised, you can set the value to <code>127.0.0.1 [::1]</code>. If not, you can specify Google DNS servers <code>8.8.8.8 8.8.4.4</code>, or any others. <strong>But keep in mind</strong>, using Google DNS servers for OCSP stapling, it opens the door to DNS cache poisoning of the OCSP stapling mechanism by a third-party. Data centers are easy enough to identify by IP address range. So all Google has to do is verify that someone is requesting known OCSP servers, verify that the server supports OCSP stapling, and they can easily engage in an OCSP stapling MITM attack. Running BIND locally is easy to install and set up on most distributions, eg. for Debian-based you need to install it using <code>sudo apt-get install bind9</code>.</p>
+<h4>Key Exchange</h4>
+<p>Directive <strong><code>ssl_dhparam</code></strong> is necessary to earn Forward Secrecy. That means that if a third party recognizes a session key, it can only access data protected by that key.</p>
+<pre><code class="language-nginx">server {
+    # ...
+
+    ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+    # rest config
+}</code></pre>
+<p>To maintain perfect forward secrecy (PFS), the key used to encrypt the transmitted data should not be used to obtain any additional keys. You can generate this key locally using the following command:</p>
+<pre><code class="language-bash">sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 4096</code></pre>
+<h4>Chiphers</h4>
+<pre><code class="language-nginx">server {
+    # ...
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+    ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
+
+    ssl_prefer_server_ciphers on;
+
+    # rest config
+}</code></pre>
+<p>Using <strong><code>ssl_protocols</code></strong> we are defining, that we want to use only TLS protocols instead of SSL. This is reasonably secure. However, disabling <code>TLSv1.0</code> and <code>TLSv1.1</code> gives us better score by SSL Labs checking. In <strong><code>ssl_ciphers</code></strong> directive we are disabling everything from SSL and defining ciphers we want to use. Directive <strong><code>ssl_prefer_server_ciphers</code></strong> force nginx to strictly follow only this ciphers.</p>
+<h4>Cache session</h4>
+<p>Maintaining SSL Sessions is definitely a good thing for everyone if you expect the user to be on your website for more than a single page view. Directive <strong><code>ssl_session_cache</code></strong> sets types and sizes of caches that store session parameters. In example below we will set 20 MB, this should be enough; and <strong><code>ssl_session_timeout</code></strong> directive sets a time during which a client may reuse the session parameters from cache.</p>
+<pre><code class="language-nginx">server {
+    # ...
+
+    ssl_session_cache shared:SSL:20m;
+    ssl_session_timeout 60m;
+
+    # rest config
+}</code></pre>
+<h4>Strict Transport Security</h4>
+<p>An attacker can hijack the redirect with a tool like <code>SSLStrip</code>, and if the user is posting sensitive information then it will be leaked. You should enable <code>HSTS</code> (HTTP Strict Transport Security) to enforce HTTPS. This makes it so once a user's browser has been to your website, it will refuse to connect to the insecure version for some period of time. This isn't as nice as it could be, but it's much better than nothing.</p>
+<pre><code class="language-nginx">server {
+    # ...
+
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+
+    # rest config
+}</code></pre>
+<p><strong>Strict-Transport-Security</strong> response header tells browsers how long they need to remember the security requirements for our domain. In this case - 1 year, including subdomains. <code>preload</code> is not part of the HSTS specification and should not be treated as official, but nevertheless, browsers will never connect to your domain using an insecure connection.</p>
+<p><strong>Be careful</strong> with <code>includeSubDomains</code> flag! Sometimes certificates are issued for a limited number of subdomains, so only those have trusted certificates will work. Or you can avoid <code>includeSubDomains</code> flag to be included in the header.</p>
+<h4>Content Security Policy (CSP)</h4>
+<pre><code class="language-nginx">server {
+    # ...
+
+    add_header Content-Security-Policy-Report-Only "default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report";
+
+    # rest config
+}</code></pre>
+<p>Content Security Policy is the standard that defines the HTTP headers <code>Content-Security-Policy</code> and <code>Content-Security-Policy-Report-Only</code>, which inform the browser of the whitelist of hosts from which it can download various resources.</p>
+<h3>Putting it all together</h3>
+<p>Eventually we get the following configuration file:</p>
+<pre><code class="language-nginx">server {
+    server_tokens off;
+
+    server_name example.com;
+    root        /path/to/project;
+    index       index.php index.html index.htm;
+
+    listen      443 ssl http2;
+    listen [::]:443 ssl http2;
+
+    ssl on;
+
+    ssl_certificate /etc/nginx/ssl/fullchain.pem;
+    ssl_certificate_key /etc/nginx/ssl/key.pem;
+
+    ssl_stapling on;
+    ssl_stapling_verify on;
+    resolver 8.8.8.8 8.8.4.4 208.67.222.222 208.67.220.220 valid=300s;
+    resolver_timeout 10;
+
+    ssl_dhparam /etc/nginx/ssl/dhparam.pem;
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+
+    ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:CAMELLIA:DES-CBC3-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!MD5:!PSK:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA';
+
+    ssl_prefer_server_ciphers on;
+
+    ssl_session_cache shared:SSL:20m;
+    ssl_session_timeout 60m;
+
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+    add_header Content-Security-Policy-Report-Only "default-src https:; script-src https: 'unsafe-eval' 'unsafe-inline'; style-src https: 'unsafe-inline'; img-src https: data:; font-src https: data:; report-uri /csp-report";
+
+    # rest config
+}</code></pre>
+<p>As a result, we will get A+ score from SSL Labs:</p>
+<p><img src="/files/original/images/88/68/8868d5b5a01fd2d2ed3873b82c853444aa90c842.png" alt="SSL Labs score A+" /></p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-09-07 22:25:06</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[PHP variables under the hood]]></title>
+                        <link>https://blog.larapulse.com/php/variables-under-the-hood</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/php/variables-under-the-hood</guid>
+            <description><![CDATA[We all know how to create a variable, how to get the value of a variable, and how to take a reference to a variable. Let's have a learn what happens in the interpreter when you change the value of a variable? Or when you delete it? How are the types ...]]></description>
+                        <content:encoded><![CDATA[<p>Variables in PHP are some containers that store the type of the variable, its value, the amount of referring variables to this container, and the flag - whether this variable is referenced.</p>
+<p><img src="/files/original/images/b5/68/b5682fe42ea60839c2eec5b7303d5b9914d3a6f0.png" alt="PHP variables under the hood" /></p>
+<h3>Structures and Pointers</h3>
+<p><strong>Structures</strong> are very similar to classes, but they can not have methods, just data, pointers to data and pointers to functions. Declaring a structure in C, you define the data type. And when defining a variable, you can write the name of this structure in place of the type of that variable, like so:</p>
+<pre><code class="language-c">my_super_struct super_struct_instance;</code></pre>
+<p><strong>Pointers</strong> are like variables, but their values store an address in memory. Reference variables behave like dereferenced pointers, that means they access values of the pointer. Let's look at an example:</p>
+<pre><code class="language-c">// defining pointer `foo`, that will points to variable with `int` type
+int *foo;
+// defining variable with `int` type
+int bar = 3;
+
+// taking reference to variable `bar` and assigning it to pointer.
+// `foo` stores memory address, where `bar` stores
+foo = &amp;bar;
+
+// with an asterisk we dereference the pointer (take the value at its address) and increment the value
+(*foo)++;
+
+// we increment the pointer itself, that means the pointer will refers at another value
+foo++;</code></pre>
+<p><img src="/files/original/images/16/91/16912e5d126cdf7feccf99f92c41a303cacfa68d.png" alt="Dealing with pointers" /></p>
+<h3>Containers</h3>
+<p>The container is a structure called <code>zval</code> (short for <strong>“Zend value”</strong>), it represents an arbitrary PHP value and looks like this:</p>
+<pre><code class="language-c">struct zval {
+    zvalue_value value;
+    zend_uchar type;
+    zend_uchar is_ref;
+    zend_ushort refcount;
+};</code></pre>
+<p>As we can see, there is a value, a type, a flag and a amount of referring variables. PHP <code>zval</code> supports following 8 types:</p>
+<ul>
+<li><code>BOOL</code></li>
+<li><code>LONG</code> <em>(signed integer type)</em></li>
+<li><code>DOUBLE</code> <em>(used to store floating point numbers)</em></li>
+<li><code>STRING</code></li>
+<li><code>ARRAY</code></li>
+<li><code>OBJECT</code></li>
+<li><code>RESOURCE</code></li>
+<li><code>NULL</code></li>
+</ul>
+<p><code>zvalue_value</code> is an <code>union</code>. Union is a special type that may have several members declarations of different types, but only one will be used. That how it defines:</p>
+<pre><code class="language-c">typedef union _zvalue_value {
+    long lval; // integer
+    double dval; // float
+    struct {
+        char *val;
+        int len;
+    } str; // string
+    HashTable *ht; // array
+    zend_object obj; // object
+} zvalue_value;</code></pre>
+<p>As a result, when you create a variable of this type, it will take in memory exactly as much as occupies the heaviest element of unions.</p>
+<p><img src="/files/original/images/2b/14/2b14977ba7eea51082fe6da32c437928318a1fec.png" alt="PHP variable creation" /></p>
+<h3>Why do we need all this</h3>
+<p>First, let's figure out why we need <strong>refcount</strong>. That's very simple: when you assign to a variable a value of another variable, they both refer to one <code>zval</code>, and <code>refcount</code> increments.</p>
+<p><img src="/files/original/images/00/e8/00e806411395f52d4ae16cefd30f412b98ad8f90.png" alt="2 variables refers to the same memory place" /></p>
+<p>Now, if you change the value of one of these variables, PHP seeing the <code>refcount</code> greater than 1, will copy this <code>zval</code>, make the changes there, and your variable will point already to the new <code>zval</code>. It will look something like this:</p>
+<table>
+<thead>
+    <tr>
+        <th>PHP</th>
+        <th>Under the hood</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+<pre>
+<code class="language-php">$foo = "baz";
+$bar = $foo;
+</code></pre>
+        </td>
+        <td>
+<pre>
+<code class="language-c">bar,foo: {
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 0
+    refcount: 2
+}
+</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+<pre>
+<code class="language-php">$bar .= "q";
+</code></pre>
+        </td>
+        <td>
+<pre>
+<code class="language-c">foo: {
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 0
+    refcount: 1
+}
+bar: {
+    type: string,
+    value:
+        str:
+            val: "bazq"
+            len: 4
+    is_ref: 0
+    refcount: 1
+}
+</code></pre>
+        </td>
+    </tr>
+</tbody>
+</table>
+<p>This technique is called <strong>&quot;copy on write&quot;</strong> and it allows to reduce memory consumption quite well. Also, <code>refcount</code> is needed for the <strong>garbage collector</strong>, which removes from memory all <code>zval</code>s, which have <code>refcount = 0</code>.</p>
+<p>And what happens with references? And <strong><code>is_ref</code></strong> is working? That's very simple: if you create a reference from a variable, the is_ref flag becomes 1, and the above optimization for this zval will not be applied.</p>
+<table>
+<thead>
+    <tr>
+        <th>PHP</th>
+        <th>Under the hood</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>
+<pre><code class="language-php">$foo = "baz";
+$bar = $foo;</code></pre>
+        </td>
+        <td>
+<pre>
+<code class="language-c">bar,foo: {
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 0
+    refcount: 2
+}
+</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+<pre>
+<code class="language-php">$baz = &$foo;</code></pre>
+        </td>
+        <td>
+<pre>
+<code class="language-c">baz,foo: {
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 1
+    refcount: 2
+}
+bar: { // variable `bar` was allocated to a separate `zval`
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 0
+    refcount: 1
+}
+</code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>
+<pre>
+<code class="language-php">$qwe = $foo;</code></pre>
+        </td>
+        <td>
+<pre>
+<code class="language-c">baz,foo: {
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 1
+    refcount: 2
+}
+bar: {
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 0
+    refcount: 1
+}
+qwe: { // this variable was also allocated to a separate `zval`
+    type: string,
+    value:
+        str:
+            val: "baz"
+            len: 3
+    is_ref: 0
+    refcount: 1
+}
+</code></pre>
+        </td>
+    </tr>
+</tbody>
+</table>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-09-13 19:06:49</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Make your website printable]]></title>
+                        <link>https://blog.larapulse.com/css/printable-website</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/css/printable-website</guid>
+            <description><![CDATA[Various websites could contain useful information, that you would like to keep locally for the future. Unfortunately, not all websites adapted to be printable via default browser behaviour. Using CSS3 print media query this feature lack could be easi...]]></description>
+                        <content:encoded><![CDATA[<p>As you progress in web development, it becomes easier to think of styles as <em>modes</em>, a way of viewing a site in different contexts and on different devices. The content of your site is HTML: static, unchanging data. CSS acts as a filter, emphasizing, reducing, eliminating or moving content in a way appropriate to each client.</p>
+<p>You can embed your print styles directly in HTML, but this will cause an extra HTTP request, which may slow down the page loading:</p>
+<pre><code class="language-html">&lt;link media="print" href="printable.css" /&gt;</code></pre>
+<p>The best way to embed print styles is to declare the <code>@media</code> query, that was introduced since CSS3 released:</p>
+<pre><code class="language-css">@media print {
+    /* print styles go here */
+}</code></pre>
+<p>Between the opening and closing curly braces you will be writing the style rules for your pages when they are printed. There is no need to duplicate your earlier rules, only to indicate what is <em>different</em> when a page is printed. However, you are not limited to writing stylesheets, you could make the printed page appear completely different from the web version.</p>
+<h3>Hide elements that are irrelevant to the printed page</h3>
+<p>When someone prints your site, they are interested in content, and everything else, like navigation bars, headers, and footers aren't relevant to the content. Therefore, in the print @media query, we turn off their visibility.</p>
+<pre><code class="language-css">header, footer, nav, aside, .non-printable {
+    display: none;
+}</code></pre>
+<h3>Hide background images, and change colors to high-contrast</h3>
+<p>Make sure you are setting <code>background-image: none</code> in your <code>@media print</code> rules for elements that have a background image set. Also we should reset styles like <code>color</code>, <code>box-shadow</code> and <code>text-shadow</code> to be better seen on the paper.</p>
+<pre><code class="language-css">*:not(a),
+*:not(a):before,
+*:not(a):after,
+*:first-letter:not(a),
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}</code></pre>
+<h5>Force background printing</h5>
+<p>On the other hand, you might be interested to force browser to display <code>background</code>, so we need to overwrite the default settings for some browsers:</p>
+<pre><code class="language-css">header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}</code></pre>
+<h3>Use absolute units (which are not pixels) for measurements</h3>
+<p>&quot;Pixels&quot; have no relevance to the printed page, and you can usually assume that any printer is using standard paper. Responsive design principles – measuring most elements in percentages or other scalable units – usually works best, but it's also safe and recommended to use absolute units like <code>cm</code> (centimeters), <code>mm</code> (millimeters), <code>in</code> (inches), <code>pt</code> (points) or <code>pc</code> (picas).</p>
+<pre><code class="language-css">header {
+    margin-bottom: 1cm;
+}</code></pre>
+<h3>Revealing links and abbreviations</h3>
+<p>Obviously, the reader cannot &quot;click&quot; on the printed page to see where a link goes. However, it is still useful to indicate URL addresses. To do this, we use some advanced CSS in the <code>@media print</code> section:</p>
+<pre><code class="language-css">a[href^=//]:not([href*="example.com"]):after,
+a[href^=http]:not([href*="example.com"]):after {
+    content: " &lt;" attr(href) "&gt;";
+}</code></pre>
+<p>These lines mean, we can filter links to show only external links, as we don't want to show reference of the <code>a</code> tag, that could be used as an anchor.</p>
+<p>Abbreviations should be wrapped in <code>abbr</code> elements and their expansions included in the <code>title</code> attribute. It makes sense to display those on printed pages:</p>
+<pre><code class="language-css">abbr[title]:after {
+    content: " (" attr(title) ")";
+}</code></pre>
+<h3>Force page breaks</h3>
+<p>Since printed pages aren’t endless like web pages, content will eventually break on one page and continue on the next page.</p>
+<h5>Page breaks before an element</h5>
+<p>You might wish each product presented on the site to be printed on a new page, or a fresh page used for every individual entry on a blog. If you have been consistent in your markup, and use an <code>h2</code> element exclusively for each new item, you could write the following within your <code>@media</code> query:</p>
+<pre><code class="language-css">h2 {
+    page-break-before: always;
+}</code></pre>
+<p>It ensures that when an h3 element will be encountered, it always starts a new page: for all intents and purposes, <code>h2</code> elements become page headings when printed. The one downside to this approach is that your first page may be essentially blank, or very short.</p>
+<p>When you have a series of <code>article</code> entries presented on the same web page, you might like to start a new page when an <code>article</code> follows another <code>article</code>:</p>
+<pre><code class="language-css">article + article {
+    page-break-before: always;
+}</code></pre>
+<h5>Page breaks after an element</h5>
+<p>We can prevent page breaks right after sub-headings because that looks odd:</p>
+<pre><code class="language-css">h3, h4, h5, h6 {
+    page-break-after: avoid;
+}</code></pre>
+<h5>Page breaks inside an element</h5>
+<p>While browsers will logically split long paragraphs across pages when they are printed, you typically do not want that to occur to images, tables, lists and other elements:</p>
+<pre><code class="language-css">ul, pre, code, blockquote, table, img {
+    page-break-inside: avoid;
+}</code></pre>
+<h5>Widows and Orphans</h5>
+<p>Sometimes you may not want to force a page break, but at least control how many lines are displayed on the current or the next page.</p>
+<p>if the last line of a paragraph doesn’t fit on the current page, the last two lines of that paragraph will be printed on the next page, because the property that controls this, <code>widows</code> is set to <code>2</code> by default. If it's the other way around and only one line fits on the current page, the whole paragraph will be printed on the next page. The property responsible for this behavior is <code>orphans</code> and its default value is <code>2</code> as well. But we can overwrite these values:</p>
+<pre><code class="language-css">p {
+    widows: 4;
+    orphans: 3;
+}</code></pre>
+<h3>Testing</h3>
+<p>You don't have to print a page every time you make a small change. Depending on your browser you can export the page as a PDF, show a print preview or even debug directly in the browser.</p>
+<p>The most convenient way to check your printable stylesheets is probably Google Chrome built-in functionality in DevTools. It could emulate <em>CSS media</em> to preview the page.</p>
+<p><img src="/files/original/images/72/08/720830469e28617ab0f5072a2a19d1f92b5fe899.png" alt="Testing print stylesheets using Chrome DevTools" /></p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-11-21 18:10:18</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Handling large files on S3 with Laravel]]></title>
+                        <link>https://blog.larapulse.com/laravel/handling-large-files-on-s3</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/laravel/handling-large-files-on-s3</guid>
+            <description><![CDATA[Working with large files in storage can cause an application to be out of memory as it loads the entire file into RAM before sending it to the storage. To save memory usage we need to work with streams.]]></description>
+                        <content:encoded><![CDATA[<h3>How to upload files</h3>
+<p>To upload file to S3 bucket we just need to create a new <code>Filesystem</code> instance representing our S3 disk storage; define the path relative to our bucket, where we would like to store desired file; and then upload the file using <code>put()</code> method.</p>
+<pre><code class="language-php">$targetFile = 'hello.txt';          // path where data should be stored
+$sourceFile = '/var/log/syslog';    // local path to file to be uploaded
+
+$disk= Storage::disk('s3');
+$disk-&gt;put($targetFile, file_get_contents($sourceFile));
+// or
+$disk-&gt;getDriver()-&gt;putStream($targetFile, file_get_contents($sourceFile));</code></pre>
+<p>Method <code>put()</code> of the <code>IlluminateContractsFilesystemFilesystem</code> interface accepts 3 parameters: </p>
+<ul>
+<li>Destination file path,</li>
+<li>Content to be stored in this file,</li>
+<li>and options</li>
+</ul>
+<p>Third parameters used to set visibility of the file and it is optional. But it could be used as:</p>
+<pre><code class="language-php">$disk-&gt;put($targetFile, file_get_contents($sourceFile), ['visibility' =&gt; 'private']);
+// or just
+$disk-&gt;put($targetFile, file_get_contents($sourceFile), 'private');</code></pre>
+<p>This is a good way to handle small files, but you should note that <code>file_get_contents</code> will load the entire file into RAM before sending it to S3 storage. This could be an issue for large files. To prevent errors or exceptions for large files, we will use streams to upload and download files.</p>
+<h3>What is stream</h3>
+<p>A stream is a <code>resource</code> object which exhibits streamable behavior. It can be read from or written to in a linear fashion.</p>
+<p><img src="/files/original/images/f7/8b/f78bfbfb55f9085158e54a635b35a6494ca8ad54.png" alt="PHP filesystems streams flow" /></p>
+<h3>How to upload using stream</h3>
+<p>To proper upload big files you should use PHP streams. That's how you could do it:</p>
+<pre><code class="language-php">$disk = Storage::disk('s3');
+$disk-&gt;put($targetFile, fopen($sourceFile, 'r+'));</code></pre>
+<p>PHP will only require a few MB of RAM even if you upload a file of several GB.</p>
+<h3>How to read stream</h3>
+<p>To download a file from S3 storage to the local file system you can use <code>readStream()</code> method. This method returns a <code>resource</code> or boolean <code>false</code>, so it is handy to check results of execution before reading stream. Locally file from the stream can be stored as shown below:</p>
+<pre><code class="language-php">$sourceFileOnS3 = 'hello.txt';
+
+$disk = Storage::disk('s3');
+$stream = $disk
+    -&gt;getDriver()
+    -&gt;readStream($sourceFileOnS3);
+
+is_resource($stream) &amp;&amp; file_put_contents($targetFile, stream_get_contents($stream), FILE_APPEND);</code></pre>
+<p>You can even use streams to copy file from one disk to another without touching the local filesystem:</p>
+<pre><code class="language-php">$s3 = Storage::disk('s3');
+$sftp = Storage::disk('sftp');
+
+$stream = $s3-&gt;getDriver()-&gt;readStream($sourceFile);
+
+is_resource($stream) &amp;&amp; $sftp-&gt;put($targetFile, $stream);</code></pre>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2018-12-05 17:46:20</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Set up global .gitignore]]></title>
+                        <link>https://blog.larapulse.com/git/global-gitignore</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/git/global-gitignore</guid>
+            <description><![CDATA[A .gitignore file should be committed into your repository, in order to share the ignore rules with any other users that clone the repository. But for application and OS specific files it is recommended to create a global .gitignore file, which is a ...]]></description>
+                        <content:encoded><![CDATA[<h2>What is gitignore</h2>
+<p>Gitignore is a special file that tells Git what files you want to automatically exclude from repositories. There are certain types of files that you don't want to commit because they're not actually part of your project, or because they are impractical to include in version control.</p>
+<p>You don't want version control to waste space saving copies of already compiled materials, especially those that quickly go out of date. If you're never going to use them again, they're a poor fit for version control management.</p>
+<p>As for assets, most data files won't change during development. Using version control to track memory intensive art, sounds, databases and other data files isn't a productive use of this tool.</p>
+<h2>Global gitignore vs repository gitignore</h2>
+<p>A <code>.gitignore</code> file normally lives at the top level of your repository, it specifies which files you want to automatically exclude from your commits. Alternatively, you can use Git to build a global <code>.gitignore</code> file in your home directory, that will excludes files for all repositories.</p>
+<h2>Why global</h2>
+<p>If you create global <code>.gitignore</code> file properly, you can basically set it and forget it. You get all the advantages of <code>.gitignore</code> in every Git project you use. It's way easier than using separate <code>.gitignore</code> files for each and every project.</p>
+<p>Since other people using the repositories won't necessarily be using the same setup, they wouldn't benefit from having your specific ignores in the repo's gitignore.</p>
+<h3>OS specific files</h3>
+<p>Operating systems can leave a lot of junk, both visible and invisible, lying around your computer. These files are usually generated as a part of normal system operations. For example, you might find a Windows thumbnail cache, or a folder customization file that remembers icon positions or stores a background image. Since these files are used for display purposes by your computer, they don’t affect your project in any way, and you want to omit these OS specific items.</p>
+<pre><code class="language-.gitignore"># OS generated files #
+######################
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/</code></pre>
+<h3>IDE / Code editor specific files</h3>
+<p>Application files also are not required by your project at all. It is also unlikely that any of your team members would require these files in order for them to work on their project. Hence, we ignore application files.</p>
+<pre><code class="language-.gitignore"># Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+### Node.js logs ###
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Runtime data ###
+pids
+*.pid
+*.seed
+*.pid.lock
+
+### Dependencies ###
+node_modules/
+jspm_packages/
+bower_components/
+vendor/
+
+### IDEs and code editors ###
+.idea/
+.idea_modules/
+.vscode/*
+.vs/
+nbproject/
+atlassian-ide-plugin.xml
+.sass-cache/
+build/*
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]</code></pre>
+<h5>Find all necessary excludes</h5>
+<p>You can use <a href="https://www.gitignore.io/">Gitignore.io</a> service to build <code>.gitignore</code> files. It generates a <code>.gitignore</code> file for you using all kinds of keywords you searched. Also you could find plain <code>.gitignore</code> files in this <a href="https://github.com/github/gitignore">GitHub repository</a>.</p>
+<p><img src="/files/original/images/f0/86/f086292737616b553902a3df11603acd55be97dc.png" alt="gitignore.io web tool" /></p>
+<h2>How to do it</h2>
+<p>You tell Git which file to use by issuing a global Git config command, and here it is. This starts with <code>git config --global</code> which configures Git globally across your personal computer account. It applies to any repo your account creates. The name of the option you're setting is <code>core.excludesfile</code>. And the path of the file you're setting this to is a <code>.gitignore --global</code> file in your home directory which is what that tilde at the start of this path means.</p>
+<p>This command does not create this new file for you, it just configures Git to know where to look for the file, where that file is supposed to be.</p>
+<p>Let's create a new empty global <code>.gitignore</code> file in your home directory:</p>
+<pre><code>$ cd ~
+$ touch .gitignore_global</code></pre>
+<p>Open this file and fill it out with a list of rules for ignoring files in every Git repository on your computer. As a final step, let Git knows, that you want to use this file as a global <code>.gitignore</code> by adding it to your Git config with the following command:</p>
+<pre><code>$ git config --global core.excludesfile ~/.gitignore_global</code></pre>
+<h2>Clean up commited files</h2>
+<p><img src="/files/original/images/79/31/7931ba6ebec65bb9902a33076e914a9d30278f77.png" alt="Cleaning up commited files that should be ignored" /></p>
+<p>If you already have a file checked in, and you want to ignore it, Git will not ignore the file if you add a rule later. In those cases, you must untrack the file first, by running the following command in your terminal:</p>
+<pre><code>$ git rm --cached {FILENAME}</code></pre>
+<h2>Committing an ignored file</h2>
+<p>It is possible to force an ignored file to be committed to the repository using the <code>-f</code> (or <code>--force</code>) option with:</p>
+<pre><code>$ git add -f debug.log</code></pre>
+<p>You might consider doing this if you have a general pattern (like <code>*.log</code>) defined, but you want to commit a specific file. However a better solution is to define an exception to the general rule:</p>
+<pre><code>$ echo !debug.log &gt;&gt; .gitignore
+$ cat .gitignore
+*.log
+!debug.log
+$ git add debug.log</code></pre>
+<p>This approach is more obvious, and less confusing, for your teammates.</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2019-01-30 07:01:03</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Process monitoring tools you probably didn't know about]]></title>
+                        <link>https://blog.larapulse.com/dev-tools/process-monitoring-tools</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/dev-tools/process-monitoring-tools</guid>
+            <description><![CDATA[]]></description>
+                        <content:encoded><![CDATA[<h2>Htop – Linux Process Monitoring</h2>
+<p><code>htop</code> is a much advanced interactive and real time Linux process monitoring tool. This is much similar to Linux <code>top</code> command, but it has some rich features like user friendly interface to manage process, shortcut keys, vertical and horizontal view of the processes and much more. <code>htop</code> is a third party tool and doesn't included in Linux systems, you need to install it manually.</p>
+<p><img src="/files/original/images/7e/64/7e640a4a6384745b30168a9f17e9c0a0bfc04950.png" alt="htop - Process monitoring tool" /></p>
+<h4>Features</h4>
+<ul>
+<li>it shows a frequently updated list of the processes running on a computer, normally ordered by the amount of CPU usage;</li>
+<li>it provides a full list of processes running, instead of the top resource-consuming processes;</li>
+<li>it uses color and gives visual information about processor, swap and memory status;</li>
+<li>it can also display the processes as a tree;</li>
+<li>it provides a convenient, visual, cursor-controlled interface for sending signals to processes.</li>
+</ul>
+<h4>Instalation</h4>
+<p>Debian / Ubuntu:</p>
+<pre><code>$ sudo apt-get install htop</code></pre>
+<p>CentOs / Fedora:</p>
+<pre><code># yum install htop</code></pre>
+<p>MacOS:</p>
+<pre><code>$ brew install htop</code></pre>
+<h4>Usage</h4>
+<p>All you have to do is just run it from the terminal:</p>
+<pre><code>$ htop</code></pre>
+<p>Navigating throughout this tools is very easy, especially due to the fact that it supports the work of the cursor.</p>
+<blockquote>
+<p>You can also check out other alternatives, like <a href="https://nicolargo.github.io/glances/">Glances</a> or <a href="http://nmon.sourceforge.net/pmwiki.php">nmon</a>.</p>
+</blockquote>
+<p><code>Glances</code> is a good htop alternative as it can adapt dynamically when displaying system information, depending on the terminal size.</p>
+<p><img src="/files/original/images/1a/38/1a385b46bfe9493641d05a40d96fd519a0effafa.png" alt="Glances at the terminal" /></p>
+<p><code>nmon</code> is another htop alternative systems administrators tool, for server tuning, benchmarking or viewing detailed system performance information.</p>
+<p><img src="/files/original/images/29/4f/294f086d24105d0d31588d47cf5c9d374fd718d2.png" alt="nmon at the terminal" /></p>
+<hr />
+<h2>IPTraf – Real Time IP LAN Monitoring</h2>
+<p><code>iptraf</code> is an open source console-based real time network (IP LAN) monitoring utility for Linux. It collects a variety of information such as IP traffic monitor that passes over the network, including TCP flag information, ICMP details, TCP/UDP traffic breakdowns, TCP connection packet and byne counts. It also gathers information of general and detaled interface statistics of TCP, UDP, IP, ICMP, non-IP, IP checksum errors, interface activity etc.</p>
+<p><img src="/files/original/images/c0/27/c02780bc45301dc308c6ba6de0590dd0a6e3d62b.png" alt="IPTraf – Real Time IP LAN Monitoring" /></p>
+<h4>Features</h4>
+<ul>
+<li>An <em>IP traffic monitor</em> shows information on the IP traffic passing over your network. Includes TCP flag information, packet and byte counts, ICMP details, OSPF packet types.</li>
+<li><em>General and detailed interface statistics</em> showing IP, TCP, UDP, ICMP, non-IP and other IP packet counts, IP checksum errors, interface activity, packet size counts.</li>
+<li>A <em>TCP and UDP service monitor</em> showing counts of incoming and outgoing packets for common TCP and UDP application ports.</li>
+<li>A <em>LAN statistics module</em> discovers active hosts and shows statistics showing the data activity on them.</li>
+<li>TCP, UDP, and other protocol display filters, allowing you to view only traffic you're interested in.</li>
+<li>Support Logging.</li>
+<li>Supports Ethernet, FDDI, ISDN, SLIP, PPP, and loopback interface types.</li>
+<li>Utilizes the built-in raw socket interface of the Linux kernel, allowing it to be used over a wide range of supported network cards.</li>
+<li>Full-screen, menu-driven operation.</li>
+</ul>
+<h4>Instalation</h4>
+<p>Debian / Ubuntu:</p>
+<pre><code>$ sudo apt-get install iptraf</code></pre>
+<p>CentOS / Fedora:</p>
+<pre><code># yum install iptraf</code></pre>
+<h4>Usage</h4>
+<p>If the <code>iptraf</code> command is issued without any command-line options, the program comes up in interactive mode, with the various facilities accessed through the main menu. <strong>Note</strong>, that it has to be run with <code>root</code> privileges:</p>
+<pre><code>$ sudo iptraf</code></pre>
+<hr />
+<h2>Ctop - interface for container metrics</h2>
+<p><a href="https://ctop.sh/"><code>ctop</code></a> provides a concise and condensed overview of real-time metrics for multiple containers, as well as a single container view for inspecting a specific container.</p>
+<blockquote>
+<p>It mostly works same as <code>docker stats</code>, but provides a better interface and single container view and logging.</p>
+</blockquote>
+<p><img src="/files/original/images/f0/07/f0075506f2d36a88c32ffa5b999e27465bd9d6db.png" alt="Ctop - Top-like interface for container metrics" /></p>
+<h4>Features</h4>
+<ul>
+<li>it shows a frequently updated list of the containers with metrics running on a computer;</li>
+<li>it comes with built-in support for Docker and runC;</li>
+<li>it uses color and gives visual information about CPU, memory and network usage;</li>
+<li>it shows logs per instance;</li>
+<li>it has a full-screen, menu-driven operation.</li>
+</ul>
+<p><img src="/files/original/images/a2/c3/a2c382c56e3031e03913eddbb9b4961f7ff077a4.png" alt="Ctop - Instance logging" /></p>
+<h4>Instalation</h4>
+<p>Linux:</p>
+<pre><code>$ sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.2/ctop-0.7.2-linux-amd64 -O /usr/local/bin/ctop
+$ sudo chmod +x /usr/local/bin/ctop</code></pre>
+<p>MacOS:</p>
+<pre><code>$ brew install ctop</code></pre>
+<h4>Usage</h4>
+<p><code>ctop</code> requires no arguments and uses Docker host variables by default. To run it, just type it in the terminal:</p>
+<pre><code>$ ctop</code></pre>
+<hr />
+<h2>Mytop - real-time threads and performance monitoring tools</h2>
+<p><code>mytop</code> is an open source, command line tool used for monitoring MySQL performance. Mytop connects to a MySQL server and periodically runs the <code>show processlist</code> and <code>show global status</code> commands. It then summarizes the information in a useful format. Using <code>mytop</code>, we can in real-time monitor MySQL threads, queries, and uptime as well as see which user is running queries on which database, which are the slow queries, and more. All this information can be used to optimize the MySQL server performance.</p>
+<p><img src="/files/original/images/ee/91/ee91b2e570e6b7335e07c2fe3f2dc28096b217d5.png" alt="Mytop - monitoring queries and processes" /></p>
+<h4>Features</h4>
+<p><code>htop</code> provides a command-line shell interface to monitor real time MySQL/MariaDB threads, queries per second, process list and performance of databases and gives a idea for the database administrator to better optimize the server to handle heavy load.</p>
+<p>The <code>mytop</code> display screen is really broken into two parts. The top 4 lines (header) contain summary information about your MySQL server:</p>
+<ul>
+<li>The first line identified the hostname of the server and the version of MySQL it is running. The right had side shows the <code>uptime</code> of the MySQL server process in <code>days+hours:minutes:seconds</code> format (much like FreeBSD's top) as well as the current time.</li>
+<li>The second line displays the total number of queries the server has processed, the average number of queries per second, the real-time number of queries per second, and the number of slow queries.</li>
+<li>The third line deals with threads. Versions of MySQL before 3.23.x didn't give out this information, so you'll see all zeros.</li>
+<li>And the fourth line displays key buffer efficiency (how often keys are read from the buffer rather than disk) and the number of bytes that MySQL has sent and received.</li>
+</ul>
+<p>The second part of the display lists as many threads as can fit on screen. By default they are sorted according to their idle time (least idle first).</p>
+<h4>Instalation</h4>
+<p>By default Mytop tool is included in the Fedora and Debian/Ubuntu repositories, so you just have to install it using your default package manager. To install Mytop, run the appropriate command below for your Linux distribution to install it:</p>
+<pre><code>$ sudo apt install mytop    # Debian/Ubuntu
+# yum install mytop         # RHEL/CentOS
+# dnf install mytop         # Fedora 22+
+# pacman -S mytop           # Arch Linux
+# zypper in mytop           # openSUSE</code></pre>
+<p>To prevent inserting connection details, create a customized configuration file for mytop named <code>.mytop</code> in the home directory and add the following content in the file:</p>
+<pre><code class="language-conf">user=root
+pass=
+host=127.0.0.1
+db=
+port=3306
+delay=3
+slow=10
+socket=
+batchmode=0
+header=1
+color=1
+idle=1
+long=120</code></pre>
+<p>The <code>delay</code> option specifies the amount of time in seconds between display refreshes. The <code>idle</code> parameter specifies whether to allow idle (sleeping) threads to appear in the list in mytop display screen.</p>
+<h4>Usage</h4>
+<p>If you configured <code>.mytop</code> file, you can run <code>mytop</code> without any command-line arguments:</p>
+<pre><code>$ mytop</code></pre>
+<p>If you didn't provide a password in the configuration file, you have to use the <code>--prompt</code> option to <code>mytop</code>, which asks for the password each time:</p>
+<pre><code>$ mytop --prompt
+Password:</code></pre>
+<p>If you need to connect to another database, then in the configuration file, you could run mytop with necessary arguments:</p>
+<pre><code>$ mytop -u larapulse -d larapulse_db --prompt</code></pre>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2019-01-30 22:14:01</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[ECMAScript 10 - JavaScript this year]]></title>
+                        <link>https://blog.larapulse.com/es-2015/ecmascript-10</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/es-2015/ecmascript-10</guid>
+            <description><![CDATA[]]></description>
+                        <content:encoded><![CDATA[<p>ES9 is the <a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm">current version of the specification</a>.</p>
+<p>ES10 is still <a href="https://tc39.github.io/ecma262/">a draft</a>.</p>
+<p>Today in <em>Stage 4</em> there are only a few proposals, but in <em>Stage 3</em> - a whole dozen!</p>
+<h2>Five stages</h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Strawman</td>
+<td>An idea that can be implemented through the <em>Babel</em> plugin</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Proposal</td>
+<td>A formal proposal for the feature and check the viability of the idea</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Draft</td>
+<td>Start developing specifications</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Candidate</td>
+<td>A preliminary version of the specification</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Finished</td>
+<td>The final version of the specification</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> to ensure the stability of the application, only Stage 3 and higher should be used.</p>
+</blockquote>
+<p>In this article, we will only look at Stage 4 (de facto, included in the new standard) and Stage 3 (which is about to become a part of it).</p>
+<h2>Stage 4</h2>
+<p>These changes are already included in the standard.</p>
+<h4>Optional argument of catch</h4>
+<p><a href="https://github.com/tc39/proposal-optional-catch-binding">TC39 proposal reference</a></p>
+<p>Before ES10, a <code>catch</code> block forced us to bind an exception variable for the catch clause whether it’s necessary or not:</p>
+<pre><code class="language-javascript">function isValidJSON(text) {
+  try {
+    JSON.parse(text);
+    return true;
+  } catch (unused) { // variable is not used
+    return false;
+  }
+}</code></pre>
+<p>Sometimes, as we see above, the exception variable that’s bound to the <code>catch</code> clause is absolutely redundant.</p>
+<p><img src="/files/original/images/e3/73/e373874b9f75a384e8b218efe29e85be4e2b6f42.png" alt="try...catch optional argument in the Edge and Chrome" /></p>
+<p>Starting from the ES10 edition, the parentheses can be omitted and the <code>catch</code> will looks like <code>try</code> as two peas in a pod:</p>
+<pre><code class="language-javascript">function isValidJSON(text) {
+  try {
+    JSON.parse(text);
+    return true;
+  } catch { // has no argument
+    return false;
+  }
+}</code></pre>
+<h4>Access to the symbolic link description</h4>
+<p><a href="https://tc39.github.io/proposal-Symbol-description/">TC39 proposal reference</a></p>
+<p>The symbolic link description can be indirectly obtained by the <code>toString()</code> method:</p>
+<pre><code class="language-javascript">const symLink = Symbol("Symbol description");
+String(symLink);
+// ↪ "Symbol(Symbol description)"</code></pre>
+<p>Starting with ES10, symbols will have a <code>description</code> property that is read-only. It allows you to get a description of the symbol without any dancing with a tambourine:</p>
+<pre><code class="language-javascript">symLink.description;
+// ↪ "Symbol description"</code></pre>
+<p>If the description is not specified, <code>undefined</code> will be returned:</p>
+<pre><code class="language-javascript">const withoutDescriptionSymbol = Symbol();
+withoutDescriptionSymbol.description;
+// ↪ undefined
+
+const emptyDescriptionSymbol = Symbol('');
+emptyDescriptionSymbol.description;
+// ↪ ""</code></pre>
+<h4>EcmaScript strings compatible with JSON</h4>
+<p><a href="https://github.com/tc39/proposal-json-superset">TC39 proposal reference</a></p>
+<p>EcmaScript before its 10th edition, claims that ECMAScript JSON is a subset of JSON, but that's not entirely true. Whereas JSON strings accepts unescaped line separator <code>U+2028</code> and paragraph separator <code>U+2029</code> characters, but <code>ECMAScript</code> strings up to version 10 don't accept.</p>
+<p>If you call <code>eval()</code> with the string <code>"u2029"</code>, it behaves as if we had done a line break - right in the middle of the code, but with ES10 strings it is fine now:</p>
+<p><img src="/files/original/images/06/6f/066f9bd11399dbdc54dfb141ae4fe1481a417f34.png" alt="PARAGRAPH SEPARATOR entity in the Edge and Chrome" /></p>
+<h4>Function prototype <code>toString()</code> revision</h4>
+<p><a href="http://tc39.github.io/Function-prototype-toString-revision/">TC39 proposal reference</a></p>
+<p><details>
+<summary>Goals of changes</summary></p>
+<ul>
+<li>remove the forward-incompatible requirement:</li>
+</ul>
+<blockquote>
+<p>If the implementation cannot produce a source code string that meets these criteria then it must return a string for which <code>eval</code> will throw a <em>SyntaxError</em> exception.</p>
+</blockquote>
+<ul>
+<li>clarify the &quot;functionally equivalent&quot; requirement</li>
+<li>standardise the string representation of built-in functions and host objects</li>
+<li>clarify requirement of representation based on the &quot;actual characteristics&quot; of an object</li>
+<li>ensure that the string's parse contains the same function body and parameter list as the original</li>
+<li>for functions defined using ECMAScript code, <code>toString</code> must return source text slice from beginning of first token to end of last token matched by the appropriate grammar production</li>
+<li>for built-in function objects and bound function exotic objects, <code>toString</code> must not return anything other than <code>NativeFunction</code></li>
+<li>for callable objects which were not defined using ECMAScript code, <code>toString</code> must return <code>NativeFunction</code></li>
+<li>for functions created dynamically (through the <em>Function</em> and <em>GeneratorFunction</em> constructors), <code>toString</code> must synthesise a source text</li>
+<li>for all other objects, <code>toString</code> must throw a <em>TypeError</em> exception
+</details></li>
+</ul>
+<pre><code class="language-javascript">// User-defined function
+function () { console.log('My Function!'); }.toString();
+// ↪ function () { console.log('My Function!'); }
+
+// Embedded object method
+Number.parseInt.toString();
+// ↪ function parseInt() { [native code] }
+
+// Function with context binding
+function () { }.bind(0).toString();
+// ↪ function () { [native code] }
+
+// Built-in callable function object
+Symbol.toString();
+// ↪ function Symbol() { [native code] }
+
+// Dynamically generated function object
+Function().toString();
+// ↪ function anonymous() {}
+
+// Dynamically generated function generator-object
+function* () { }.toString();
+// ↪ function* () { }
+
+// .call is now waiting for the function as an argument
+Function.prototype.toString.call({});
+// ↪ Function.prototype.toString requires that 'this' be a Function"</code></pre>
+<hr />
+<h2>Stage 3</h2>
+<p>Proposals that came out of the draft status, but not yet included in the final version of the standard.</p>
+<h4><code>private</code> / <code>static</code> / <code>public</code> methods, properties and attributes for classes</h4>
+<p><a href="https://github.com/tc39/proposal-class-fields">TC39 proposal reference for class fields</a>
+<a href="https://github.com/tc39/proposal-private-methods">TC39 proposal reference for private methods</a>
+<a href="https://github.com/tc39/proposal-static-class-features">TC39 proposal reference for static class features</a></p>
+<p>In some languages there is an agreement to call private methods through an underscore.</p>
+<pre><code class="language-python">class Person:
+    def __init__(self, name, alias):
+        self.name = name      # public
+        self.__alias = alias  # private
+
+    def who(self):
+        print('name  : ', self.name)
+        print('alias : ', self.__alias)
+
+    def __foo(self):          # private method
+        print('This is private method')
+
+    def foo(self):            # public method
+        print('This is public method')
+        self.__foo()</code></pre>
+<p>But let me remind you - this is only an agreement. Nothing prevents you from using the prefix for other purposes, using another prefix, or not using it at all. The developers of the EcmaScript specification went further and made the <code>#</code> sign (hash, octothorp) part of the syntax. To make methods, getter/setters or fields private, just give them a name starting with <code>#</code>.</p>
+<p>With all of its implementation kept internal to the class, this custom element can present an interface which is basically just like a built-in HTML element. Users of the custom element don't have the power to mess around with any of its internals.</p>
+<pre><code class="language-javascript">class Counter extends HTMLElement {
+  #xValue = 0;
+
+  get #x() {
+    return #xValue;
+  }
+
+  set #x(value) {
+    this.#xValue = value;
+    window.requestAnimationFrame(this.#render.bind(this));
+  }
+
+  #clicked() {
+    this.#x++;
+  }
+
+  constructor() {
+    super();
+    this.onclick = this.#clicked.bind(this);
+  }
+
+  connectedCallback() {
+    this.#render();
+  }
+
+  #render() {
+    this.textContent = this.#x.toString();
+  }
+}
+
+window.customElements.define('num-counter', Counter);</code></pre>
+<p>Like static public methods, static public fields take a common idiom which was possible to write without class syntax and make it more ergonomic, have more declarative-feeling syntax (although the semantics are quite imperative), and allow free ordering with other class elements.</p>
+<p>Declaring static properties in the class body is hoped to be cleaner and doing a better job of meeting programmer expectations of what classes should be for. The latter workaround is a somewhat common idiom, and it would be a nice convenience for programmers if the property declaration could be lifted into the class body, matching how methods are placed there.</p>
+<h4>Hashbang (shebang) Grammar</h4>
+<p><a href="https://github.com/tc39/proposal-hashbang">TC39 proposal reference</a></p>
+<p>Shebang (hashbang) is a familiar way for *nix users to specify an interpreter for an executable file.</p>
+<p>Some CLI JS hosts strip the hashbang in order to generate valid JS source texts before passing to JS engines currently. This would unify and standardize how that is done.</p>
+<pre><code class="language-javascript">#!/usr/bin/env node
+// in the Script Goal
+'use strict';
+console.log(1);</code></pre>
+<pre><code class="language-javascript">#!/usr/bin/env node
+// in the Module Goal
+export {};
+console.log(1);</code></pre>
+<blockquote>
+<p>Under Unix-like operating systems, when a script with a shebang is run as a program, the program loader parses the rest of the script's initial line as an interpreter directive; the specified interpreter program is run instead, passing to it as an argument the path that was initially used when attempting to run the script.</p>
+</blockquote>
+<p>So, the <code>index.js</code> file can be executed in the shell, like an executable (if it has executable permission):</p>
+<pre><code>$ ./index.js</code></pre>
+<p>instead of</p>
+<pre><code>$ node index.js</code></pre>
+<h4>BigInt: Arbitrary precision integers</h4>
+<p><a href="https://github.com/tc39/proposal-bigint">TC39 proposal reference</a></p>
+<p><img src="/files/original/images/db/96/db96a8050dd0f4f7854b01eb088e4afcadf2ece2.png" alt="Web browsers support of BigInt: CanIUse" /></p>
+<p><code>BigInt</code> is a new primitive that provides a way to represent whole numbers larger than 2<sup>53</sup>, which is the largest number Javascript can reliably represent with the Number primitive.</p>
+<pre><code class="language-javascript">const x = Number.MAX_SAFE_INTEGER;
+// ↪ 9007199254740991, this is 1 less than 2^53
+
+const y = x + 1;
+// ↪ 9007199254740992, ok, checks out
+
+const z = x + 2
+// ↪ 9007199254740992, wait, that’s the same as above!</code></pre>
+<p>A <code>BigInt</code> is created by appending <code>n</code> to the end of the integer or by calling the constructor.</p>
+<pre><code class="language-javascript">const theBiggestInt = 9007199254740991n;
+
+const alsoHuge = BigInt(9007199254740991);
+// ↪ 9007199254740991n
+
+const hugeButString = BigInt('9007199254740991');
+// ↪ 9007199254740991n
+</code></pre>
+<p>This is a new primitive type:</p>
+<pre><code class="language-javascript">typeof 123;
+// ↪ 'number'
+typeof 123n;
+// ↪ 'bigint'</code></pre>
+<p><code>Number</code>s and <code>BigInt</code>s may be compared as usual.</p>
+<pre><code class="language-javascript">42n === BigInt(42);
+// ↪ true
+42n == 42;
+// ↪ true</code></pre>
+<p>But mathematical operations need to be carried out within one type:</p>
+<pre><code class="language-javascript">20000000000000n / 20n
+// ↪ 1000000000000n
+
+20000000000000n / 20
+// ↪ Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions</code></pre>
+<p>Unary minus is supported, unary plus returns an error:</p>
+<pre><code class="language-javascript">-2n
+// ↪ -2n
+
++2n
+// ↪ Uncaught TypeError: Cannot convert a BigInt value to a number</code></pre>
+<h4>globalThis - a new way to access the global context</h4>
+<p><a href="https://github.com/tc39/proposal-global">TC39 proposal reference</a></p>
+<p>Since the implementation of the global scope is dependent on a particular engine, you had to do something like this before:</p>
+<pre><code class="language-javascript">var getGlobal = function () {
+    // the only reliable means to get the global object is
+    // `Function('return this')()`
+    // However, this causes CSP violations in Chrome apps.
+    if (typeof self !== 'undefined') { return self; }
+    if (typeof window !== 'undefined') { return window; }
+    if (typeof global !== 'undefined') { return global; }
+    throw new Error('unable to locate global object');
+};</code></pre>
+<p>And even this option did not guarantee that everything will work exactly. <code>globalThis</code> is a common way for all platforms to access the global scope:</p>
+<pre><code class="language-javascript">// Appeal to the global array constructor
+globalThis.Array(1,2,3);
+// ↪ [1, 2, 3]
+
+// Write data to the global scope
+globalThis.myGLobalSettings = {
+    isActive: true
+};
+
+// Access data from the global scope
+globalThis.myGLobalSettings;
+// ↪ {isActive: true}</code></pre>
+<h4>Dynamic <code>import()</code></h4>
+<p><a href="https://github.com/tc39/proposal-dynamic-import">TC39 proposal reference</a></p>
+<p><img src="/files/original/images/74/ab/74abc32c34cefd981393f40c865e46533464977f.png" alt="Web browsers support of dynamic imports: CanIUse" /></p>
+<p>Did you want variables in the <code>import</code> strings? With dynamic imports, this has become possible:</p>
+<pre><code class="language-javascript">import(`./language-packs/${navigator.language}.js`);</code></pre>
+<p>Dynamic import is an asynchronous operation. It returns a <code>Promise</code> that, after loading a module, returns it to the callback function. Therefore, new binding would work only inside <code>async</code> functions:</p>
+<pre><code class="language-javascript">element.addEventListener('click', async () =&gt; {
+    const module = await import(`./eventsScripts/buttonClickEvent.js`);
+    module.clickEvent();
+});</code></pre>
+<p>It looks like a call to the <code>import()</code> function, but is not inherited from <code>Function.prototype</code>, which means it will not be possible to call via <code>call</code> or <code>apply</code>:</p>
+<pre><code class="language-javascript">import.call("example this", "argument")
+// ↪ Uncaught SyntaxError: Unexpected identifier</code></pre>
+<h4><code>import.meta</code> - meta-information about the loaded module</h4>
+<p><a href="https://github.com/tc39/proposal-import-meta">TC39 proposal reference</a></p>
+<p>In the code of the loadable module it became possible to obtain information on it. For now it is only the address from where the module was loaded:</p>
+<pre><code class="language-javascript">console.log(import.meta);
+// ↪ { url: "file:///home/user/my-module.js" }</code></pre>
+<h4>Creating an object using <code>Object.fromEntries()</code></h4>
+<p><a href="https://github.com/tc39/proposal-object-from-entries">TC39 proposal reference</a></p>
+<p><code>Object.fromEntries</code> is proposed to perform the reverse of <code>Object.entries</code>: it accepts an iterable of key-value pairs and returns a new object whose own keys and corresponding values are given by those pairs.</p>
+<pre><code class="language-javascript">Object.fromEntries([['key1', 1], ['key2', 2]])
+// ↪ {key1: 1; key2: 2}</code></pre>
+<p><em>Underscore</em> and <em>Lodash</em> provide a <code>_.fromPairs</code> function which constructs an object from a list of key-value pairs.</p>
+<h4>Well-formed <code>JSON.stringify</code></h4>
+<p><a href="https://github.com/tc39/proposal-well-formed-stringify">TC39 proposal reference</a></p>
+<p><a href="https://tools.ietf.org/html/rfc8259#section-8.1">RFC 8259 section 8.1</a> requires JSON text exchanged outside the scope of a closed ecosystem to be encoded using UTF-8, but <a href="https://tc39.github.io/ecma262/#sec-json.stringify"><code>JSON.stringify</code></a> can return strings including code points that have no representation in UTF-8 (specifically, surrogate code points U+D800 through U+DFFF).</p>
+<pre><code class="language-javascript">// Non-BMP characters still serialize to surrogate pairs.
+JSON.stringify('𝌆')
+// ↪ '"𝌆"'
+JSON.stringify('uD834uDF06')
+// ↪ '"𝌆"'
+
+// Unpaired surrogate code units will serialize to escape sequences.
+JSON.stringify('uDF06uD834')
+// ↪ '"\udf06\ud834"'
+JSON.stringify('uDEAD')
+// ↪ '"\udead"'</code></pre>
+<p>So the string <code>uDF06uD834</code> after processing with <code>JSON.stringify()</code> turns into <code>\udf06\ud834</code>. However, returning such invalid Unicode strings is unnecessary, because JSON strings can include Unicode escape sequences.</p>
+<h4>Legacy <code>RegExp</code> features</h4>
+<p><a href="https://github.com/tc39/proposal-regexp-legacy-features">TC39 proposal reference</a></p>
+<p>A specification for the legacy (deprecated) <code>RegExp</code> features in JavaScript, i.e., static properties of the constructor like <code>RegExp.$1</code> as well as the <code>RegExp.prototype.compile</code> method.</p>
+<p>The proposal includes another feature that needs consensus and implementation experience before being specced:</p>
+<ul>
+<li><code>RegExp</code> legacy static properties as well as <code>RegExp.prototype.compile</code> are disabled for instances of proper subclasses of <code>RegExp</code> as well as for cross-realm regexps.</li>
+</ul>
+<h4>String prototypes <code>.trimStart()</code> &amp; <code>.trimEnd()</code></h4>
+<p><a href="https://github.com/tc39/proposal-string-left-right-trim">TC39 proposal reference</a></p>
+<p>For consistency with <code>padStart</code>/<code>padEnd</code> the standard functions will be <code>trimStart</code> and <code>trimEnd</code>, however for web compatilibity <code>trimLeft</code> will alias <code>trimStart</code> and <code>trimRight</code> will alias <code>trimEnd</code>.</p>
+<pre><code class="language-javascript">const one = "      hello and let ";
+const two = "us begin.        ";
+console.log(one.trimStart() + two.trimEnd());
+// ↪ "hello and let us begin."</code></pre>
+<h4>New string prototype <code>.matchAll()</code></h4>
+<p><a href="https://github.com/tc39/proposal-string-matchall">TC39 proposal reference</a></p>
+<p><code>matchAll()</code> connote that <em>all</em> matches would be returned, not just a single match. It works as a <code>.match()</code> method with a global flag <code>/g</code> to locate all matches in the string, but returns an iterator:</p>
+<pre><code class="language-javascript">const searchString = 'olololo';
+
+// it returns the first occurrence with additional information about it
+searchString.match(/o/);
+// ↪ ["o", index: 0, input: "olololo", groups: undefined]
+
+// it returns an array of all occurrences without additional information
+searchString.match(/o/g);
+// ↪ ["o", "o", "o", "o"]
+
+// it returns an iterator
+searchString.matchAll(/o/);
+// ↪ {_r: /o/g, _s: "olololo"}
+
+// The iterator returns each subsequent occurrence with detailed information,
+// as if we were using .match without a global flag.
+for (const item of searchString.matchAll(/o/)) {
+  console.log(item);
+}
+// ↪ ["o", index: 0, input: "olololo", groups: undefined]
+// ↪ ["o", index: 2, input: "olololo", groups: undefined]
+// ↪ ["o", index: 4, input: "olololo", groups: undefined]
+// ↪ ["o", index: 6, input: "olololo", groups: undefined]</code></pre>
+<p>The argument of <code>matchAll()</code> must be a regular expression, otherwise an exception will be thrown:</p>
+<pre><code class="language-javascript">'olololo'.matchAll('o');
+// ↪ Uncaught TypeError: o is not a regexp!</code></pre>
+<h4>Flatten a multi-dimensional array into a single level with <code>.flat()</code> &amp; <code>.flatMap()</code></h4>
+<p>The array prototype got <code>.flat()</code> and <code>.flatMap()</code>, which are generally similar to the implementation in <code>lodash</code>, but still have some differences. Optional argument - sets the maximum tree traversal depth:</p>
+<pre><code class="language-javascript">const deepArray = [
+  '≥0 — first level',
+  [
+    '≥1 — second level',
+    [
+      '≥2 — third level',
+      [
+        '≥3 — forth level',
+        [
+          '≥4 — fifth level'
+        ]
+      ]
+    ]
+  ]
+];
+
+// 0 — returns an array without any changes
+deepArray.flat(0);
+// ↪ ["≥0 — first level", Array(2)]
+
+// 1 — default deep value
+deepArray.flat();
+// ↪ ["≥0 — first level", "≥1 — second level", Array(2)]
+
+deepArray.flat(2);
+// ↪ ["≥0 — first level", "≥1 — second level", "≥2 — third level", Array(2)]
+
+deepArray.flat(100500);
+// ↪ ["≥0 — first level", "≥1 — second level", "≥2 — third level", "≥3 — forth level", "≥4 — fifth level"]</code></pre>
+<p><code>.flatMap()</code> is an equivalent to a sequential call of <code>.map().flat()</code>. The callback function passed to the method must return an array that will become part of a common flat array:</p>
+<pre><code class="language-javascript">['Hello', 'World'].flatMap(word =&gt; [...word]);
+// ↪ ["H", "e", "l", "l", "o", "W", "o", "r", "l", "d"]
+
+['Hello', 'World'].map(word =&gt; [...word]).flat()
+// ↪ ["H", "e", "l", "l", "o", "W", "o", "r", "l", "d"]</code></pre>
+<p>Also note that <code>.flatMap()</code>, unlike <code>.flat()</code>, does not have a <code>depth</code> argument. So only the first level will be flatten.</p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2019-02-07 22:02:51</pubDate>
+                                                                                                        </item>
+                <item>
+            <title><![CDATA[Commonly used DNS record types]]></title>
+                        <link>https://blog.larapulse.com/network/dns-record-types</link>
+            <guid isPermaLink="true">https://blog.larapulse.com/network/dns-record-types</guid>
+            <description><![CDATA[DNS servers create a DNS record to provide important information about a domain or hostname, particularly its current IP address. The most common DNS record types will be described.]]></description>
+                        <content:encoded><![CDATA[<h2>What is DNS</h2>
+<p>DNS is a global system for translating IP addresses to human-readable domain names. When a user tries to access a web address like <code>example.com</code>, their web browser or application performs a <strong>DNS Query</strong> against a DNS server, supplying the hostname. The DNS server takes the hostname and resolves it into a numeric IP address, which the web browser can connect to.</p>
+<p><img src="/files/original/images/b4/2d/b42d7daa42c48e7937cf30ec347e2ef3a08315b5.png" alt="DNS - Domain Name System" /></p>
+<h2>What is record types</h2>
+<p>Before we dive into various types of DNS records, it is important to understand the distinction and concept DNS Zones and DNS Records.</p>
+<p>Zone DNS database is a collection of resource records and each of the records provides information about a specific object. A DNS Zone is like a container of all the DNS records for a specific domain and only that domain.</p>
+<p>A DNS Record is a single entry that gives the zone instructions on how to handle any given request based on type.</p>
+<p><img src="/files/original/images/00/a5/00a53657134759be32d5ba98b77dca9d647495af.png" alt="DNS record types" /></p>
+<p>DNS servers create a DNS record to provide important information about a domain or hostname, particularly its current IP address. Each individual DNS record is assigned a type and information needed for that type of record.</p>
+<p>The most common DNS record types are:</p>
+<h4>Record A: Address Mapping record</h4>
+<p>The A-record is the most basic and the most commonly used DNS record type. It is also known as a DNS host record, stores a hostname and its corresponding IPv4 address.</p>
+<p>It is used to translate human friendly domain names such as <code>www.example.com</code> into IP-addresses such as <code>93.184.216.34</code> (machine friendly numbers).</p>
+<p><img src="/files/original/images/fc/3d/fc3d50ca03d1e2edebe7f51beb0bf22b792ae1ef.png" alt="DNS record type A - to GitHub" /></p>
+<p>A-records are the DNS server equivalent of the hosts file - a simple domain name to IP-address mapping. A-records are not required for all computers, but are needed for any computer that provides shared resources on a network. Assigning a value to an A record is as simple as providing your DNS management panel with an IP address to where the domain or subdomain should point and a TTL.</p>
+<p><img src="/files/original/images/72/74/72749a7a4c4df93fc0612d81a162a9bcb68f2cf6.png" alt="DNS record type A" /></p>
+<p>You'll want to use an A Record for your DNS entry if you have an IP address that the domain/subdomain should point to or if you want to establish a domain/subdomain to be used as the place to point a CNAME.</p>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record AAAA: IP Version 6 Address record</h4>
+<p>The record AAAA (also quad-A record) specifies IPv6 address for given host. So it works the same way as the A record and the difference is the type of IP address.</p>
+<p>IPv6 is the future replacement for the current IP address system (also known as IPv4). The current IPv4 addresses are 32 bits long (<code>xxx.xxx.xxx.xxx</code> = 4 bytes), and therefore &quot;only&quot; support a total of 4,294,967,296 addresses - less than the global population. With this limitation there is an increasing shortage of IPv4 addresses, and to solve the problem, the whole Internet will eventually be migrated to IPv6.</p>
+<p>IPv6 addresses are 128 bits long and are written in hexadecimal numbers separated by colons (<code>:</code>) at every four digits (segment). A series of zero value segments can be shortened as &quot;<code>::</code>&quot;, and leading zeros in a segment can be skipped. For example: <code>4C2F::1:2:3:4:567:89AB</code>.</p>
+<p><em>This record type is defined in RFC3596.</em></p>
+<h4>Record CNAME: Canonical Name record</h4>
+<p>The CNAME record specifies a domain name that has to be queried in order to resolve the original DNS query. Therefore CNAME records are used for creating aliases of domain names. CNAME records are truly useful when you want to alias a domain to an external domain.</p>
+<p>When a DNS client requests a record that contains a CNAME, which points to another hostname, the DNS resolution process is repeated with the new hostname. In other cases we can remove CNAME records and replace them with A records and even decrease performance overhead.</p>
+<p><img src="/files/original/images/dd/d4/ddd4f732cf71d5bf59ed04906a2d1448f6bdf8e6.png" alt="DNS record type CNAME" /></p>
+<p>Computers on the Internet often performs multiple roles such as web-server, ftp-server, chat-server etc. To mask this, CNAME-records can be used to give a single computer multiple names (aliases).</p>
+<p>For example, the computer &quot;computer1.xyz.com&quot; may be both a web-server and an ftp-server, so two CNAME-records are defined:</p>
+<p><code>www.xyz.com</code> = <code>computer1.xyz.com</code> and <code>ftp.xyz.com</code> = <code>computer1.xyz.com</code>.</p>
+<p>Sometimes a single server computer hosts many different domain names (take ISPs), and so CNAME-records may be defined such as <code>www.abc.com</code> = <code>www.xyz.com</code>.</p>
+<p>The most common use of the CNAME-record type is to provide access to a web-server using both the standard <code>www.domain.com</code> and <code>domain.com</code> (with and without the www prefix). This is usually done by creating an A-record for the short name (without www), and a CNAME-record for the www name pointing to the short name.</p>
+<p>CNAME-records can also be used when a computer or service needs to be renamed, to temporarily allow access through both the old and new name.</p>
+<p>A CNAME-record should always point to an A-record and never to itself or another CNAME-record to avoid circular references.</p>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record MX: Mail exchanger record</h4>
+<p>It specifies an SMTP email server for the domain a DNS domain name. The information is used by Simple Mail Transfer Protocol (SMTP) to route emails to proper hosts. Typically, there are more than one mail exchange server for a DNS domain and each of them have set priority.</p>
+<p>Mail Exchanger (MX) records are used to help route email according the domain owners preference. The MX record itself specifies which server(s) to attempt to use to deliver mail to when this type of request is made to the domain. They differ from A Records and CNAMEs in the way that they also require a &quot;priority&quot; value as a part of their entry. The priority number is used to indicate which of the servers listed as MX records it should attempt to use first.</p>
+<ul>
+<li>If a domain name is handled by multiple e-mail servers (for backup/redundancy), a separate MX-record is used for each e-mail server, and the preference numbers then determine in which order (lower numbers first) these servers should be used by other e-mail servers.</li>
+<li>If a domain name is handled by a single e-mail server, only one MX-record is needed and the preference number does not matter.</li>
+</ul>
+<p>Some email providers have only one MX record and some have well over two. The number of MX entries you will need to create depends largely on the mail provider and how they expect the load on these email servers to be handled.</p>
+<p><img src="/files/original/images/1d/f0/1df021948a3784d508de429a39dceedf79d4316e.png" alt="DNS record type MX" /></p>
+<p>When sending an e-mail to &quot;user@example.com&quot;, your e-mail server must first look up any MX-records for &quot;example.com&quot; to see which e-mail servers handles incoming e-mail for &quot;example.com&quot;. This could be &quot;mail.example.com&quot; or someone else's mail server like &quot;mail.larapulse.com&quot;. After this it looks up the A-record for that e-mail server name to connect to its IP-address.</p>
+<blockquote>
+<p><strong>Important:</strong>
+An MX-record must point to the name of a mail server - not directly to the IP-address.
+Because of this, it is very important that an A-record for the referenced mail server name exists (not necessarily on your DNS server, but wherever it belongs), otherwise there may not be any way to connect to that e-mail server.</p>
+</blockquote>
+<p>Do not point an MX-record to a CNAME-record. Many e-mail servers don't understand this. Add another A-record instead.</p>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record NS: Name Server records</h4>
+<p>It specifies that a DNS Zone, such as “example.com” is delegated to a specific Authoritative Name Server, and provides the address of the name server.</p>
+<p>A zone should contain one NS-record for each of its own DNS servers (primary and secondaries). This is mostly used for zone transfer purposes (notify messages). These NS-records have the same name as the zone in which they are located.</p>
+<p>The more important function of the NS-record is <strong>delegation</strong>. Delegation means that part of a domain is delegated to other DNS servers.</p>
+<p>For example, all &quot;.com&quot; sub-names (such as &quot;example.com&quot;) are delegated from the &quot;com&quot; zone. The &quot;com&quot; zone contains NS-records for all &quot;.com&quot; sub-names (a lot!).</p>
+<p><img src="/files/original/images/31/9f/319f031c39b4854b50ad0f64e185435160ff91b4.png" alt="DNS record type NS" /></p>
+<p>You can delegate sub-names of your own domain name (such as &quot;subname.example.com&quot;) to other DNS servers the same way. To delegate &quot;subname.example.com&quot;, create NS-records for &quot;subname.example.com&quot; in the &quot;example.com&quot; zone. These NS-records must point to the DNS server responsible for &quot;subname.example.com&quot;, for example, &quot;ns1.subname.example.com&quot; - or a DNS server somewhere else like &quot;ns1.othername.net&quot;.</p>
+<p>An NS-record identifies the name of a DNS server - not the IP-address. Because of this, it is important that an A-record for the referenced DNS server exists (not necessarily on your DNS server, but wherever it belongs), otherwise there may not be any way to connect with that DNS server.</p>
+<p>If an NS-record delegates a sub-name (&quot;subname.example.com&quot;) to a DNS server with a name in that sub-name (&quot;ns1.subname.example.com&quot;), an A-record for that server (&quot;&quot;ns1.subname.example.com&quot;) must exist in the parent zone (&quot;example.com&quot;). This A-record is called a <em>&quot;glue record&quot;</em>, because it doesn't really belong in the parent zone, but is necessary to locate the DNS server for the delegated sub-name.</p>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record SOA: Start of Authority</h4>
+<p>This record appears at the beginning of a DNS zone file and specifies core information about a DNS zone. A zone contains exactly one SOA-record, which holds the following properties for the zone:</p>
+<ul>
+<li><strong>Name of primary DNS server</strong>. The host name of the primary DNS server for the zone. The zone should contain a matching NS-record.</li>
+</ul>
+<blockquote>
+<p>NOTE: For dynamic updates from Windows clients and Active Directory to work correctly, it is important that this contains the correct host name for the primary DNS server for the zone, and also that an A-record exists for this name pointing to the correct IP address.</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>E-mail address of responsible person</strong>. The e-mail address of the person responsible for the zone. The standard for this is the &quot;hostmaster&quot; alias - such as &quot;hostmaster@example.com&quot;.</p>
+</li>
+<li>
+<p><strong>Serial number</strong>. Used by secondary DNS servers to check if the zone has changed. If the serial number is higher than what the secondary server has, a zone transfer will be initiated. You should never decrease a serial number.</p>
+</li>
+<li>
+<p><strong>Refresh Interval</strong>. How often secondary DNS servers should check if changes are made to the zone.</p>
+</li>
+<li>
+<p><strong>Retry Interval</strong>. How often secondary DNS server should retry checking if changes are made - if the first refresh fails.</p>
+</li>
+<li>
+<p><strong>Expire Interval</strong>. How long the zone will be valid after a refresh. Secondary servers will discard the zone if no refresh could be made within this interval.</p>
+</li>
+<li>
+<p><strong>Minimum (default) TTL</strong>. Used by other DNS servers to cache negative responses (such as record does not exist etc.).</p>
+</li>
+</ul>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record TXT: Text Record</h4>
+<p>A TXT record is used to store any text-based information that can be grabbed when necessary. We most commonly see TXT records used to hold SPF data and verify domain ownership. They are also often used to hold general information about a domain name such as who is hosting it, contact person, phone numbers, etc.</p>
+<p>One common use of TXT-records is for SPF.</p>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record ALIAS: Auto resolved alias</h4>
+<p>ALIAS-records are virtual alias records resolved by DNS Provider at at the time of each request - providing &quot;flattened&quot; (no CNAME-record chain) synthesized records with data from a hidden source name.</p>
+<p>This can be used for different purposes - including solving the classic problem with CNAME-records at the domain apex (for the zone name / for &quot;the naked domain&quot;).</p>
+<p><em>Similar implementations of virtual alias records (&quot;ANAME&quot;, &quot;ALIAS&quot;, &quot;CNAME flattening&quot;) are offered by various DNS service providers. There is no standard (RFC or similar) for this.</em></p>
+<h4>Record PTR: Reverse-lookup Pointer records</h4>
+<p>As opposed to forward DNS resolution (A and AAAA DNS records), the PTR record is used to look up domain names based on an IP address.</p>
+<p>For a reverse IPv4 mapping, the name of the PTR-record is the IP address with the segments reversed and with &quot;in-addr.arpa&quot; appended to the end. As an example, looking up the domain name for IP address &quot;<code>12.23.34.45</code>&quot; is done with a query for the PTR-record for &quot;<code>45.34.23.12.in-addr.arpa</code>&quot;.</p>
+<p>For a reverse IPv6 mapping, the name of the PTR-record is each hex digit of the IP address in reverse order, with dots between each digit, and with &quot;ip6.arpa&quot; appended to the end. As an example, looking up the domain name for IPv6 address &quot;<code>1234:5678:90ab:cdef:1234:5678:90ab:cdef</code>&quot; is done with a query for the PTR-record for &quot;<code>f.e.d.c.b.a.0.9.8.7.6.5.4.3.2.1.f.e.d.c.b.a.0.9.8.7.6.5.4.3.2.1.ip6.arpa</code>&quot;.</p>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record CERT: Certificate record</h4>
+<p>CERT-records store certificates and related revocation lists (CRL) for cryptographic keys.</p>
+<p>CERT-records have the following data elements (see RFC below for details):</p>
+<ul>
+<li><em>Type</em>: the type of certificate/CRL stored. Select one of the predefined values, or enter a numeric value (0-65535).</li>
+<li><em>Key tag</em>: A numeric value (0-65535) used the efficiently pick a CERT record.</li>
+<li><em>Algorithm</em>: the algorithm used .Select one of the predefined values, or enter a numeric value (0-65535).</li>
+<li><em>Certificate or CRL</em>: Base 64 encoded.</li>
+</ul>
+<p><em>This record type is defined in RFC4398.</em></p>
+<h4>Record SRV: Service Location</h4>
+<p>SRV-records are used to specify the location of a service. They are used in connection with different directory servers such as LDAP (Lightweight Directory Access Protocol), and Windows Active Directory, and more recently with SIP servers.</p>
+<p>They can also be used for advanced load balancing and to specify specific ports for services, for example, that a web-server is running on port <code>8080</code> instead of the usual port <code>80</code> (theoretical example - this is not yet supported by any major browsers). This record type is however <strong>NOT supported</strong> by most programs in use today, including web-browsers.</p>
+<p>The SRV record identification (record name) is made of 3 parts:</p>
+<ul>
+<li><em>Service</em>: Most internet services are defined in RFC1700 (page 15).</li>
+<li><em>Protocol</em>: Generally TCP or UDP, but also values are also valid.</li>
+<li><em>Domain name</em>.</li>
+</ul>
+<p>The &quot;service location&quot; is specified through a priority, weight, port and target:</p>
+<ul>
+<li>Priority is a preference number used when more servers are providing the same service (lower numbers are tried first).</li>
+<li>Weight is used for advanced load balancing.</li>
+<li>Port is the TCP/UDP port number on the server that provides this service.</li>
+<li>Target is the domain name of the server (referencing an A-record or AAAA-record).</li>
+</ul>
+<p><em>This record type is defined in RFC2782.</em></p>
+<h4>Record HINFO: Host Information records</h4>
+<p>HINFO records are used to acquire general information about a host. The record specifies type of CPU and OS. The HINFO record data provides the possibility to use operating system specific protocols when two hosts want to communicate. For security reasons the HINFO records are not typically used on public servers.</p>
+<p>This information can be used by application protocols such as FTP, which use special procedures when communicating with computers of a known CPU and operating system type. Standard CPU and operating system types are defined in RFC1700 (Page 206 / 214). The standard for a Windows PC is &quot;INTEL-386&quot; / &quot;WIN32&quot;.</p>
+<p><em>This record type is defined in RFC1035.</em></p>
+<h4>Record ISDN: Integrated Services Digital Network records</h4>
+<p>The ISDN resource record specifies ISDN address for a host. An ISDN address is a telephone number that consists of a country code, a national destination code, a ISDN Subscriber number and, optionally, a ISDN subaddress.</p>
+<p>The ISDN phone numbers / DDI (Direct Dial In) used should follow <code>ITU-T E.163/E.164</code> international telephone numbering standards. The ISDN sub-address is an optional hexadecimal number.</p>
+<p>The function of the record is only variation of the A resource record function.</p>
+<p><em>This record type is defined in RFC1183.</em></p>]]></content:encoded>
+                        <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Sergey Podgorny</dc:creator>
+            <pubDate>2019-02-08 21:30:56</pubDate>
+                                                                                                        </item>
+            </channel>
+</rss>

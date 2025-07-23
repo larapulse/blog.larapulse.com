@@ -1,0 +1,1954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/vendor/sitemap/styles/xml.xsl" type="text/xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url>
+	<loc>https://blog.larapulse.com</loc>
+		<priority>1.0</priority>
+		<lastmod>2025-07-23T00:00:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/static/images/larapulse_logo_one_2.png</image:loc>
+			<image:title>Larapulse Technology cover</image:title>
+			<image:caption>Larapulse Technology cover</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/static/images/logo_400x400.jpg</image:loc>
+			<image:title>Larapulse Technology logo</image:title>
+			<image:caption>Larapulse Technology logo</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/faq</loc>
+		<priority>0.1</priority>
+		<lastmod>2025-07-01T00:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/support</loc>
+		<priority>0.1</priority>
+		<lastmod>2025-07-01T00:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/data-protection/privacy-policy</loc>
+		<priority>0.1</priority>
+		<lastmod>2025-07-01T00:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/data-protection/cookie-policy</loc>
+		<priority>0.1</priority>
+		<lastmod>2025-07-01T00:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/feed/atom.xml</loc>
+		<priority>0.8</priority>
+		<lastmod>2025-07-01T00:00:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/feed/rss.xml</loc>
+		<priority>0.7</priority>
+		<lastmod>2025-07-01T00:00:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/subscription</loc>
+		<priority>0.3</priority>
+		<lastmod>2025-01-01T00:00:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/categories</loc>
+		<priority>0.1</priority>
+		<lastmod>2025-01-01T00:00:00+00:00</lastmod>
+		<changefreq>never</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements</loc>
+		<priority>0.4</priority>
+		<lastmod>2025-07-01T00:00:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/general-it</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/programming-languages</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/web</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/native-apps</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/desktop-apps</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/html</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/css</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/javascript</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/react-js</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/node-js</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/es-2015</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/php</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/laravel</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/symfony</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/zend-framework</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/phalcon</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/magento</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/python</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/django</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/flask</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/ruby</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/ruby-on-rails</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/java</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/spring</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/android</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/ios</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/databases</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/mysql</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/postgres</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/mongo-db</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/oracle-database</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/redis</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/elasticsearch</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/data-science</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/data-analysis</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/big-data</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/neural-networks</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/artificial-intelligence</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/machine-learning</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/deep-learning</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/data-mining</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/statistics</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/dev-tools</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/git</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/docker</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/rabbit-mq</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/digital-literacy</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/frameworks</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/api</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/testing</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/regex</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/clean-code</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/algorithms</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/blockchain</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/system-administration</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/hardware</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/os</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/gnu-linux</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/mac-os</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/windows</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/network</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/cloud</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/aws</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/deployment</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/security</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/hacking</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/game-development</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/virtual-reality</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/iot</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/robotics</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/science</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/physics</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/quantum-mechanics</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/mathematics</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/psychology</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/quality-assurance</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/seo</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/design</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/personal-development</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/business</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/general</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/system-updates</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/bonuses</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/recommendations</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/advertisement</loc>
+		<priority>0.2</priority>
+		<lastmod>2018-04-20T13:19:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/general-it/importance-of-sprint-retrospective</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-08-31T13:56:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/86/03/8603e03b90cf3f3519c6249af56095cdb125d870.png</image:loc>
+			<image:title>Cover | The Importance of the Sprint Retrospective</image:title>
+			<image:caption>Cover | The Importance of the Sprint Retrospective</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ce/43/ce43b216e4f76d7def67fa91ef6fe4bdb8d375b8.png</image:loc>
+			<image:title>Thumbnail | The Importance of the Sprint Retrospective</image:title>
+			<image:caption>Thumbnail | The Importance of the Sprint Retrospective</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/68/92/68929e1a57df54de946acdc0b6332312e9231cfc.png</image:loc>
+			<image:title>Agile software development cycle</image:title>
+			<image:caption>Agile software development cycle</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b9/a4/b9a4e41412e21c6a4596c0c585dcf638d0e6dfd5.png</image:loc>
+			<image:title>Agile retrospective format</image:title>
+			<image:caption>Agile retrospective format</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/80/aa/80aa2720df28c08a614d9bcbf953dc64259a44ca.jpeg</image:loc>
+			<image:title>Agile retrospective discussion</image:title>
+			<image:caption>Agile retrospective discussion</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b7/de/b7de203520703b712dc1440a166f5708e6f75dff.png</image:loc>
+			<image:title>Workflow improvements</image:title>
+			<image:caption>Workflow improvements</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/web/github-as-static-website-hosting</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-08-15T16:57:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d2/f2/d2f259c8b1e38927fd78d7526762e2756d562d82.png</image:loc>
+			<image:title>Cover | GitHub as static website hosting</image:title>
+			<image:caption>Cover | GitHub as static website hosting</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e3/ff/e3ff7fd8a7dc0e3240d41c94f24fc969b1302b7a.png</image:loc>
+			<image:title>Thumbnail | GitHub as static website hosting</image:title>
+			<image:caption>Thumbnail | GitHub as static website hosting</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/1b/b6/1bb66d7b79f4f8ae852568020a61faee2cadb9f3.png</image:loc>
+			<image:title>GitHub Pages on repository settings</image:title>
+			<image:caption>GitHub Pages on repository settings</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/13/88/1388783deee01c1cec0dad6e6f7ae7c8a57b2b38.png</image:loc>
+			<image:title>GitHub Pages drop-down menu to select source branch</image:title>
+			<image:caption>GitHub Pages drop-down menu to select source branch</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e3/ff/e3ff757560d36b3cb717f8630d0e6418fcdf19ae.png</image:loc>
+			<image:title>CNAME file content</image:title>
+			<image:caption>CNAME file content</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/02/af/02af11d6bca74c97e70e58996ccf35293e28dd58.png</image:loc>
+			<image:title>Choosing custom domain</image:title>
+			<image:caption>Choosing custom domain</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e0/ab/e0abcc96c5c74f50de8ff84338b834c0fcd1af66.png</image:loc>
+			<image:title>Configure A records with your DNS provider</image:title>
+			<image:caption>Configure A records with your DNS provider</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/14/2a/142adf96058715ba0101ee87852e456c33e91f94.png</image:loc>
+			<image:title>Enforcing HTTPS on your GitHub pages</image:title>
+			<image:caption>Enforcing HTTPS on your GitHub pages</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/web/store-website-data</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-03-14T22:00:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/be/d5/bed57da9c79602718a94201239199a20a0cb0b99.png</image:loc>
+			<image:title>Cover | Where to store website data</image:title>
+			<image:caption>Cover | Where to store website data</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d9/b4/d9b49c2b65509560ec8a38c13c245531f9ac0176.png</image:loc>
+			<image:title>Thumbnail | Where to store website data</image:title>
+			<image:caption>Thumbnail | Where to store website data</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/15/21/15212238b8ef1cadf2b2a505b898835e7a58dcaf.png</image:loc>
+			<image:title>Stop using localStorage for sensitive data</image:title>
+			<image:caption>Stop using localStorage for sensitive data</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/bb/b2/bbb2dd399ab8174eafdaeaf6bf05d76c9e6ad2c4.png</image:loc>
+			<image:title>Cookies preview in Google Chrome</image:title>
+			<image:caption>Cookies preview in Google Chrome</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/web/protect-cookies</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-03-13T22:46:59+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/66/25/662513a947781d6b44f4abdd06acf1ac7a7a8a62.png</image:loc>
+			<image:title>Cover | Cookies and how to protect them</image:title>
+			<image:caption>Cover | Cookies and how to protect them</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/74/61/7461207bcf28fc70c18632bdf2a3b4cfba3bb14e.png</image:loc>
+			<image:title>Thumbnail | Cookies and how to protect them</image:title>
+			<image:caption>Thumbnail | Cookies and how to protect them</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/1a/01/1a014c29d912babb7256823b0f38c2eb56ea7cd1.png</image:loc>
+			<image:title>Cookies backing tray as web browser window</image:title>
+			<image:caption>Cookies backing tray as web browser window</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ad/c7/adc7bc07a7a9b1e4722cd79dd7ee5c84c4c1753d.png</image:loc>
+			<image:title>Cookie assigned by webserver and transmitted to browser</image:title>
+			<image:caption>Cookie assigned by webserver and transmitted to browser</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a4/a4/a4a4c380b43fc3c80fe8819e0cb379ec8d9610c8.png</image:loc>
+			<image:title>Deleting cookies from browser</image:title>
+			<image:caption>Deleting cookies from browser</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/f6/63/f6633917512c25d3b474eaf7b4f34b7c99c5bef9.png</image:loc>
+			<image:title>This website wants to use cookies</image:title>
+			<image:caption>This website wants to use cookies</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/61/09/610963b3960d298837ff97504e8aa42138ee6092.png</image:loc>
+			<image:title>This website wants to use cookies</image:title>
+			<image:caption>This website wants to use cookies</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/web/jwt</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-04-14T22:01:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d8/cb/d8cbf8bf59ac942ae34ec0fe5c8e69f51190af86.png</image:loc>
+			<image:title>Cover | JWT: JSON Web Token</image:title>
+			<image:caption>Cover | JWT: JSON Web Token</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d5/a3/d5a367b37c344b9dab323f9a4b1430847d12b403.png</image:loc>
+			<image:title>Thumbnail | JWT: JSON Web Token</image:title>
+			<image:caption>Thumbnail | JWT: JSON Web Token</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/bc/0f/bc0f4a7362879ca963da7109ddf8abf6d2a60fa9.png</image:loc>
+			<image:title>JWT Structure: header, payload and signature</image:title>
+			<image:caption>JWT Structure: header, payload and signature</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a0/20/a020fe3bf6869b5591fece359af87083c97918a0.png</image:loc>
+			<image:title>JWT token</image:title>
+			<image:caption>JWT token</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d5/ed/d5ed69580276e6813a99d18b87a1cc5796f37aae.png</image:loc>
+			<image:title>JWT life-cycle</image:title>
+			<image:caption>JWT life-cycle</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/9f/b8/9fb82d6107226cbf4628623c1ff182abdd8c91a8.jpeg</image:loc>
+			<image:title>JWT Algorithm vulnerability</image:title>
+			<image:caption>JWT Algorithm vulnerability</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/css/printable-website</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-11-21T18:52:20+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/64/b9/64b910c7dd0451b844d5a8640030da12d20931ea.png</image:loc>
+			<image:title>Cover | Make your website printable</image:title>
+			<image:caption>Cover | Make your website printable</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/6f/c9/6fc92adfbddfb18323471daa657b1e93b35925b6.png</image:loc>
+			<image:title>Thumbnail | Make your website printable</image:title>
+			<image:caption>Thumbnail | Make your website printable</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/javascript/creating-chart-js-plugins</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-08-16T16:33:07+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e9/7d/e97d66ffd595d544cfc7d31a19fdcda618dbddab.png</image:loc>
+			<image:title>Cover | Creating Chart.js plugins</image:title>
+			<image:caption>Cover | Creating Chart.js plugins</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/82/11/82118b42f5a6d676ff3971be204a06a39bb908a2.png</image:loc>
+			<image:title>Thumbnail | Creating Chart.js plugins</image:title>
+			<image:caption>Thumbnail | Creating Chart.js plugins</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a8/45/a84529c8ccb51488502be7124f2b5b0e82ff1b23.png</image:loc>
+			<image:title>Chart.js plugin Core Api lifecycle</image:title>
+			<image:caption>Chart.js plugin Core Api lifecycle diagram</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/7e/5d/7e5dc5f1c8e2be853411be73ae31e38dd24bfb85.png</image:loc>
+			<image:title>Chart.js plugin Core Api lifecycle [small]</image:title>
+			<image:caption>Chart.js plugin Core Api lifecycle diagram [small]</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/react-js/tips-to-write-clean-react-code</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-07-24T18:28:39+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d3/6c/d36c6149c3e3b12269c0e51746efae28f41ee323.png</image:loc>
+			<image:title>Cover | Tips to write clean React code</image:title>
+			<image:caption>Cover | Tips to write clean React code</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3f/3e/3f3e4d75444a7316fcabd29daaa7169b8388044c.png</image:loc>
+			<image:title>Thumbnail | Tips to write clean React code</image:title>
+			<image:caption>Thumbnail | Tips to write clean React code</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/react-js/react-component-lifecycle-changed</loc>
+		<priority>0.9</priority>
+		<lastmod>2018-07-27T17:08:59+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/26/97/26973ab497a49c6ec587d0b0174d778263142f2e.png</image:loc>
+			<image:title>Cover | React Component lifecycle has changed</image:title>
+			<image:caption>Cover | React Component lifecycle has changed</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a5/e3/a5e3c8eea27ba257f5de7cd5018f05b72961586a.png</image:loc>
+			<image:title>Thumbnail | React Component lifecycle has changed</image:title>
+			<image:caption>Thumbnail | React Component lifecycle has changed</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/09/19/0919a813a4bc70d8ef6a7928ba24bca7f3247496.png</image:loc>
+			<image:title>React 16.3 lifecycle diagram</image:title>
+			<image:caption>React 16.3 lifecycle diagram</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/es-2015/synchronous-requests-using-fetch</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-09-05T13:55:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/7a/4a/7a4a7f9343724f0e0032a3b2369fe90036a8ae7f.png</image:loc>
+			<image:title>Cover | Synchronous data requests using fetch</image:title>
+			<image:caption>Cover | Synchronous data requests using fetch</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/2d/3c/2d3c50cb81b624c5bfd841df5efcf97e76d32e69.png</image:loc>
+			<image:title>Thumbnail | Synchronous data requests using fetch</image:title>
+			<image:caption>Thumbnail | Synchronous data requests using fetch</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/es-2015/synchronous-fetch-browser-geolocation</loc>
+		<priority>0.9</priority>
+		<lastmod>2018-09-05T13:55:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/19/b6/19b6538c194fa6d6e4581fb1731d0c3171bfd454.png</image:loc>
+			<image:title>Cover | Fetch synchronous geolocation from browser</image:title>
+			<image:caption>Cover | Fetch synchronous geolocation from browser</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/4f/25/4f25988f4b49fc2c4209530155ea26d4845885ec.png</image:loc>
+			<image:title>Thumbnail | Fetch synchronous geolocation from browser</image:title>
+			<image:caption>Thumbnail | Fetch synchronous geolocation from browser</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/es-2015/ecmascript-10</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-02-07T22:02:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b5/24/b5245821810607388f1e08c52da0d39ad4a7700e.png</image:loc>
+			<image:title>Cover | ECMAScript 10 - JavaScript this year</image:title>
+			<image:caption>Cover | ECMAScript 10 - JavaScript this year</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/7b/5f/7b5f31b8f06b1d7b5f0a7eae556b54f046476ac6.png</image:loc>
+			<image:title>Thumbnail | ECMAScript 10 - JavaScript this year</image:title>
+			<image:caption>Thumbnail | ECMAScript 10 - JavaScript this year</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e3/73/e373874b9f75a384e8b218efe29e85be4e2b6f42.png</image:loc>
+			<image:title>try...catch optional argument in the Edge and Chrome</image:title>
+			<image:caption>try...catch optional argument in the Edge and Chrome</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/06/6f/066f9bd11399dbdc54dfb141ae4fe1481a417f34.png</image:loc>
+			<image:title>PARAGRAPH SEPARATOR entity in the Edge and Chrome</image:title>
+			<image:caption>PARAGRAPH SEPARATOR entity in the Edge and Chrome</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/db/96/db96a8050dd0f4f7854b01eb088e4afcadf2ece2.png</image:loc>
+			<image:title>Web browsers support of BigInt: CanIUse</image:title>
+			<image:caption>Web browsers support of BigInt: CanIUse</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/74/ab/74abc32c34cefd981393f40c865e46533464977f.png</image:loc>
+			<image:title>Web browsers support of dynamic imports: CanIUse</image:title>
+			<image:caption>Web browsers support of dynamic imports: CanIUse</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/php/datastructures-in-php</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-08-29T12:49:42+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b5/a2/b5a2f256c60bc505e5dff9b06294edcb4a946035.png</image:loc>
+			<image:title>Cover | Datastructures in PHP</image:title>
+			<image:caption>Cover | Datastructures in PHP</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/51/11/5111fee8e4dd2a6dc2ec5eda441263370d29865e.png</image:loc>
+			<image:title>Thumbnail | Datastructures in PHP</image:title>
+			<image:caption>Thumbnail | Datastructures in PHP</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/26/53/2653ecfc03744252e8673f04f78b15f6bacd8305.png</image:loc>
+			<image:title>Linked list types, single-listed and doubly-linked lists</image:title>
+			<image:caption>Linked list types, single-listed and doubly-linked lists</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/1f/46/1f46e1027578149886dd5e7e4eaeabb05231e0ce.png</image:loc>
+			<image:title>A properly constructed heap binary tree</image:title>
+			<image:caption>A properly constructed heap binary tree</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/bc/6f/bc6fc7be57736752c6b16f798ebc4eb62a4744f8.gif</image:loc>
+			<image:title>Read heap tree</image:title>
+			<image:caption>Read heap consistently item by item</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e0/bb/e0bb18f845f951a2a78349830090e551d94aefdd.png</image:loc>
+			<image:title>Min heap and Max heap</image:title>
+			<image:caption>Min heap and Max heap</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/php/variables-under-the-hood</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-09-13T19:06:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/20/6d/206de6d87d4587698a4cdb905b295d6a23f2cd15.png</image:loc>
+			<image:title>Cover | PHP variables under the hood</image:title>
+			<image:caption>Cover | PHP variables under the hood</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ed/d9/edd9c84af2350b283ab51e407b0a6eea0a53703b.png</image:loc>
+			<image:title>Thumbnail | PHP variables under the hood</image:title>
+			<image:caption>Thumbnail | PHP variables under the hood</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b5/68/b5682fe42ea60839c2eec5b7303d5b9914d3a6f0.png</image:loc>
+			<image:title>PHP variables under the hood</image:title>
+			<image:caption>PHP variables under the hood</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/1c/6d/1c6d05709469e2969ba489dcd9b1cfe837b767be.png</image:loc>
+			<image:title>Dealing with pointers</image:title>
+			<image:caption>Dealing with pointers</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/9d/6b/9d6bf2cb7518c60eef425f58712357e1fca09a04.png</image:loc>
+			<image:title>PHP variable creation</image:title>
+			<image:caption>PHP variable creation</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3b/33/3b33ea25463001193d555ab764af18f909949876.png</image:loc>
+			<image:title>2 variables refers to the same memory place</image:title>
+			<image:caption>2 variables refers to the same memory place</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/16/91/16912e5d126cdf7feccf99f92c41a303cacfa68d.png</image:loc>
+			<image:title>Dealing with pointers (preview)</image:title>
+			<image:caption>Dealing with pointers (preview)</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/2b/14/2b14977ba7eea51082fe6da32c437928318a1fec.png</image:loc>
+			<image:title>PHP variable creation (preview)</image:title>
+			<image:caption>PHP variable creation (preview)</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/00/e8/00e806411395f52d4ae16cefd30f412b98ad8f90.png</image:loc>
+			<image:title>2 variables refers to the same memory place (preview)</image:title>
+			<image:caption>2 variables refers to the same memory place (preview)</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/laravel/aws-s3-with-laravel-5</loc>
+		<priority>0.9</priority>
+		<lastmod>2018-12-05T18:10:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e1/9b/e19bccffb313d0fe4a8002e8448f388578b69280.png</image:loc>
+			<image:title>Cover | Use AWS S3 with Laravel 5</image:title>
+			<image:caption>Cover | Use AWS S3 with Laravel 5</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e8/68/e868991186ffa426718ff541f9606c5efcc991d1.png</image:loc>
+			<image:title>Thumbnail | Use AWS S3 with Laravel 5</image:title>
+			<image:caption>Thumbnail | Use AWS S3 with Laravel 5</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/35/6f/356f1eb4d62c34b498a8b62c7a49400f4ab47b63.png</image:loc>
+			<image:title>S3 location in AWS navigation bar</image:title>
+			<image:caption>S3 location in AWS navigation bar</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/5c/b4/5cb4580b270f29c3ad2ea82f574d5bb98050b482.png</image:loc>
+			<image:title>Create new AWS bucket</image:title>
+			<image:caption>Create new AWS bucket</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/9a/5e/9a5e8c7c8babb089bdb72d78fa983892aa3af7bc.png</image:loc>
+			<image:title>IAM location in AWS navigation bar</image:title>
+			<image:caption>IAM location in AWS navigation bar</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/4a/c7/4ac73241e45b2738c7308aa390fc53217749a92e.png</image:loc>
+			<image:title>Create new policy</image:title>
+			<image:caption>Create new policy</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/9d/d9/9dd9c562597e04aafc161449a02b1e930e9fd0d0.png</image:loc>
+			<image:title>AWS permissions setup with visual editor</image:title>
+			<image:caption>AWS permissions setup with visual editor</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/11/d5/11d5c39db7fee2ad6265040cbc79d0544958d8af.png</image:loc>
+			<image:title>Review policy and saving with descriptive name</image:title>
+			<image:caption>Review policy and saving with descriptive name</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/42/d1/42d110f0a6e66c89721fae81c0503991b8cf8ffe.png</image:loc>
+			<image:title>Add new IAM user</image:title>
+			<image:caption>Add new IAM user</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b5/20/b520c4cf0bc7ccd930ccb6135c7e9cd284f2cc8f.png</image:loc>
+			<image:title>Select AWS IAM access type</image:title>
+			<image:caption>Select AWS IAM access type</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e1/76/e1762a96b06cce040ca6ca4817d0663280d9bf29.png</image:loc>
+			<image:title>Attach existing AWS policy directly</image:title>
+			<image:caption>Attach existing AWS policy directly</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/81/76/81765f2486d02ef624a8f8a2880589903a87d55d.png</image:loc>
+			<image:title>Access key ID and Secret access key</image:title>
+			<image:caption>Access key ID and Secret access key</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/29/5d/295d85d3bcbe787c6e9078eb5e190d6a0bafc0d3.png</image:loc>
+			<image:title>AWS environment variables</image:title>
+			<image:caption>AWS environment variables</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ec/9b/ec9b74c863f73f2235f8f493279ee6b2a817cbe4.png</image:loc>
+			<image:title>Setup AWS storage Laravel config</image:title>
+			<image:caption>Setup AWS storage Laravel config</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/8b/12/8b12c8a69cda7284b68f1cb2c731df762dd9a1fc.png</image:loc>
+			<image:title>Testing storage using tinker tool</image:title>
+			<image:caption>Testing storage using tinker tool</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/laravel/handling-large-files-on-s3</loc>
+		<priority>0.9</priority>
+		<lastmod>2018-12-05T17:46:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/4e/1e/4e1eac3521c050f53bc58406e16aea168d4c2e02.png</image:loc>
+			<image:title>Cover | Handling large files on S3 with Laravel</image:title>
+			<image:caption>Cover | Handling large files on S3 with Laravel</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/21/1b/211be47a6d4135590d9875362e0402b0ec6e0703.png</image:loc>
+			<image:title>Thumbnail | Handling large files on S3 with Laravel</image:title>
+			<image:caption>Thumbnail | Handling large files on S3 with Laravel</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/f7/8b/f78bfbfb55f9085158e54a635b35a6494ca8ad54.png</image:loc>
+			<image:title>PHP filesystems streams flow</image:title>
+			<image:caption>PHP filesystems streams flow</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/laravel/laravel-certification</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-03-07T22:50:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/62/54/6254ecfd29b60cc4460ee8121bb75f4acd51e92a.png</image:loc>
+			<image:title>Cover | Passing Laravel Certification exam</image:title>
+			<image:caption>Cover | Passing Laravel Certification exam</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/6d/67/6d67094296a797bfe56057ca21181ffbdd35896b.png</image:loc>
+			<image:title>Thumbnail | Passing Laravel Certification exam</image:title>
+			<image:caption>Thumbnail | Passing Laravel Certification exam</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/4e/83/4e837baaf3c5daa166294db725e177dee2df04ab.png</image:loc>
+			<image:title>Laravel certificate</image:title>
+			<image:caption>Laravel certificate</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/symfony/symfony-request-validation</loc>
+		<priority>0.9</priority>
+		<lastmod>2018-08-29T12:48:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/db/00/db00d09026950ad6f69dfb2cb6fe9ddf08ee90e0.png</image:loc>
+			<image:title>Cover | Symfony Request validation</image:title>
+			<image:caption>Cover | Symfony Request validation</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/84/f4/84f4ec582dc43dc83c0b1baf52dfe018cd0738f7.png</image:loc>
+			<image:title>Thumbnail | Symfony Request validation</image:title>
+			<image:caption>Thumbnail | Symfony Request validation</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/redis/redis-basics</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-05-27T14:45:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/44/61/446189a338c402f47c977b09fb25a02aae20db5f.png</image:loc>
+			<image:title>Cover | What is Redis used for?</image:title>
+			<image:caption>Cover | What is Redis used for?</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/32/1c/321c0553b856eb5f86bcbe70373a4c4abf07e00d.png</image:loc>
+			<image:title>Thumbnail | What is Redis used for?</image:title>
+			<image:caption>Thumbnail | What is Redis used for?</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/08/06/080665d9cbef194858176a2feaeeb1ae9f76a03b.png</image:loc>
+			<image:title>Redis usage in the application</image:title>
+			<image:caption>Redis usage in the application</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b3/04/b3047d69e9960690809e73b934e34ba7550ab595.png</image:loc>
+			<image:title>Diagram of Redis cluster architecture</image:title>
+			<image:caption>Diagram of Redis cluster architecture</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/77/1a/771a8cf638610630b9befc3b487165ed38e2e012.png</image:loc>
+			<image:title>Redis Master-Slave data replication</image:title>
+			<image:caption>Redis Master-Slave data replication</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/22/89/2289444b5983d491e618859c2865c8434cf77d13.png</image:loc>
+			<image:title>Diagram of Redis cluster architecture</image:title>
+			<image:caption>Diagram of Redis cluster architecture</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/dev-tools/reinstall-phpstorm-on-ubuntu</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-04-20T08:07:35+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ad/82/ad82e3427ee395dae834776f4b8da48401740f83.png</image:loc>
+			<image:title>Cover | Updating JetBrains PhpStorm to newer version on Ubuntu</image:title>
+			<image:caption>Cover | Updating JetBrains PhpStorm to newer version on Ubuntu</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3f/9b/3f9bfef8e973b61fa2d44551d1d522c1741569bb.png</image:loc>
+			<image:title>Thumbnail | Updating JetBrains PhpStorm to newer version on Ubuntu</image:title>
+			<image:caption>Thumbnail | Updating JetBrains PhpStorm to newer version on Ubuntu</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/dev-tools/process-monitoring-tools</loc>
+		<priority>0.9</priority>
+		<lastmod>2019-01-31T22:33:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3f/42/3f42f6f56130621bea2484f66eb2ed28cc8d8301.png</image:loc>
+			<image:title>Cover | Process monitoring tools you probably didn't know about</image:title>
+			<image:caption>Cover | Process monitoring tools you probably didn't know about</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/f8/cc/f8ccab3184d2e1f795c41076b945f199639c36d0.png</image:loc>
+			<image:title>Thumbnail | Process monitoring tools you probably didn't know about</image:title>
+			<image:caption>Thumbnail | Process monitoring tools you probably didn't know about</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/7e/64/7e640a4a6384745b30168a9f17e9c0a0bfc04950.png</image:loc>
+			<image:title>htop - Process monitoring tool</image:title>
+			<image:caption>htop - Process monitoring tool</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/1a/38/1a385b46bfe9493641d05a40d96fd519a0effafa.png</image:loc>
+			<image:title>Glances at the terminal</image:title>
+			<image:caption>Glances at the terminal</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/29/4f/294f086d24105d0d31588d47cf5c9d374fd718d2.png</image:loc>
+			<image:title>nmon at the terminal</image:title>
+			<image:caption>nmon at the terminal</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/42/03/420369956d4042fbe2b3075c5ba50566d63afdcd.png</image:loc>
+			<image:title>nmon at the terminal</image:title>
+			<image:caption>nmon at the terminal</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/c0/27/c02780bc45301dc308c6ba6de0590dd0a6e3d62b.png</image:loc>
+			<image:title>IPTraf – Real Time IP LAN Monitoring</image:title>
+			<image:caption>IPTraf – Real Time IP LAN Monitoring</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/f0/07/f0075506f2d36a88c32ffa5b999e27465bd9d6db.png</image:loc>
+			<image:title>Ctop - Top-like interface for container metrics</image:title>
+			<image:caption>Ctop - Top-like interface for container metrics</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a2/c3/a2c382c56e3031e03913eddbb9b4961f7ff077a4.png</image:loc>
+			<image:title>Ctop - Instance logging</image:title>
+			<image:caption>Ctop - Instance logging</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ee/91/ee91b2e570e6b7335e07c2fe3f2dc28096b217d5.png</image:loc>
+			<image:title>Mytop - monitoring queries and processes</image:title>
+			<image:caption>Mytop - monitoring queries and processes</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/git/global-gitignore</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-01-30T07:01:13+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/5f/a5/5fa5ca648359647ae34407baad325d876f676f7d.png</image:loc>
+			<image:title>Cover | Set up global .gitignore</image:title>
+			<image:caption>Cover | Set up global .gitignore</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b7/a9/b7a90e9ac17c209602f9a585eba113317193f02f.png</image:loc>
+			<image:title>Thumbnail | Set up global .gitignore</image:title>
+			<image:caption>Thumbnail | Set up global .gitignore</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/f0/86/f086292737616b553902a3df11603acd55be97dc.png</image:loc>
+			<image:title>gitignore.io web tool</image:title>
+			<image:caption>gitignore.io web tool</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/79/31/7931ba6ebec65bb9902a33076e914a9d30278f77.png</image:loc>
+			<image:title>Cleaning up commited files that should be ignored</image:title>
+			<image:caption>Cleaning up commited files that should be ignored</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/git/stash-files-in-repository</loc>
+		<priority>0.9</priority>
+		<lastmod>2019-02-11T22:47:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/86/2c/862cbb5f688e8d3ad7e8da2b82a6cb3277e9c6f8.png</image:loc>
+			<image:title>Cover | Stashing files in Git repository</image:title>
+			<image:caption>Cover | Stashing files in Git repository</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/4d/17/4d177d918fee9b13bca3c70127441c2ac52bff4e.png</image:loc>
+			<image:title>Thumbnail | Stashing files in Git repository</image:title>
+			<image:caption>Thumbnail | Stashing files in Git repository</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/94/54/9454a4d0df44b3cd033a5a1431a0def1c45e5336.png</image:loc>
+			<image:title>Stashing untracked or ignored files</image:title>
+			<image:caption>Stashing untracked or ignored files</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/99/7e/997e9df86f50ce6bebe49bfa625dae2efde592e3.png</image:loc>
+			<image:title>Partial stashes</image:title>
+			<image:caption>Partial stashes</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/digital-literacy/ddd-in-simple-words</loc>
+		<priority>0.9</priority>
+		<lastmod>2019-04-01T00:34:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/56/c3/56c3cf2e94d036791efef99981980c53d994b1f0.png</image:loc>
+			<image:title>Cover | Domain-Driven Design in simple words</image:title>
+			<image:caption>Cover | Domain-Driven Design in simple words</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/39/a1/39a1b854b4eae62963b3bac99c1b336c6f40bf22.png</image:loc>
+			<image:title>Thumbnail | Domain-Driven Design in simple words</image:title>
+			<image:caption>Thumbnail | Domain-Driven Design in simple words</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/63/c2/63c2cb0b4586d65b31b41b115079bb1b77226e55.png</image:loc>
+			<image:title>DDD schema flow</image:title>
+			<image:caption>DDD schema flow</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/digital-literacy/oop-paradigms</loc>
+		<priority>0.8</priority>
+		<lastmod>2020-02-03T21:45:17+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a8/1a/a81afa73125ee8f8968c03a90b3c67b2e37c450b.png</image:loc>
+			<image:title>Cover | Make OOP paradigms clear again</image:title>
+			<image:caption>Cover | Make OOP paradigms clear again</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/58/a4/58a4389752d55664e85e1ddc213dfc4ce3e66e24.png</image:loc>
+			<image:title>Thumbnail | Make OOP paradigms clear again</image:title>
+			<image:caption>Thumbnail | Make OOP paradigms clear again</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/60/83/608301d7ed6d39c702e932c54a3f1bff9c67eb90.png</image:loc>
+			<image:title>Class and objects in the OOP concept</image:title>
+			<image:caption>Class and objects in the OOP concept</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ab/4f/ab4fb10d722b87b8d1eb4c0106928b353c72c346.png</image:loc>
+			<image:title>OOP paradigms kiss</image:title>
+			<image:caption>OOP paradigms kiss</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3b/4a/3b4a80841b0cafb9067545d58ff6fa889b08a65d.png</image:loc>
+			<image:title>Public, protected and private access modifiers</image:title>
+			<image:caption>Public, protected and private access modifiers</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e2/bb/e2bb9381b25cc99bff2030c0f6e490ac80c67783.png</image:loc>
+			<image:title>Inherited car types</image:title>
+			<image:caption>Inherited car types</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/45/37/4537aa744f4668e8f0e68acb3b90b361a1ad41f3.png</image:loc>
+			<image:title>Car subtypes</image:title>
+			<image:caption>Car subtypes</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/de/4b/de4b06bf0dd5056fef0620dd88dad1a2724bf85a.png</image:loc>
+			<image:title>Inheritance tree of musical instruments</image:title>
+			<image:caption>Inheritance tree of musical instruments</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/c5/61/c5614058dc5822bd2b7b5a921348fd68348b16f5.png</image:loc>
+			<image:title>Composition over inheritance</image:title>
+			<image:caption>Composition over inheritance</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/dd/4e/dd4ebadee4d74bf06a63d0fbede7f2d54ca432a9.gif</image:loc>
+			<image:title>Animals talk about polymorphism</image:title>
+			<image:caption>Animals talk about polymorphism</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/8a/d0/8ad07f4ef149312a02de0199194b8df2449806f8.png</image:loc>
+			<image:title>Car abstraction</image:title>
+			<image:caption>Car abstraction</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e7/e2/e7e290ef1619141e58f53bbae6785a830402cf59.png</image:loc>
+			<image:title>Class and objects in the OOP concept (small)</image:title>
+			<image:caption>Class and objects in the OOP concept (small)</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/63/83/63839c3a24fcda610f5671425767c1081e2f860e.png</image:loc>
+			<image:title>Car abstraction (small)</image:title>
+			<image:caption>Car abstraction (small)</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/api/restful-api</loc>
+		<priority>0.8</priority>
+		<lastmod>2020-02-05T23:43:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/96/86/96860b04d732f649378497f57c28076ca7e7d9aa.png</image:loc>
+			<image:title>Cover | Building RESTful API: all you need to know</image:title>
+			<image:caption>Cover | Building RESTful API: all you need to know</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d6/24/d6244b84e00960ce66474c5d5bda027ac6a89d3f.png</image:loc>
+			<image:title>Thumbnail | Building RESTful API: all you need to know</image:title>
+			<image:caption>Thumbnail | Building RESTful API: all you need to know</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/98/9c/989c319af042ead1eafa8eb44a9ac51c87b6e2c8.png</image:loc>
+			<image:title>RESTful services for web</image:title>
+			<image:caption>RESTful services for web</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/5e/d0/5ed035bf0d21f2a697cf86e0c13b6a29c5866b4e.gif</image:loc>
+			<image:title>REST operations as a CRUD</image:title>
+			<image:caption>REST operations as a CRUD</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/clean-code/when-refactoring-is-useless</loc>
+		<priority>0.8</priority>
+		<lastmod>2018-07-24T16:35:43+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a9/f2/a9f27729dd6d420c1a050a9d1088f6b46901dba2.jpeg</image:loc>
+			<image:title>Cover | When refactoring is useless</image:title>
+			<image:caption>Cover | When refactoring is useless</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/89/3f/893f490add01f1cd20a944dfd328003c235daf66.jpeg</image:loc>
+			<image:title>Thumbnail | When refactoring is useless</image:title>
+			<image:caption>Thumbnail | When refactoring is useless</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/clean-code/solid-in-simple-words</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-12-16T22:22:58+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/72/30/723099de69095890132dc7cfc63c826eb43be335.png</image:loc>
+			<image:title>Cover | SOLID in very simple words and examples</image:title>
+			<image:caption>Cover | SOLID in very simple words and examples</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/05/b3/05b35aa444f6400c4d627ca31c4c0b85e73cfc5a.png</image:loc>
+			<image:title>Thumbnail | SOLID in very simple words and examples</image:title>
+			<image:caption>Thumbnail | SOLID in very simple words and examples</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/63/ff/63ffe0822748a69d365d8599fa6efddf3cac0efc.png</image:loc>
+			<image:title>SOLID in very short and simple words</image:title>
+			<image:caption>SOLID in very short and simple words</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/dc/39/dc390d12fff96b7cbf0da853f1087f30fa9349e5.png</image:loc>
+			<image:title>Single-responsibility Principle</image:title>
+			<image:caption>Single-responsibility Principle</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/20/d2/20d29ce59a4064b6af056d96f0303a67e2eda32a.png</image:loc>
+			<image:title>Open-closed principle</image:title>
+			<image:caption>Open-closed principle</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/94/e2/94e27bbfb0c7ce8717ea3ac48af39a1dc5755507.png</image:loc>
+			<image:title>Liskov substitution principle</image:title>
+			<image:caption>Liskov substitution principle</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a4/ea/a4eaaa4f341a37c9cb83586056c3305fea34fe7f.jpeg</image:loc>
+			<image:title>Liskov substitution principle duck example</image:title>
+			<image:caption>Liskov substitution principle duck example</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b4/1a/b41a22fce2b3443b4479f41a71ce20004e3a71fd.png</image:loc>
+			<image:title>Interface segregation principle</image:title>
+			<image:caption>Interface segregation principle</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/56/42/564282d4aebf20542b8d78532e6a2d916847af15.png</image:loc>
+			<image:title>Dependency Inversion Principle</image:title>
+			<image:caption>Dependency Inversion Principle</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/network/security-class-a-with-nginx-https</loc>
+		<priority>1.0</priority>
+		<lastmod>2018-09-07T22:25:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/05/f6/05f66a64d9c3decb400b494d6db65144d68e4c4b.png</image:loc>
+			<image:title>Cover | Obtaining security class A+ with nginx and https</image:title>
+			<image:caption>Cover | Obtaining security class A+ with nginx and https</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/cd/6c/cd6c845cee7e3f8e02fa85a747bf28f0cbfa79ae.png</image:loc>
+			<image:title>Thumbnail | Obtaining security class A+ with nginx and https</image:title>
+			<image:caption>Thumbnail | Obtaining security class A+ with nginx and https</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3a/ec/3aec24677f5f6817ba2224082fad1f66fb574664.png</image:loc>
+			<image:title>Secure and not secure connection in browser preview</image:title>
+			<image:caption>Secure and not secure connection in browser preview</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ec/26/ec2613de0f5bea5569f47bcfd7379fe19883eff1.png</image:loc>
+			<image:title>HTTPS session handshake</image:title>
+			<image:caption>HTTPS session handshake</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d6/25/d6257a17b4cde36916a071c5126acfa0c9be7376.png</image:loc>
+			<image:title>HTTP/1.1 vs HTTP/2</image:title>
+			<image:caption>Illustrated comparison of HTTP/1.1 and HTTP/2</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/88/68/8868d5b5a01fd2d2ed3873b82c853444aa90c842.png</image:loc>
+			<image:title>SSL Labs score A+</image:title>
+			<image:caption>SSL Labs score A+</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/network/dns-record-types</loc>
+		<priority>0.9</priority>
+		<lastmod>2019-02-21T23:36:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/16/fa/16faa61a87afd389a4ad5f1e50b285188738fd74.png</image:loc>
+			<image:title>Cover | Commonly used DNS record types</image:title>
+			<image:caption>Cover | Commonly used DNS record types</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/c7/f9/c7f9cd2bca11f77650c711dcb1e0bbde74776811.png</image:loc>
+			<image:title>Thumbnail | Commonly used DNS record types</image:title>
+			<image:caption>Thumbnail | Commonly used DNS record types</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/72/74/72749a7a4c4df93fc0612d81a162a9bcb68f2cf6.png</image:loc>
+			<image:title>DNS record type A</image:title>
+			<image:caption>DNS record type A</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/fc/3d/fc3d50ca03d1e2edebe7f51beb0bf22b792ae1ef.png</image:loc>
+			<image:title>DNS record type A - to GitHub</image:title>
+			<image:caption>DNS record type A - to GitHub</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/dd/d4/ddd4f732cf71d5bf59ed04906a2d1448f6bdf8e6.png</image:loc>
+			<image:title>DNS record type CNAME</image:title>
+			<image:caption>DNS record type CNAME</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/b4/2d/b42d7daa42c48e7937cf30ec347e2ef3a08315b5.png</image:loc>
+			<image:title>DNS - Domain Name System</image:title>
+			<image:caption>DNS - Domain Name System</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/31/9f/319f031c39b4854b50ad0f64e185435160ff91b4.png</image:loc>
+			<image:title>DNS record type NS</image:title>
+			<image:caption>DNS record type NS</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/1d/f0/1df021948a3784d508de429a39dceedf79d4316e.png</image:loc>
+			<image:title>DNS record type MX</image:title>
+			<image:caption>DNS record type MX</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/00/a5/00a53657134759be32d5ba98b77dca9d647495af.png</image:loc>
+			<image:title>DNS record types</image:title>
+			<image:caption>DNS record types</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/network/how-dns-servers-work</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-02-21T23:37:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d3/ba/d3bafad2f57f5558feb278b53fbb7ed63c13885b.png</image:loc>
+			<image:title>Cover | How DNS servers work</image:title>
+			<image:caption>Cover | How DNS servers work</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/36/c2/36c2e0476384b62d92c983e784e8550996e67a53.png</image:loc>
+			<image:title>Thumbnail | How DNS servers work</image:title>
+			<image:caption>Thumbnail | How DNS servers work</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/2d/10/2d103ccd4218ceeaae2c2bcf2e123c3f827f89e6.png</image:loc>
+			<image:title>DNS request flow</image:title>
+			<image:caption>DNS request flow</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/dc/11/dc11830a36bbf0587e8e287516b14cd3230d41d7.png</image:loc>
+			<image:title>Sample registrar information from who.is</image:title>
+			<image:caption>Sample registrar information from who.is</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d2/cd/d2cdfcee9d4ebcf792aecd83eca5527987c90a5a.png</image:loc>
+			<image:title>Sample nameserver information from who.is</image:title>
+			<image:caption>Sample nameserver information from who.is</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/25/ab/25ab228b447ef256852ac6024da808f5a65c898b.png</image:loc>
+			<image:title>A map of the thirteen logical name servers, including anycasted instances, at the end of 2006</image:title>
+			<image:caption>A map of the thirteen logical name servers, including anycasted instances, at the end of 2006</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d3/4d/d34d8d66e67453f2870092e3a27a075be3212460.png</image:loc>
+			<image:title>AWS Route 53 Sample DNS Entry/Edit Box</image:title>
+			<image:caption>AWS Route 53 Sample DNS Entry/Edit Box</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/66/04/6604d5cc7124a806da9716b588dabc58dc6d23a8.png</image:loc>
+			<image:title>DNS allowed values</image:title>
+			<image:caption>DNS allowed values</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3b/97/3b971d9c9cb6ce7d5443578b78237462160a39cd.png</image:loc>
+			<image:title>DNS records</image:title>
+			<image:caption>DNS records</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/network/vpn-protocols</loc>
+		<priority>0.8</priority>
+		<lastmod>2019-05-30T12:06:48+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/78/42/7842e2ae72090c24baf8303eac7e9d4777d34174.png</image:loc>
+			<image:title>Cover | Which VPN protocol should you use</image:title>
+			<image:caption>Cover | Which VPN protocol should you use</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/98/40/984046c55e904fa106af1154c2738f5b9a162cdd.png</image:loc>
+			<image:title>Thumbnail | Which VPN protocol should you use</image:title>
+			<image:caption>Thumbnail | Which VPN protocol should you use</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/e6/86/e6862bec1f6d256d19a9715977c135ed695e4686.png</image:loc>
+			<image:title>VPN connection schema</image:title>
+			<image:caption>VPN connection schema</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/security/prevent-mitm-attacks</loc>
+		<priority>0.9</priority>
+		<lastmod>2019-03-15T21:37:37+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/68/73/68732e69577fd2cdbe01c15776d20dce81432023.png</image:loc>
+			<image:title>Cover | Prevent MITM attacks on your website</image:title>
+			<image:caption>Cover | Prevent MITM attacks on your website</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/9a/0b/9a0b68d6a65a59fa8ea4e62f16917f8aa615281b.png</image:loc>
+			<image:title>Thumbnail | Prevent MITM attacks on your website</image:title>
+			<image:caption>Thumbnail | Prevent MITM attacks on your website</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/3e/8c/3e8c78810e53dec80d2a5b2933b564a20c0e0295.png</image:loc>
+			<image:title>Man-In-The-Middle Attack</image:title>
+			<image:caption>Man-In-The-Middle Attack</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/88/e6/88e6194c5053892bdcf2d286bbf0803072279ecc.png</image:loc>
+			<image:title>SSL Strip Attack: https to http replacement</image:title>
+			<image:caption>SSL Strip Attack: https to http replacement</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/28/87/28875e4dd5324ac2a3fbdb9503ddd8250bed17f6.png</image:loc>
+			<image:title>Fake DNS: DNS Hijacking Attack</image:title>
+			<image:caption>Fake DNS: DNS Hijacking Attack</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/security/prevent-xss-csrf-attacks</loc>
+		<priority>0.9</priority>
+		<lastmod>2019-03-23T23:05:08+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/06/74/06744400bde2e3890f99048581fa56d62b13cc74.png</image:loc>
+			<image:title>Cover | Prevent XSS and CSRF attacks on your website</image:title>
+			<image:caption>Cover | Prevent XSS and CSRF attacks on your website</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/5b/09/5b096c209ac2fd8027a4968a704dcba5a7627431.png</image:loc>
+			<image:title>Thumbnail | Prevent XSS and CSRF attacks on your website</image:title>
+			<image:caption>Thumbnail | Prevent XSS and CSRF attacks on your website</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/fd/d7/fdd7a5ad433463bfa16a25a523693b43bcd41f94.png</image:loc>
+			<image:title>Virustotal URL scan</image:title>
+			<image:caption>Virustotal URL scan</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d2/bf/d2bf6754e90c9944a508cc47e3b303d9a65c30b0.png</image:loc>
+			<image:title>Reflected XSS: Cross-site scripting</image:title>
+			<image:caption>Reflected XSS: Cross-site scripting</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/cc/78/cc78b0c3f9caf823730f3a4059f567084469782a.png</image:loc>
+			<image:title>Stored XSS: Cross-site scripting</image:title>
+			<image:caption>Stored XSS: Cross-site scripting</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/dc/dc/dcdc2266e8a8dada6072376c4aee0a098930f138.png</image:loc>
+			<image:title>SVG is evil for XSS because of script tag</image:title>
+			<image:caption>SVG is evil for XSS because of script tag</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/96/eb/96eb21cccee7aedd0dad195137d112b0194ec731.png</image:loc>
+			<image:title>CSRF: Cross-site request forgery</image:title>
+			<image:caption>CSRF: Cross-site request forgery</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/security/sql-injection</loc>
+		<priority>0.8</priority>
+		<lastmod>2020-02-04T22:59:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a9/10/a910eb36fb950d3dd1fde26fac21bed843f1d782.png</image:loc>
+			<image:title>Cover | SQL injection as one of the biggest vulnerabilities for your data</image:title>
+			<image:caption>Cover | SQL injection as one of the biggest vulnerabilities for your data</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d0/74/d0748d9f053501f54b97bbc9334dd2cae21c99ff.png</image:loc>
+			<image:title>Thumbnail | SQL injection as one of the biggest vulnerabilities for your data</image:title>
+			<image:caption>Thumbnail | SQL injection as one of the biggest vulnerabilities for your data</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/f4/1f/f41f79cc97efd8d4c0db26068f79510af851b640.png</image:loc>
+			<image:title>Stackoverflow answer about SQL injection prevention</image:title>
+			<image:caption>Stackoverflow answer about SQL injection prevention</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/75/33/75338caa573d4c7e51925ba41f14f76f69b91033.svg</image:loc>
+			<image:title>Second order SQL injection</image:title>
+			<image:caption>Second order SQL injection</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/general/dont-trust-facebook</loc>
+		<priority>0.7</priority>
+		<lastmod>2019-03-26T22:38:44+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/41/bd/41bd28f6991b31cb23f34101426659e9135821a2.png</image:loc>
+			<image:title>Cover | Don't trust facebook: it knows your secrets</image:title>
+			<image:caption>Cover | Don't trust facebook: it knows your secrets</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/dc/be/dcbe50f7de810f3115992edf56ccb90f0d9d17f8.png</image:loc>
+			<image:title>Thumbnail | Don't trust facebook: it knows your secrets</image:title>
+			<image:caption>Thumbnail | Don't trust facebook: it knows your secrets</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/general/php-conferences-2019</loc>
+		<priority>0.7</priority>
+		<lastmod>2019-12-15T23:34:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/31/69/316977b8a953fb93ef356b3a05010fac15e2687a.jpeg</image:loc>
+			<image:title>Cover | PHP conferences from the fall 2019</image:title>
+			<image:caption>Cover | PHP conferences from the fall 2019</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/82/f3/82f3c15040476500b98447857c6a10efda3b423d.png</image:loc>
+			<image:title>Thumbnail | PHP conferences from the fall 2019</image:title>
+			<image:caption>Thumbnail | PHP conferences from the fall 2019</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/8b/43/8b4308f24bbbba8e66765d05f417706369395911.jpeg</image:loc>
+			<image:title>All employees must wash hands after using self-joins</image:title>
+			<image:caption>All employees must wash hands after using self-joins</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/22/b5/22b541875b4fe243f6cf88b213cea643647fe355.png</image:loc>
+			<image:title>SQL recursion and analitical</image:title>
+			<image:caption>SQL recursion and analitical</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/de/aa/deaa5bf57eb34f5afe87bfebefc0a1406e91b1ad.png</image:loc>
+			<image:title>SQL system versioning and JSON_TABLE</image:title>
+			<image:caption>SQL system versioning and JSON_TABLE</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/system-updates/atom-rss-feeds-is-available</loc>
+		<priority>0.7</priority>
+		<lastmod>2018-12-11T15:42:05+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/d9/85/d9854d3b088c6f35d695587dbaa752ea7fbb54b4.png</image:loc>
+			<image:title>Cover | News feeds is active now</image:title>
+			<image:caption>Cover | News feeds is active now</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/ec/5f/ec5f51e87fb073268508d47478ceeee1fc594399.png</image:loc>
+			<image:title>Thumbnail | News feeds is active now</image:title>
+			<image:caption>Thumbnail | News feeds is active now</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/49/c7/49c73a5dcc5fcb18f9ae13b287a808e38a5cd864.png</image:loc>
+			<image:title>Global SEO things</image:title>
+			<image:caption>Global SEO things</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/system-updates/gdpr-and-subscription</loc>
+		<priority>0.7</priority>
+		<lastmod>2018-12-11T15:40:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/77/f8/77f821ecae4b42ee6f4a114270df45dfcd04085f.png</image:loc>
+			<image:title>Cover | Secure data processing and enabled subscription</image:title>
+			<image:caption>Cover | Secure data processing and enabled subscription</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/f9/cc/f9cc5c4663a3f3b5821f360a55d407174dc52a53.png</image:loc>
+			<image:title>Thumbnail | Secure data processing and enabled subscription</image:title>
+			<image:caption>Thumbnail | Secure data processing and enabled subscription</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/4a/5e/4a5e04d704c80ae42e6d4d96b94ace75167ea6c4.png</image:loc>
+			<image:title>Google analytics insight for one week in December 2018</image:title>
+			<image:caption>Google analytics insight for one week in December 2018</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/0c/10/0c1005d99f17671709498f5b1e212dc16fc90e17.png</image:loc>
+			<image:title>Printable article preview</image:title>
+			<image:caption>Printable article preview</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/system-updates/larapulse-becomes-static</loc>
+		<priority>0.7</priority>
+		<lastmod>2025-07-23T12:18:04+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/09/62/0962302a0e5c4fd9a6e4d7d3bc26e62b.png</image:loc>
+			<image:title>Cover | Larapulse becomes static</image:title>
+			<image:caption>Cover | Larapulse becomes static</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/05/08/0508835f3f5b4a8c9ff3533fc844b7f5.png</image:loc>
+			<image:title>Thumbnail | Larapulse becomes static</image:title>
+			<image:caption>Thumbnail | Larapulse becomes static</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/bonuses/symfony-4-certification-discount</loc>
+		<priority>0.7</priority>
+		<lastmod>2018-08-04T09:25:20+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/96/43/964308384ea8ee7f3f5bbe0feeda47becd729465.png</image:loc>
+			<image:title>Cover | Discount for Symfony 4 certification</image:title>
+			<image:caption>Cover | Discount for Symfony 4 certification</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/24/36/2436694de95c267d6b7aac1bd50ce269c8706822.png</image:loc>
+			<image:title>Thumbnail | Discount for Symfony 4 certification</image:title>
+			<image:caption>Thumbnail | Discount for Symfony 4 certification</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/4d/8f/4d8f448977c53bd7915e839c7588ba1aba2fae60.jpeg</image:loc>
+			<image:title>Symfony certification discount banner</image:title>
+			<image:caption>Symfony certification discount banner</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/bonuses/apply-for-free-web-summit-2018-tickets</loc>
+		<priority>0.7</priority>
+		<lastmod>2018-08-04T09:25:37+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/cd/a4/cda451d197ced4dd6e7a2aab315d3f9e1a0c9f29.png</image:loc>
+			<image:title>Cover | Apply for free Web Summit 2018 tickets</image:title>
+			<image:caption>Cover | Apply for free Web Summit 2018 tickets</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/87/d8/87d8c33c75650bacb0635f5fb9d7148ac34d3963.png</image:loc>
+			<image:title>Thumbnail | Apply for free Web Summit 2018 tickets</image:title>
+			<image:caption>Thumbnail | Apply for free Web Summit 2018 tickets</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/85/6e/856ed7b04a5a88e1cae5d327b80872f62ae54b57.png</image:loc>
+			<image:title>Congrats! Here are your free Web Summit tickets</image:title>
+			<image:caption>Congrats! Here are your free Web Summit tickets</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/recommendations/php-internals-book</loc>
+		<priority>0.7</priority>
+		<lastmod>2018-09-16T12:37:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a8/62/a862dbfd238de82019baa8c44331e6032bcb0cab.png</image:loc>
+			<image:title>Cover | PHP Internals Book</image:title>
+			<image:caption>Cover | PHP Internals Book</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/87/f4/87f4ed8408a3499ca80ca198d811c0091acb2a4d.png</image:loc>
+			<image:title>Thumbnail | PHP Internals Book</image:title>
+			<image:caption>Thumbnail | PHP Internals Book</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/72/08/720830469e28617ab0f5072a2a19d1f92b5fe899.png</image:loc>
+			<image:title>Testing print stylesheets using Chrome DevTools</image:title>
+			<image:caption>Testing print stylesheets using Chrome DevTools</image:caption>
+		</image:image>
+	</url>
+	<url>
+	<loc>https://blog.larapulse.com/announcements/recommendations/cyberyozh</loc>
+		<priority>0.7</priority>
+		<lastmod>2019-03-05T22:28:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/18/ac/18ac4d728c2d9f71f289d3d0d352a966511604bd.png</image:loc>
+			<image:title>Cover | CyberYozh: Internet privacy and security course</image:title>
+			<image:caption>Cover | CyberYozh: Internet privacy and security course</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/2f/cf/2fcf6973ac29372d897cc6ea0eb0afdcfd6934c3.png</image:loc>
+			<image:title>Thumbnail | CyberYozh: Internet privacy and security course</image:title>
+			<image:caption>Thumbnail | CyberYozh: Internet privacy and security course</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/20/78/20789e079b0615cc38a95ffabaccb714f4c13c60.png</image:loc>
+			<image:title>Learn security and anonymity basics</image:title>
+			<image:caption>Learn security and anonymity basics</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/c4/cb/c4cbf6126cedc8c3739efbfb235bf44404c42de6.png</image:loc>
+			<image:title>Be informed to avoid being caught or detected</image:title>
+			<image:caption>Be informed to avoid being caught or detected</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/a7/37/a7379d9ea915da8ed3b79e873454ecd47591b193.png</image:loc>
+			<image:title>Cyber threats</image:title>
+			<image:caption>Cyber threats</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://blog.larapulse.com/files/original/images/93/91/93910b52889343f388cdb8f64fca39fbf9304e55.png</image:loc>
+			<image:title>Theory and Practice at CyberYozh</image:title>
+			<image:caption>Theory and Practice at CyberYozh</image:caption>
+		</image:image>
+	</url>
+</urlset>
+

@@ -1,0 +1,349 @@
+<!DOCTYPE html><html lang="en"><head>
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//blog.larapulse.com">
+<link rel="dns-prefetch" href="//larapulse.com">
+<link rel="dns-prefetch" href="//api.larapulse.com">
+<link rel="dns-prefetch" href="//github.com">
+<link rel="dns-prefetch" href="//symfony.com">
+<link rel="dns-prefetch" href="//podgornyy.rocks">
+<link rel="dns-prefetch" href="//louisbarranqueiro.github.io">
+<link rel="dns-prefetch" href="//www.youtube.com">
+<link rel="dns-prefetch" href="//www.instagram.com">
+<link rel="dns-prefetch" href="//www.facebook.com">
+<link rel="dns-prefetch" href="//www.linkedin.com">
+<link rel="dns-prefetch" href="//twitter.com">
+<link rel="dns-prefetch" href="//t.me"><script async src=https://www.googletagmanager.com/gtag/js?id=UA-122807654-1></script><script> window.dataLayer = window.dataLayer || []; function gtag(){ dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-122807654-2'); </script><title>Symfony Request validation - Symfony | Larapulse Technology Blog</title><meta charset=UTF-8><meta name=robots content="index,follow"><meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes"><meta name=keywords content="larapulse,technology,blog,article,symfony,validation,validator,php,step-by-step,web,frameworks,clean-code,request,code,oop"><meta name=description content="Validation is an important task every web developer should care when working with data coming to server. Symfony has Validator component for that, but let&#039;s build request auto-validation structure to be sure that data came to our appliction is already valid."><meta name=subject content="Symfony Request validation - Symfony | Larapulse Technology Blog"><meta name=author content="Sergey Podgorny"><meta name=publisher content="Larapulse Technology"><meta name=language content="en_GB"><meta name=copyright content="Larapulse Technology"><meta name=format-detection content="telephone=no"><meta name=topic content="Symfony Request validation"><meta name=page-topic content="Symfony Request validation"><meta name=designer content="Louis Barranqueiro"><meta name=owner content="Sergey Podgornyy, sergey.podgornyy@yahoo.de"><meta name=url content="/"><meta name=identifier-url content="/"><meta name=pagename content="Symfony Request validation - Symfony | Larapulse Technology Blog"><meta name=coverage content="Worldwide"><meta name=distribution content="Global"><meta name=medium content="blog"><meta name=pageKey content="blog::article.show.10"><meta name=google-site-verification content="3WYVb1kIZ6bM3SSFHxn5vjD9YgSr11qmrilWNnEJtX8"><meta name=msapplication-TileImage content="/static/images/logo_400x400.jpg"><meta name=msapplication-TileColor content="#F55338"><meta name=twitter:card content="summary"><meta name=twitter:title content="Symfony Request validation - Symfony | Larapulse Technology Blog"><meta name=twitter:description content="Validation is an important task every web developer should care when working with data coming to server. Symfony has Validator component for that, but let&#039;s build request auto-validation structure to be sure that data came to our appliction is already valid."><meta name=twitter:image content="/files/original/images/db/00/db00d09026950ad6f69dfb2cb6fe9ddf08ee90e0.png"><meta name=twitter:site content="@LarapulseT"><meta property="fb:app_id" content="321394058628025"><meta property="og:title" content="Symfony Request validation"><meta property="og:url" content="/symfony/symfony-request-validation"><meta property="og:locale" content="en_GB"><meta property="og:description" content="Validation is an important task every web developer should care when working with data coming to server. Symfony has Validator component for that, but let&#039;s build request auto-validation structure to be sure that data came to our appliction is already valid."><meta property="og:site_name" content="Larapulse Technology Blog"><meta property="og:type" content="article"><meta property="og:image" content="/files/original/images/db/00/db00d09026950ad6f69dfb2cb6fe9ddf08ee90e0.png"><meta property="og:image:url" content="/files/original/images/db/00/db00d09026950ad6f69dfb2cb6fe9ddf08ee90e0.png"><meta property="og:image:secure_url" content="/files/original/images/db/00/db00d09026950ad6f69dfb2cb6fe9ddf08ee90e0.png"><meta property="og:image:type" content="image/png"><meta property="og:image" content="/files/original/images/84/f4/84f4ec582dc43dc83c0b1baf52dfe018cd0738f7.png"><meta property="og:image:url" content="/files/original/images/84/f4/84f4ec582dc43dc83c0b1baf52dfe018cd0738f7.png"><meta property="og:image:secure_url" content="/files/original/images/84/f4/84f4ec582dc43dc83c0b1baf52dfe018cd0738f7.png"><meta property="og:image:type" content="image/png"><meta property="article:published_time" content="2018-08-29T12:48:31+00:00"><meta property="article:modified_time" content="2018-08-29T12:48:06+00:00"><meta property="article:author" content="Sergey Podgorny"><meta property="article:section" content="Symfony"><meta property="article:tag" content=""><meta property="profile:first_name" content="Sergey"><meta property="profile:last_name" content="Podgorny"><meta property="profile:username" content="sergey.podgornyy"><meta http-equiv="Content-type" content="text/html; charset=UTF-8"><meta http-equiv="Content-language" content="en_GB"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><link rel="icon" href="/static/images/favicon.ico" ><link rel="shortcut icon" href="/static/images/favicon.ico" ><link rel="icon" href="/static/images/logo_192x192.jpg" sizes="192x192" ><link rel="apple-touch-icon" href="/static/images/logo_180x180.jpg" sizes="180x180" ><link rel="apple-touch-icon" href="/static/images/logo_152x152.jpg" sizes="152x152" ><link rel="apple-touch-icon" href="/static/images/logo_120x120.jpg" sizes="120x120" ><link rel="apple-touch-icon" href="/static/images/logo_76x76.jpg" sizes="76x76" ><link rel="apple-touch-icon" href="/static/images/logo_57x57.jpg" sizes="57x57" ><link rel="index" href="/" title="Larapulse Technology" ><link rel="help" href="/faq" title="FAQ" ><link rel="publisher" href="/" ><link rel="image_src" href="/files/original/images/db/00/db00d09026950ad6f69dfb2cb6fe9ddf08ee90e0.png" ><link rel="canonical" href="/symfony/symfony-request-validation" ><link rel="alternate" href="/feed/atom.xml" type=application/atom+xml title="Atom 0.3" ><link rel="alternate" href="/feed/rss.xml" type=application/rss+xml title="RSS" ><link media="all" type=text/css rel="stylesheet" href="/assets/main.4065552450.css"><style> .badge.chip-symfony-request-validation { background-color: #1a171c; } @media only screen and (max-width: 479px) { .post-group .post.item .badge.chip-symfony-request-validation { border: 2px solid #1a171c !important; background-color: #fff; padding: 3px 16px; } .post-group .post.item .badge.chip-symfony-request-validation a { color: #1a171c !important; } } </style><!--[if lt IE 9]><script src=//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.4065552450.js></script><script src=//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.4065552450.js></script><![endif]--><script>var apiUrl = 'https://api.larapulse.com';</script>
+<style>.page_speed_1777889831{ display: block; } .page_speed_971241349{ margin-bottom: 30px } .page_speed_1008821397{ display: none; } .page_speed_2076146770{ top: -420px; display: none; }</style>
+</head><body><div id="blog" class="page_speed_1777889831"><header id="header" data-behavior="1"><i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i><h3 class="header-title"><a class="header-title-link" href="/">Larapulse Blog</a></h3><a class="header-right-picture" href="/#about"><img class="header-picture" src=/assets/logo_30x30.jpg width=30px height=30px></a></header><nav id="sidebar" data-behavior="1"><div class="sidebar-profile"><a href="/#about"><img class="sidebar-profile-picture" src=/assets/logo_90x90.jpg width=90px height=90px></a><span class="sidebar-profile-name">Larapulse Blog</span></div><ul class="sidebar-buttons"><li class="sidebar-button"><a class="sidebar-button-link " href="/"><i class="sidebar-button-icon fa fa-lg fa-home"></i><span class="sidebar-button-desc">Home</span></a></li><li class="sidebar-button"><a class="sidebar-button-link " href="/announcements"><i class="sidebar-button-icon fa fa-lg fa-bell"></i><span class="sidebar-button-desc">Announcements</span></a></li><li class="sidebar-button"><a class="sidebar-button-link " href="/#about"><i class="sidebar-button-icon fa fa-lg fa-question"></i><span class="sidebar-button-desc">About</span></a></li></ul><ul class="sidebar-buttons"><li class="sidebar-button"><a class="sidebar-button-link " href="/faq"><i class="sidebar-button-icon fa fa-lg fa-comments"></i><span class="sidebar-button-desc">FAQ</span></a></li><li class="sidebar-button"><a class="sidebar-button-link " href="https://github.com/larapulse" target="_blank"><i class="sidebar-button-icon fa fa-lg fa-github"></i><span class="sidebar-button-desc">GitHub</span></a></li></ul><ul class="sidebar-buttons"></ul></nav><div id="main" data-behavior="1"><section class="main-content-wrap"><article class="post article"><div class="post-header"><h1 class="post-title text-center"> Symfony Request validation </h1><div class="post-meta text-center"><p class="published-line"><time content="Wed, Aug 29, 2018 12:48 PM"> Aug 29, 2018 </time> by Sergey Podgorny</p><span class="badge chip chip-symfony-request-validation"><a href="/symfony"> Symfony </a></span><span class="badge complexity-badge complexity-4"> Complexity: Medium</span><span class="tags"><a href="#">#symfony</a><a href="#">#validation</a><a href="#">#validator</a><a href="#">#php</a><a href="#">#step-by-step</a><a href="#">#web</a><a href="#">#frameworks</a><a href="#">#clean-code</a><a href="#">#request</a><a href="#">#code</a><a href="#">#oop</a></span></div></div><br><div class="breadcrumb non-printable"><a href="/categories">All categories</a> &raquo; <a href="/programming-languages">Programming languages</a> &raquo; <a href="/php">PHP</a> &raquo; <a href="/symfony">Symfony</a> &raquo; <span class="inactive">Symfony Request validation</span></div><hr><div class="post-content printable" onload="prettyPrint();"><div class="post-teaser"><blockquote><p>Validating data which come to the server is always an important thing for every web application. Symfony gives us an ability to validate your request using the <a href="https://symfony.com/doc/current/validation.html">Validator component</a>. So let's use it to auto-validate Symfony requests using dependency injection, as Laravel <code>FormRequest</code> do.</p></blockquote></div><hr class="page_speed_971241349"><p>Data sent to the server always have to be validated. For that, validation should be applied for every single request that comes to server to aware about data which we expect to have in request. As data needs to be validated before it is written into a database or passed to a web service, we should validate request before it comes to Controller.</p><p>In this article, we will share with you how we implemented the validation of request in the Symfony, in the likeness of Laravel <code>FormRequest</code>. To validate data from request we will have a separate class which is an extra level over the original request, but with functionalities to validate incoming data and throw an exception, if data in the request is invalid.</p><h3>Accessing request properties and methods</h3><p>In order to give the validator the ability to validate our data, we will merge them and make them accessible through method <code>all()</code>. All other properties of the original request will also be available to us. For that we can implement the following trait:</p><p><details><summary>Code example</summary></p><pre  class="line-numbers"><code class="language-php">&lt;?php
+
+namespace AppTraits;
+
+use SymfonyComponentHttpFoundationRequest;
+
+trait ValidationAwareTrait
+{
+    /** @var Request */
+    protected $httpRequest;
+
+    public function __get($property)
+    {
+        if (property_exists($this-&gt;httpRequest, $property)) {
+            return $this-&gt;httpRequest-&gt;$property;
+        }
+
+        $trace = debug_backtrace();
+        $fileName = $trace[0]['file'] ?? __FILE__;
+        $line = $trace[0]['line'] ?? __LINE__;
+        trigger_error("Undefined property {$property} in {$fileName} on line {$line}");
+
+        return null;
+    }
+
+    public function __set($property, $value)
+    {
+        if (property_exists($this-&gt;httpRequest, $property)) {
+            $this-&gt;httpRequest-&gt;$property = $value;
+        }
+
+        return $this;
+    }
+
+    public function __isset($property)
+    {
+        return isset($this-&gt;httpRequest-&gt;$property);
+    }
+
+    public function __unset($property)
+    {
+        unset($this-&gt;httpRequest-&gt;$property);
+    }
+
+    public function __call($name, $arguments)
+    {
+        if (method_exists($this-&gt;httpRequest, $name)) {
+            return $this-&gt;httpRequest-&gt;$name(...$arguments);
+        }
+
+        $trace = debug_backtrace();
+        $fileName = $trace[0]['file'] ?? __FILE__;
+        $line = $trace[0]['line'] ?? __LINE__;
+        trigger_error(sprintf(
+            'Attempted to call an undefined method named "%s" of class "%s" in %s on line %d',
+            $name,
+            get_class($this),
+            $fileName,
+            $line
+        ));
+
+        return null;
+    }
+}</code></pre><p></details></p><p>This trait will be used in our validation class. It implements core magic methods <code>__get()</code> and <code>__set()</code> to access properties from original request. As <code>__set()</code> should have pair method <code>__isset</code> we implemented it also there. To access native methods from original request class (such as <code>getClientIp()</code>, <code>getPathInfo()</code> etc.) we implemented <code>__call()</code> method.</p><h3>Handle exception</h3><p>Also we need a separate <code>Exception</code> class, which we will throw out in case the data is not valid. To access all error messages we implemented <code>getResponseData()</code> method. Let's have a look on Exception we will throw for the invalid request:</p><p><details><summary>Code example</summary></p><pre  class="line-numbers"><code class="language-php">&lt;?php
+
+namespace AppException;
+
+use SymfonyComponentPropertyAccessPropertyAccess;
+use SymfonyComponentValidatorConstraintViolation;
+use SymfonyComponentValidatorConstraintViolationList;
+use SymfonyComponentValidatorValidatorValidatorInterface;
+
+/**
+ * Class ValidationException
+ */
+class ValidationException extends RuntimeException
+{
+    /** @var ValidatorInterface */
+    private $validator;
+
+    /** @var ConstraintViolationList|null */
+    private $violations;
+
+    /** @var SymfonyComponentPropertyAccessPropertyAccessor */
+    private $propertyAccessor;
+
+    public function __construct(ValidatorInterface $validator, ConstraintViolationList $violations = null)
+    {
+        $message = 'The given data failed to pass validation.';
+
+        parent::__construct($message);
+
+        $this-&gt;validator = $validator;
+        $this-&gt;violations = $violations;
+        $this-&gt;propertyAccessor = PropertyAccess::createPropertyAccessor();
+    }
+
+    public function getValidator() : ValidatorInterface
+    {
+        return $this-&gt;validator;
+    }
+
+    public function getResponseData() : array
+    {
+        $errors = [];
+
+        if ($this-&gt;violations instanceof ConstraintViolationList) {
+            $iterator = $this-&gt;violations-&gt;getIterator();
+
+            /** @var ConstraintViolation $violation */
+            foreach ($iterator as $key =&gt; $violation) {
+                $entryErrors = (array) $this-&gt;propertyAccessor-&gt;getValue($errors, $violation-&gt;getPropertyPath());
+                $entryErrors[] = $violation-&gt;getMessage();
+
+                $this-&gt;propertyAccessor-&gt;setValue($errors, $violation-&gt;getPropertyPath(), $entryErrors);
+            }
+        }
+
+        return $errors;
+    }
+}</code></pre><p></details></p><p><code>ValidationException</code> receive validator instance <code>$validator</code> and validation violations <code>$violations</code> as parameters. As Symfony validator implements <code>IteratorAggregate</code> interface for violation list, in constructor we define <code>$propertyAccessor</code>, which gives us an oppportunity to access properties from <code>$violations</code> iterator.</p><p>While handling <code>ValidationException</code> in kernel of our application, we can access violation list via <code>$exception-&gt;getResponseData()</code>.</p><h3>Validation class</h3><p>And now we can proceed with writing our validation class to auto-validate incoming requests:</p><p><details><summary>Code example</summary></p><pre  class="line-numbers"><code class="language-php">&lt;?php
+
+namespace AppRequests;
+
+use AppExceptionValidationException;
+use AppTraitsValidationAwareTrait;
+use SymfonyComponentHttpFoundationFileBag;
+use SymfonyComponentHttpFoundationHeaderBag;
+use SymfonyComponentHttpFoundationParameterBag;
+use SymfonyComponentHttpFoundationRequestStack;
+use SymfonyComponentHttpFoundationServerBag;
+use SymfonyComponentHttpKernelExceptionAccessDeniedHttpException;
+use SymfonyComponentValidatorConstraintsCollection;
+use SymfonyComponentValidatorConstraintViolationList;
+use SymfonyComponentValidatorValidation;
+use SymfonyComponentValidatorValidatorValidatorInterface;
+
+/**
+ * Class BaseValidation
+ *
+ * @property ParameterBag   $attributes
+ * @property ParameterBag   $request
+ * @property ParameterBag   $query
+ * @property ServerBag      $server
+ * @property FileBag        $files
+ * @property ParameterBag   $cookies
+ * @property HeaderBag      $headers
+ *
+ * @method   duplicate(array $query, array $request, array $attributes, array $cookies, array $files, array $server)
+ * @method   overrideGlobals()
+ */
+abstract class BaseValidation
+{
+    use ValidationAwareTrait;
+
+    /** @var ValidatorInterface */
+    private $validator;
+
+    final public function __construct(RequestStack $request)
+    {
+        $this-&gt;httpRequest = $request-&gt;getCurrentRequest();
+        $this-&gt;validator = Validation::createValidator();
+
+        $this-&gt;initialize();
+    }
+
+    final public function initialize() : void
+    {
+        if (!$this-&gt;passesAuthorization()) {
+            $this-&gt;failedAuthorization();
+        }
+
+        $this-&gt;validate();
+    }
+
+    /**
+     * Get all request parameters
+     *
+     * @return array
+     */
+    final public function all() : array
+    {
+        return $this-&gt;httpRequest-&gt;attributes-&gt;all()
+            + $this-&gt;httpRequest-&gt;query-&gt;all()
+            + $this-&gt;httpRequest-&gt;request-&gt;all()
+            + $this-&gt;httpRequest-&gt;files-&gt;all();
+    }
+
+    /**
+     * Returns list of constraints for validation
+     *
+     * @return Collection
+     */
+    abstract public function rules() : Collection;
+
+    /**
+     * Determine if the request passes the authorization check.
+     *
+     * @return bool
+     */
+    final protected function passesAuthorization() : bool
+    {
+        if (method_exists($this, 'authorize')) {
+            return $this-&gt;authorize();
+        }
+
+        return true;
+    }
+
+    /**
+     * Handle a failed authorization attempt.
+     *
+     * @return void
+     * @throws AccessDeniedHttpException
+     */
+    final protected function failedAuthorization() : void
+    {
+        throw new AccessDeniedHttpException();
+    }
+
+    /**
+     * @return bool
+     * @throws ValidationException
+     */
+    final protected function validate() : bool
+    {
+        /** @var ConstraintViolationList $violations */
+        $violations = $this-&gt;validator-&gt;validate($this-&gt;all(), $this-&gt;rules());
+
+        if ($violations-&gt;count()) {
+            throw new ValidationException($this-&gt;validator, $violations);
+        }
+
+        return true;
+    }
+}</code></pre><p></details></p><p>When instance of <code>BaseValidation</code> will be created, auto-validation will be fired. Constructor get current request and create <code>ValidatorInterface</code> instance. Then it tries to validate data from request.</p><p>Since our application can request not only the verification of incoming data, but also the verification of the permissions to use this data, we will add an optional <code>authorize()</code> method in case we want to verify the user's permissions to send this request. This method should return <code>boolean</code> value. If this method returns <code>false</code>, <code>AccessDeniedHttpException</code> will be thrown.</p><p><strong>NOTE</strong>: This implementation is incorrect according <code>SRP</code>, so you can split permissions check and validation of the data. To simplify the example, we show the implementation of both checks simultaneously.</p><p>If authorization passed successfully, we start validate request data according to validation rules, which we get from <code>rules()</code> method. This method should return <code>SymfonyComponentValidatorConstraintsCollection</code> to be used with Symfony validator. If any violations will occur, <code>ValidationException</code> will be thrown. If not, then we will have access to valid data in Controller (or any other place we initialize instance of <code>BaseValidation</code>).</p><h3>Let's write request class with auto-validation</h3><p>Well done! Now we have all we need to write custom request class. Let's write some request validation class to test how well it works.</p><p><details open="open"><summary>Code example</summary></p><pre  class="line-numbers"><code class="language-php">&lt;?php
+
+namespace AppRequests;
+
+use SymfonyComponentValidatorConstraints{
+    Collection, File, Image, Required
+};
+use SymfonyComponentValidatorException{
+    ConstraintDefinitionException,
+    InvalidOptionsException,
+    MissingOptionsException
+};
+
+class ImageUploadRequest extends BaseValidation
+{
+    private const ALLOW_EXTRA_FIELDS = true;
+    private const ALLOW_MISSING_FIELDS = false;
+    private const EXTRA_FIELDS_MESSAGE = 'This field was not expected.';
+    private const MISSING_FIELDS_MESSAGE = 'This field is missing.';
+
+    /**
+     * @return Collection
+     * @throws MissingOptionsException
+     * @throws InvalidOptionsException
+     * @throws ConstraintDefinitionException
+     */
+    public function rules() : Collection
+    {
+        return new Collection([
+            'fields'                =&gt; $this-&gt;getFields(),
+            'allowExtraFields'      =&gt; self::ALLOW_EXTRA_FIELDS,
+            'allowMissingFields'    =&gt; self::ALLOW_MISSING_FIELDS,
+            'extraFieldsMessage'    =&gt; self::EXTRA_FIELDS_MESSAGE,
+            'missingFieldsMessage'  =&gt; self::MISSING_FIELDS_MESSAGE,
+        ]);
+    }
+
+    /**
+     * @return array
+     * @throws MissingOptionsException
+     * @throws InvalidOptionsException
+     * @throws ConstraintDefinitionException
+     */
+    private function getFields() : array
+    {
+        return [
+            'image'   =&gt; new Required([
+                new File(),
+                new Image([
+                    'detectCorrupted'   =&gt; true,
+                ]),
+            ]),
+        ];
+    }
+}</code></pre><p></details></p><p>This example class uses to validate request, that contains an image to be uploaded to server. As you can see above, <code>SymfonyComponentValidatorConstraintsCollection</code> except field rules also accept setting how to handle this fields.</p><h3>Use custom request</h3><p>And now just see how easy and simple it is to use the data from the request in the Controller and be sure that we are working with the valid data. Now we do not need to do checks in the Controller.</p><p><details><summary>Code example</summary></p><pre  class="line-numbers"><code class="language-php">&lt;?php
+
+namespace AppControllerImageUpload;
+
+use AppRequestsImageUploadRequest;
+use AppServiceImageUploadUserImageManager;
+use LiipImagineBundleModelFileBinary;
+use SymfonyBundleFrameworkBundleControllerController;
+use SymfonyComponentHttpFoundationFileUploadedFile;
+use SymfonyComponentHttpFoundationJsonResponse;
+
+class UserImageController extends Controller
+{
+    /**
+     * Upload user image
+     *
+     * @param UserFileManager     $fileManager
+     * @param UserImageManager    $uploadManager
+     * @param ImageUploadRequest  $request
+     * @param int                 $userId
+     *
+     * @return JsonResponse
+     */
+    public function __invoke(
+        UserFileManager $fileManager,
+        UserImageManager $uploadManager,
+        ImageUploadRequest $request,
+        int $userId
+    ) : JsonResponse {
+        $filename = $fileManager-&gt;getFileName($userId);
+
+        /** @var UploadedFile $image */
+        $image = $request-&gt;files-&gt;get('image');
+        $uploadManager-&gt;save(
+            new FileBinary($image-&gt;getRealPath(), $image-&gt;getMimeType(), $image-&gt;guessExtension()),
+            $filename
+        );
+
+        return $this-&gt;json([
+            'message'   =&gt; sprintf('User image %s successfully uploaded', $filename),
+            'fileName'  =&gt; $filename,
+        ]);
+    }
+}</code></pre><p></details></p></div><div class="post-meta post-footer"><span class="post-footer-tags tags"><i class="fa fa-fw fa-tags"></i><a href="#">#symfony</a><a href="#">#validation</a><a href="#">#validator</a><a href="#">#php</a><a href="#">#step-by-step</a><a href="#">#web</a><a href="#">#frameworks</a><a href="#">#clean-code</a><a href="#">#request</a><a href="#">#code</a><a href="#">#oop</a></span><div class="author"></div><div class="post-actions-wrap non-printable"><nav><ul class="post-actions post-action-nav"></ul></nav><ul class="post-actions post-action-share"><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//plus.google.com/share?url=/symfony/symfony-request-validation" ><i class="fa fa-google-plus"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//www.facebook.com/sharer/sharer.php?u=/symfony/symfony-request-validation&title=Symfony+Request+validation" ><i class="fa fa-facebook-official"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//twitter.com/intent/tweet?text=Symfony Request validation&url=/symfony/symfony-request-validation&via=@LarapulseT" ><i class="fa fa-twitter"></i></a></li></ul></div><div id="bottom-bar" class="post-bottom-bar" data-behavior="1"><div class="post-actions-wrap non-printable"><nav><ul class="post-actions post-action-nav"></ul></nav><ul class="post-actions post-action-share"><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//plus.google.com/share?url=/symfony/symfony-request-validation" ><i class="fa fa-google-plus"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//www.facebook.com/sharer/sharer.php?u=/symfony/symfony-request-validation&title=Symfony+Request+validation" ><i class="fa fa-facebook-official"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//twitter.com/intent/tweet?text=Symfony Request validation&url=/symfony/symfony-request-validation&via=@LarapulseT" ><i class="fa fa-twitter"></i></a></li></ul></div></div></div></article><div class="back-top-wrapper non-printable"><div class="top-btn"><i class="arrow-up"></i></div></div></section><footer id="footer" class="main-content-wrap"><nav class="non-printable"><a href="/data-protection/privacy-policy">Privacy policy</a><a href="/data-protection/cookie-policy">Cookie policy</a></nav><span class="copyrights"> Copyrights &copy; 2025 <a href="https://podgornyy.rocks" target="_blank">Sergey Podgornyy</a>. All Rights Reserved. <br> Designed by <a href="http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/" target="_blank">Louis Barranqueiro</a></span><span class="socials"><a href="https://www.youtube.com/channel/UC3wminGFli412MBDKkdUufQ" target="_blank" title="Larapulse at YouTube"><i class="fa fa-youtube-play fa-fw"></i></a><a href="https://www.instagram.com/larapulse.technology/" target="_blank" title="Larapulse at Instagram"><i class="fa fa-instagram fa-fw"></i></a><a href="https://www.facebook.com/larapulse/" target="_blank" title="Larapulse at Facebook"><i class="fa fa-facebook-square fa-fw"></i></a><a href="https://www.linkedin.com/company/larapulse/" target="_blank" title="Larapulse at LinkedIn"><i class="fa fa-linkedin-square fa-fw"></i></a><a href="https://twitter.com/LarapulseT" target="_blank" title="Larapulse at Twitter"><i class="fa fa-twitter fa-fw"></i></a><a href="http://t.me/larapulse" target="_blank" title="Larapulse at Telegram"><i class="fa fa-telegram fa-fw"></i></a></span></footer></div></div><div id="about" class="popup-full non-printable page_speed_1008821397"><div id="about-card" class="page_speed_2076146770"><div id="about-btn-close"><i class="fa fa-remove"></i></div><img id="about-card-picture" src=/assets/larapulse_logo_250.png><h4 id="about-card-name">Larapulse Technology Blog</h4><h5 id="about-card-bio"><p> Information Technology blog and group of developers interesting in modern technologies, well-written code and further education </p></h5><h5 id="about-card-job"><i class="fa fa-university"></i><br><p>Founded at 2017</p></h5><h5 id="about-card-location"><i class="fa fa-map-marker"></i><br><p>Germany</p></h5></div></div><div id="cover"></div><script src=/assets/main.4065552450.js></script><div id="gdpr-modal" class="hidden non-printable"><div class="gdpr-modal-inner-wrap"><div class="gdpr-modal-inner"><div id="gdpr-modal-main" class=""><h2>Have a Cookie? :)</h2><img src=/assets/cookie.png alt="cookies"><p> Our site uses cookies to provide functionality and performance as well as for social media and advertising purposes. Social media and advertising cookies of third parties are used to offer you social media functionalities and personalized ads for Larapulse Technology content and offers. To get more information about these cookies and how we process personal data, check our <a href="/data-protection/privacy-policy" target="_blank">Privacy Policy</a>. Do you accept the use of cookies and the processing of personal data involved? </p><div class="button-wrap"><button class="gdpr-button button-secondary" onclick="gdpr_show_more_info()">More Information</button><button class="gdpr-button button-primary" onclick="gdpr_accept()" id="gdpr-accept-btn">Yes, I accept</button></div></div><div id="gdpr-modal-more-info" class="hidden"><h2>Your Cookie Settings</h2><form><div class="gdpr-modal-checkbox"><input type=checkbox id="gdpr-func-checkbox" value="yes" checked="checked" disabled><label for="gdpr-func-checkbox">Site functionality and performance</label></div><p> These cookies are required for Larapulse Technology site functionality and are therefore always enabled. These include cookies that allow you to be remembered as you explore the Larapulse Technology site, help make the shopping cart and checkout process possible as well as assist in security issues and conforming to regulations. To use the Larapulse Technology website, you have to consent to these cookies and the processing of personal data according to the Larapulse Technology website terms of use and privacy policy. </p><div class="gdpr-modal-checkbox"><input type=checkbox id="gdpr-social-checkbox" value="yes" checked=""><label for="gdpr-social-checkbox">Social media and advertising</label></div><p> Social media cookies offer the possibility to connect you to your social networks and share content from our website through social media. Advertising cookies (of third parties) collect information to help better tailor Larapulse Technology advertising to your interests, both within and beyond Larapulse Technology websites. De-selecting these cookies may result in seeing advertising that is not as relevant to you or you not being able to link effectively with Facebook, Twitter, or other social networks and/or not allowing you to share content on social media. </p></form><div class="button-wrap"><button onclick="gdpr_hide_more_info()" class="gdpr-button button-primary">Back</button></div></div></div></div></div><script> "use strict"; var domain = 'larapulse.com'; var GDPR, GDPR_FUNCTIONAL_COOKIE_CONSENT = "no", GDPR_SOCIAL_COOKIE_CONSENT = "no"; function gdpr_accept() { GDPR.userAccept(); } function gdpr_show_more_info() { GDPR.hideElement("gdpr-modal-main"); GDPR.showElement("gdpr-modal-more-info"); } function gdpr_hide_more_info() { GDPR.hideElement("gdpr-modal-more-info"); GDPR.showElement("gdpr-modal-main"); } function should_use_functional_cookie() { return "yes" == GDPR_FUNCTIONAL_COOKIE_CONSENT; } function should_use_social_cookie() { return "yes" == GDPR_SOCIAL_COOKIE_CONSENT; } function show_cookies_settings() { GDPR.showPopup(); gdpr_show_more_info(); } (GDPR = { functional_cookie_consent: !1, social_cookie_consent: !1, opinionGiven: !1, clickedFormObj: null, formChecked: !1, init: function() { this.checkConsent(); !0 === this.opinionGiven || this.isEuCountry() && (window.onload = function() { "/data-protection/privacy-policy" !== window.location.pathname && "/data-protection/cookie-policy" !== window.location.pathname && GDPR.showPopup() } ) }, checkConsent: function() { var o = this.getCookie("functional_cookie_consent"), t = this.getCookie("social_cookie_consent"); "" !== o || "" !== t ? ( this.opinionGiven = !0, "yes" === o && ( this.functional_cookie_consent = !0, GDPR_FUNCTIONAL_COOKIE_CONSENT = "yes" ), "yes" === t && ( this.social_cookie_consent = !0, GDPR_SOCIAL_COOKIE_CONSENT = "yes" ) ) : this.isEuCountry() || (GDPR_SOCIAL_COOKIE_CONSENT = GDPR_FUNCTIONAL_COOKIE_CONSENT = "yes") }, setConsent: function(o, t) { "yes" !== (t = void 0 === t ? "yes" : t) && "no" !== t || ("both" === o ? (this.setCookie("functional_cookie_consent", t, 129600), this.setCookie("social_cookie_consent", t, 129600), this.updateFormSocialConsentField(t), this.updateFormFunctionalConsentField(t)) : ("social" === o && (this.setCookie("social_cookie_consent", t, 129600), this.updateFormSocialConsentField(t)), "functional" === o && (this.setCookie("functional_cookie_consent", t, 129600), this.updateFormFunctionalConsentField(t))), this.checkConsent()) }, deleteConsent: function(o) { "both" === o ? (this.deleteCookie("functional_cookie_consent"), this.deleteCookie("social_cookie_consent")) : "functional " === o ? this.deleteCookie("functional_cookie_consent") : "social" === o && this.deleteCookie("social_cookie_consent") }, userAccept: function() { if (!0 === document.getElementById("gdpr-social-checkbox").checked ? this.setConsent("both", "yes") : (this.setConsent("social", "no"), this.setConsent("functional", "yes")), null !== this.clickedFormObj) { this.checkConsent(); var o = this.clickedFormObj; this.formChecked = !0, o.find(".mktf_submit_button").first().trigger("click"), this.hidePopup() } else document.getElementById("gdpr-accept-btn").disabled = !0, location.reload() }, updateFormSocialConsentField: function(o) { null !== this.clickedFormObj && this.clickedFormObj.find(".mktf_Cookie_Opt_In__c").first().val(o) }, updateFormFunctionalConsentField: function(o) { null !== this.clickedFormObj && this.clickedFormObj.find(".mktf_Functional_Cookie_Opt_In__c").first().val(o) }, showPopup: function() { "no" === this.getCookie("social_cookie_consent") && (document.getElementById("gdpr-social-checkbox").checked = !1), this.showElement("gdpr-modal") }, hidePopup: function() { this.hideElement("gdpr-modal") }, showElement: function(o) { var t = document.getElementById(o); this.removeClass(t, "hidden") }, hideElement: function(o) { var t = document.getElementById(o); this.addClass(t, "hidden") }, hasClass: function(o, t) { return o.classList ? o.classList.contains(t) : !!o.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)")) }, addClass: function(o, t) { o.classList ? o.classList.add(t) : this.hasClass(o, t) || (o.className += " " + t) }, removeClass: function(o, t) { if (o.classList) o.classList.remove(t); else if (this.hasClass(o, t)) { var e = new RegExp("(\\s|^)" + t + "(\\s|$)"); o.className = o.className.replace(e, " ") } }, setCookie: function(o, t, e) { var i = ""; if (null != e) { i = "; expires=" + (i = new Date((new Date).getTime() + 36e5 * e)).toGMTString(); var n = "; path=/" } document.cookie = o + "=" + escape(t) + i + n }, getCookie: function(o) { var t = "" , e = o + "="; if (0 < document.cookie.length) { var i = document.cookie.indexOf(e); if (-1 !== i) { i += e.length; var n = document.cookie.indexOf(";", i); -1 === n && (n = document.cookie.length), t = unescape(document.cookie.substring(i, n)) } } return t }, deleteCookie: function(o) { document.cookie = o + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain="+domain+";" }, isEuCountry: function(o) { /** TODO */ return true; if ("" === (o = void 0 === o ? "" : o)) { var t = GDPR.getCookie("geoip"); if ("" !== t) o = t.split(",")[0] } return "" !== o && -1 !== ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "ES", "SE", "GB"].indexOf(o) } }).init();</script></body></html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="en"><head>
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//blog.larapulse.com">
+<link rel="dns-prefetch" href="//larapulse.com">
+<link rel="dns-prefetch" href="//habr.com">
+<link rel="dns-prefetch" href="//api.larapulse.com">
+<link rel="dns-prefetch" href="//github.com">
+<link rel="dns-prefetch" href="//www.ecma-international.org">
+<link rel="dns-prefetch" href="//tc39.github.io">
+<link rel="dns-prefetch" href="//tools.ietf.org">
+<link rel="dns-prefetch" href="//nitayneeman.com">
+<link rel="dns-prefetch" href="//medium.com">
+<link rel="dns-prefetch" href="//podgornyy.rocks">
+<link rel="dns-prefetch" href="//louisbarranqueiro.github.io">
+<link rel="dns-prefetch" href="//www.youtube.com">
+<link rel="dns-prefetch" href="//www.instagram.com">
+<link rel="dns-prefetch" href="//www.facebook.com">
+<link rel="dns-prefetch" href="//www.linkedin.com">
+<link rel="dns-prefetch" href="//twitter.com">
+<link rel="dns-prefetch" href="//t.me"><script async src=https://www.googletagmanager.com/gtag/js?id=UA-122807654-1></script><script> window.dataLayer = window.dataLayer || []; function gtag(){ dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-122807654-2'); </script><title>ECMAScript 10 - JavaScript this year - ES2015+ | Larapulse Technology Blog</title><meta charset=UTF-8><meta name=robots content="index,follow"><meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes"><meta name=keywords content="larapulse,technology,blog,article,es2015+,javascript,ecmascript,es-2019,frontend,web,programming,coding"><meta name=description content="ECMAScript 10 - JavaScript this year"><meta name=subject content="ECMAScript 10 - JavaScript this year - ES2015+ | Larapulse Technology Blog"><meta name=author content="Sergey Podgorny"><meta name=publisher content="Larapulse Technology"><meta name=language content="en_GB"><meta name=copyright content="Larapulse Technology"><meta name=format-detection content="telephone=no"><meta name=topic content="ECMAScript 10 - JavaScript this year"><meta name=page-topic content="ECMAScript 10 - JavaScript this year"><meta name=designer content="Louis Barranqueiro"><meta name=owner content="Sergey Podgornyy, sergey.podgornyy@yahoo.de"><meta name=url content="/"><meta name=identifier-url content="/"><meta name=pagename content="ECMAScript 10 - JavaScript this year - ES2015+ | Larapulse Technology Blog"><meta name=coverage content="Worldwide"><meta name=distribution content="Global"><meta name=medium content="blog"><meta name=pageKey content="blog::article.show.24"><meta name=google-site-verification content="3WYVb1kIZ6bM3SSFHxn5vjD9YgSr11qmrilWNnEJtX8"><meta name=msapplication-TileImage content="/static/images/logo_400x400.jpg"><meta name=msapplication-TileColor content="#F55338"><meta name=twitter:card content="summary"><meta name=twitter:title content="ECMAScript 10 - JavaScript this year - ES2015+ | Larapulse Technology Blog"><meta name=twitter:description content="ECMAScript 10 - JavaScript this year"><meta name=twitter:image content="/files/original/images/b5/24/b5245821810607388f1e08c52da0d39ad4a7700e.png"><meta name=twitter:site content="@LarapulseT"><meta property="fb:app_id" content="321394058628025"><meta property="og:title" content="ECMAScript 10 - JavaScript this year"><meta property="og:url" content="/es-2015/ecmascript-10"><meta property="og:locale" content="en_GB"><meta property="og:description" content="Standardization of JS has moved to a year-long update cycle, and the beginning of the year is a great time to find out what awaits us in the anniversary - the tenth edition of EcmaScript!"><meta property="og:site_name" content="Larapulse Technology Blog"><meta property="og:type" content="article"><meta property="og:image" content="/files/original/images/b5/24/b5245821810607388f1e08c52da0d39ad4a7700e.png"><meta property="og:image:url" content="/files/original/images/b5/24/b5245821810607388f1e08c52da0d39ad4a7700e.png"><meta property="og:image:secure_url" content="/files/original/images/b5/24/b5245821810607388f1e08c52da0d39ad4a7700e.png"><meta property="og:image:type" content="image/png"><meta property="og:image" content="/files/original/images/7b/5f/7b5f31b8f06b1d7b5f0a7eae556b54f046476ac6.png"><meta property="og:image:url" content="/files/original/images/7b/5f/7b5f31b8f06b1d7b5f0a7eae556b54f046476ac6.png"><meta property="og:image:secure_url" content="/files/original/images/7b/5f/7b5f31b8f06b1d7b5f0a7eae556b54f046476ac6.png"><meta property="og:image:type" content="image/png"><meta property="article:published_time" content="2019-02-07T22:22:45+00:00"><meta property="article:modified_time" content="2019-02-07T22:02:54+00:00"><meta property="article:author" content="Sergey Podgorny"><meta property="article:section" content="ES2015+"><meta property="article:tag" content=""><meta property="profile:first_name" content="Sergey"><meta property="profile:last_name" content="Podgorny"><meta property="profile:username" content="sergey.podgornyy"><meta http-equiv="Content-type" content="text/html; charset=UTF-8"><meta http-equiv="Content-language" content="en_GB"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><link rel="icon" href="/static/images/favicon.ico" ><link rel="shortcut icon" href="/static/images/favicon.ico" ><link rel="icon" href="/static/images/logo_192x192.jpg" sizes="192x192" ><link rel="apple-touch-icon" href="/static/images/logo_180x180.jpg" sizes="180x180" ><link rel="apple-touch-icon" href="/static/images/logo_152x152.jpg" sizes="152x152" ><link rel="apple-touch-icon" href="/static/images/logo_120x120.jpg" sizes="120x120" ><link rel="apple-touch-icon" href="/static/images/logo_76x76.jpg" sizes="76x76" ><link rel="apple-touch-icon" href="/static/images/logo_57x57.jpg" sizes="57x57" ><link rel="index" href="/" title="Larapulse Technology" ><link rel="help" href="/faq" title="FAQ" ><link rel="original-source" href="https://habr.com/ru/post/437806/" ><link rel="publisher" href="/" ><link rel="image_src" href="/files/original/images/b5/24/b5245821810607388f1e08c52da0d39ad4a7700e.png" ><link rel="canonical" href="/es-2015/ecmascript-10" ><link rel="alternate" href="/feed/atom.xml" type=application/atom+xml title="Atom 0.3" ><link rel="alternate" href="/feed/rss.xml" type=application/rss+xml title="RSS" ><link media="all" type=text/css rel="stylesheet" href="/assets/main.4065552450.css"><style> .badge.chip-ecmascript-10 { background-color: #f9dc3e; } @media only screen and (max-width: 479px) { .post-group .post.item .badge.chip-ecmascript-10 { border: 2px solid #f9dc3e !important; background-color: #fff; padding: 3px 16px; } .post-group .post.item .badge.chip-ecmascript-10 a { color: #f9dc3e !important; } } </style><!--[if lt IE 9]><script src=//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.4065552450.js></script><script src=//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.4065552450.js></script><![endif]--><script>var apiUrl = 'https://api.larapulse.com';</script>
+<style>.page_speed_1578871912{ display: block; } .page_speed_1376432238{ margin-bottom: 30px } .page_speed_1896264382{ margin-top: 50px } .page_speed_1947972613{ margin-bottom: 0; display: none } .page_speed_2082616497{ display: none; } .page_speed_1317875701{ top: -420px; display: none; }</style>
+</head><body><div id="blog" class="page_speed_1578871912"><header id="header" data-behavior="1"><i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i><h3 class="header-title"><a class="header-title-link" href="/">Larapulse Blog</a></h3><a class="header-right-picture" href="/#about"><img class="header-picture" src=/assets/logo_30x30.jpg width=30px height=30px></a></header><nav id="sidebar" data-behavior="1"><div class="sidebar-profile"><a href="/#about"><img class="sidebar-profile-picture" src=/assets/logo_90x90.jpg width=90px height=90px></a><span class="sidebar-profile-name">Larapulse Blog</span></div><ul class="sidebar-buttons"><li class="sidebar-button"><a class="sidebar-button-link " href="/"><i class="sidebar-button-icon fa fa-lg fa-home"></i><span class="sidebar-button-desc">Home</span></a></li><li class="sidebar-button"><a class="sidebar-button-link " href="/announcements"><i class="sidebar-button-icon fa fa-lg fa-bell"></i><span class="sidebar-button-desc">Announcements</span></a></li><li class="sidebar-button"><a class="sidebar-button-link " href="/#about"><i class="sidebar-button-icon fa fa-lg fa-question"></i><span class="sidebar-button-desc">About</span></a></li></ul><ul class="sidebar-buttons"><li class="sidebar-button"><a class="sidebar-button-link " href="/faq"><i class="sidebar-button-icon fa fa-lg fa-comments"></i><span class="sidebar-button-desc">FAQ</span></a></li><li class="sidebar-button"><a class="sidebar-button-link " href="https://github.com/larapulse" target="_blank"><i class="sidebar-button-icon fa fa-lg fa-github"></i><span class="sidebar-button-desc">GitHub</span></a></li></ul><ul class="sidebar-buttons"></ul></nav><div id="main" data-behavior="1"><section class="main-content-wrap"><article class="post article"><div class="post-header"><h1 class="post-title text-center"> ECMAScript 10 - JavaScript this year </h1><div class="post-meta text-center"><p class="published-line"><time content="Thu, Feb 7, 2019 10:22 PM"> Feb 7, 2019 </time> by Sergey Podgorny</p><span class="badge chip chip-ecmascript-10"><a href="/es-2015"> ES2015+ </a></span><span class="badge complexity-badge complexity-1"> Complexity: All</span><span class="tags"><a href="#">#javascript</a><a href="#">#ecmascript</a><a href="#">#es-2019</a><a href="#">#frontend</a><a href="#">#web</a><a href="#">#programming</a><a href="#">#coding</a></span></div></div><br><div class="breadcrumb non-printable"><a href="/categories">All categories</a> &raquo; <a href="/programming-languages">Programming languages</a> &raquo; <a href="/javascript">JavaScript</a> &raquo; <a href="/es-2015">ES2015+</a> &raquo; <span class="inactive">ECMAScript 10 - JavaScript this year</span></div><hr><div class="post-content printable" onload="prettyPrint();"><div class="post-teaser"><blockquote><p>Standardization of JS has moved to a year-long update cycle, and the beginning of the year is a great time to find out what awaits us in the anniversary - the tenth edition of EcmaScript!</p></blockquote></div><hr class="page_speed_1376432238"><p>ES9 is the <a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm">current version of the specification</a>.</p><p>ES10 is still <a href="https://tc39.github.io/ecma262/">a draft</a>.</p><p>Today in <em>Stage 4</em> there are only a few proposals, but in <em>Stage 3</em> - a whole dozen!</p><h2>Five stages</h2><table><thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>0</td><td>Strawman</td><td>An idea that can be implemented through the <em>Babel</em> plugin</td></tr><tr><td>1</td><td>Proposal</td><td>A formal proposal for the feature and check the viability of the idea</td></tr><tr><td>2</td><td>Draft</td><td>Start developing specifications</td></tr><tr><td>3</td><td>Candidate</td><td>A preliminary version of the specification</td></tr><tr><td>4</td><td>Finished</td><td>The final version of the specification</td></tr></tbody></table><blockquote><p><strong>Note:</strong> to ensure the stability of the application, only Stage 3 and higher should be used.</p></blockquote><p>In this article, we will only look at Stage 4 (de facto, included in the new standard) and Stage 3 (which is about to become a part of it).</p><h2>Stage 4</h2><p>These changes are already included in the standard.</p><h4>Optional argument of catch</h4><p><a href="https://github.com/tc39/proposal-optional-catch-binding">TC39 proposal reference</a></p><p>Before ES10, a <code>catch</code> block forced us to bind an exception variable for the catch clause whether it’s necessary or not:</p><pre  class="line-numbers"><code class="language-javascript">function isValidJSON(text) {
+  try {
+    JSON.parse(text);
+    return true;
+  } catch (unused) { // variable is not used
+    return false;
+  }
+}</code></pre><p>Sometimes, as we see above, the exception variable that’s bound to the <code>catch</code> clause is absolutely redundant.</p><p><img src=/assets/e373874b9f75a384e8b218efe29e85be4e2b6f42.png alt="try...catch optional argument in the Edge and Chrome" ></p><p>Starting from the ES10 edition, the parentheses can be omitted and the <code>catch</code> will looks like <code>try</code> as two peas in a pod:</p><pre  class="line-numbers"><code class="language-javascript">function isValidJSON(text) {
+  try {
+    JSON.parse(text);
+    return true;
+  } catch { // has no argument
+    return false;
+  }
+}</code></pre><h4>Access to the symbolic link description</h4><p><a href="https://tc39.github.io/proposal-Symbol-description/">TC39 proposal reference</a></p><p>The symbolic link description can be indirectly obtained by the <code>toString()</code> method:</p><pre  class="line-numbers"><code class="language-javascript">const symLink = Symbol("Symbol description");
+String(symLink);
+// ↪ "Symbol(Symbol description)"</code></pre><p>Starting with ES10, symbols will have a <code>description</code> property that is read-only. It allows you to get a description of the symbol without any dancing with a tambourine:</p><pre  class="line-numbers"><code class="language-javascript">symLink.description;
+// ↪ "Symbol description"</code></pre><p>If the description is not specified, <code>undefined</code> will be returned:</p><pre  class="line-numbers"><code class="language-javascript">const withoutDescriptionSymbol = Symbol();
+withoutDescriptionSymbol.description;
+// ↪ undefined
+
+const emptyDescriptionSymbol = Symbol('');
+emptyDescriptionSymbol.description;
+// ↪ ""</code></pre><h4>EcmaScript strings compatible with JSON</h4><p><a href="https://github.com/tc39/proposal-json-superset">TC39 proposal reference</a></p><p>EcmaScript before its 10th edition, claims that ECMAScript JSON is a subset of JSON, but that's not entirely true. Whereas JSON strings accepts unescaped line separator <code>U+2028</code> and paragraph separator <code>U+2029</code> characters, but <code>ECMAScript</code> strings up to version 10 don't accept.</p><p>If you call <code>eval()</code> with the string <code>"u2029"</code>, it behaves as if we had done a line break - right in the middle of the code, but with ES10 strings it is fine now:</p><p><img src=/assets/066f9bd11399dbdc54dfb141ae4fe1481a417f34.png alt="PARAGRAPH SEPARATOR entity in the Edge and Chrome" ></p><h4>Function prototype <code>toString()</code> revision</h4><p><a href="http://tc39.github.io/Function-prototype-toString-revision/">TC39 proposal reference</a></p><p><details><summary>Goals of changes</summary></p><ul><li>remove the forward-incompatible requirement:</li></ul><blockquote><p>If the implementation cannot produce a source code string that meets these criteria then it must return a string for which <code>eval</code> will throw a <em>SyntaxError</em> exception.</p></blockquote><ul><li>clarify the &quot;functionally equivalent&quot; requirement</li><li>standardise the string representation of built-in functions and host objects</li><li>clarify requirement of representation based on the &quot;actual characteristics&quot; of an object</li><li>ensure that the string's parse contains the same function body and parameter list as the original</li><li>for functions defined using ECMAScript code, <code>toString</code> must return source text slice from beginning of first token to end of last token matched by the appropriate grammar production</li><li>for built-in function objects and bound function exotic objects, <code>toString</code> must not return anything other than <code>NativeFunction</code></li><li>for callable objects which were not defined using ECMAScript code, <code>toString</code> must return <code>NativeFunction</code></li><li>for functions created dynamically (through the <em>Function</em> and <em>GeneratorFunction</em> constructors), <code>toString</code> must synthesise a source text</li><li>for all other objects, <code>toString</code> must throw a <em>TypeError</em> exception</details></li></ul><pre  class="line-numbers"><code class="language-javascript">// User-defined function
+function () { console.log('My Function!'); }.toString();
+// ↪ function () { console.log('My Function!'); }
+
+// Embedded object method
+Number.parseInt.toString();
+// ↪ function parseInt() { [native code] }
+
+// Function with context binding
+function () { }.bind(0).toString();
+// ↪ function () { [native code] }
+
+// Built-in callable function object
+Symbol.toString();
+// ↪ function Symbol() { [native code] }
+
+// Dynamically generated function object
+Function().toString();
+// ↪ function anonymous() {}
+
+// Dynamically generated function generator-object
+function* () { }.toString();
+// ↪ function* () { }
+
+// .call is now waiting for the function as an argument
+Function.prototype.toString.call({});
+// ↪ Function.prototype.toString requires that 'this' be a Function"</code></pre><hr ><h2>Stage 3</h2><p>Proposals that came out of the draft status, but not yet included in the final version of the standard.</p><h4><code>private</code> / <code>static</code> / <code>public</code> methods, properties and attributes for classes</h4><p><a href="https://github.com/tc39/proposal-class-fields">TC39 proposal reference for class fields</a><a href="https://github.com/tc39/proposal-private-methods">TC39 proposal reference for private methods</a><a href="https://github.com/tc39/proposal-static-class-features">TC39 proposal reference for static class features</a></p><p>In some languages there is an agreement to call private methods through an underscore.</p><pre  class="line-numbers"><code class="language-python">class Person:
+    def __init__(self, name, alias):
+        self.name = name      # public
+        self.__alias = alias  # private
+
+    def who(self):
+        print('name  : ', self.name)
+        print('alias : ', self.__alias)
+
+    def __foo(self):          # private method
+        print('This is private method')
+
+    def foo(self):            # public method
+        print('This is public method')
+        self.__foo()</code></pre><p>But let me remind you - this is only an agreement. Nothing prevents you from using the prefix for other purposes, using another prefix, or not using it at all. The developers of the EcmaScript specification went further and made the <code>#</code> sign (hash, octothorp) part of the syntax. To make methods, getter/setters or fields private, just give them a name starting with <code>#</code>.</p><p>With all of its implementation kept internal to the class, this custom element can present an interface which is basically just like a built-in HTML element. Users of the custom element don't have the power to mess around with any of its internals.</p><pre  class="line-numbers"><code class="language-javascript">class Counter extends HTMLElement {
+  #xValue = 0;
+
+  get #x() {
+    return #xValue;
+  }
+
+  set #x(value) {
+    this.#xValue = value;
+    window.requestAnimationFrame(this.#render.bind(this));
+  }
+
+  #clicked() {
+    this.#x++;
+  }
+
+  constructor() {
+    super();
+    this.onclick = this.#clicked.bind(this);
+  }
+
+  connectedCallback() {
+    this.#render();
+  }
+
+  #render() {
+    this.textContent = this.#x.toString();
+  }
+}
+
+window.customElements.define('num-counter', Counter);</code></pre><p>Like static public methods, static public fields take a common idiom which was possible to write without class syntax and make it more ergonomic, have more declarative-feeling syntax (although the semantics are quite imperative), and allow free ordering with other class elements.</p><p>Declaring static properties in the class body is hoped to be cleaner and doing a better job of meeting programmer expectations of what classes should be for. The latter workaround is a somewhat common idiom, and it would be a nice convenience for programmers if the property declaration could be lifted into the class body, matching how methods are placed there.</p><h4>Hashbang (shebang) Grammar</h4><p><a href="https://github.com/tc39/proposal-hashbang">TC39 proposal reference</a></p><p>Shebang (hashbang) is a familiar way for *nix users to specify an interpreter for an executable file.</p><p>Some CLI JS hosts strip the hashbang in order to generate valid JS source texts before passing to JS engines currently. This would unify and standardize how that is done.</p><pre  class="line-numbers"><code class="language-javascript">#!/usr/bin/env node
+// in the Script Goal
+'use strict';
+console.log(1);</code></pre><pre  class="line-numbers"><code class="language-javascript">#!/usr/bin/env node
+// in the Module Goal
+export {};
+console.log(1);</code></pre><blockquote><p>Under Unix-like operating systems, when a script with a shebang is run as a program, the program loader parses the rest of the script's initial line as an interpreter directive; the specified interpreter program is run instead, passing to it as an argument the path that was initially used when attempting to run the script.</p></blockquote><p>So, the <code>index.js</code> file can be executed in the shell, like an executable (if it has executable permission):</p><pre  class="line-numbers"><code>$ ./index.js</code></pre><p>instead of</p><pre  class="line-numbers"><code>$ node index.js</code></pre><h4>BigInt: Arbitrary precision integers</h4><p><a href="https://github.com/tc39/proposal-bigint">TC39 proposal reference</a></p><p><img src=/assets/db96a8050dd0f4f7854b01eb088e4afcadf2ece2.png alt="Web browsers support of BigInt: CanIUse" ></p><p><code>BigInt</code> is a new primitive that provides a way to represent whole numbers larger than 2<sup>53</sup>, which is the largest number Javascript can reliably represent with the Number primitive.</p><pre  class="line-numbers"><code class="language-javascript">const x = Number.MAX_SAFE_INTEGER;
+// ↪ 9007199254740991, this is 1 less than 2^53
+
+const y = x + 1;
+// ↪ 9007199254740992, ok, checks out
+
+const z = x + 2
+// ↪ 9007199254740992, wait, that’s the same as above!</code></pre><p>A <code>BigInt</code> is created by appending <code>n</code> to the end of the integer or by calling the constructor.</p><pre  class="line-numbers"><code class="language-javascript">const theBiggestInt = 9007199254740991n;
+
+const alsoHuge = BigInt(9007199254740991);
+// ↪ 9007199254740991n
+
+const hugeButString = BigInt('9007199254740991');
+// ↪ 9007199254740991n
+</code></pre><p>This is a new primitive type:</p><pre  class="line-numbers"><code class="language-javascript">typeof 123;
+// ↪ 'number'
+typeof 123n;
+// ↪ 'bigint'</code></pre><p><code>Number</code>s and <code>BigInt</code>s may be compared as usual.</p><pre  class="line-numbers"><code class="language-javascript">42n === BigInt(42);
+// ↪ true
+42n == 42;
+// ↪ true</code></pre><p>But mathematical operations need to be carried out within one type:</p><pre  class="line-numbers"><code class="language-javascript">20000000000000n / 20n
+// ↪ 1000000000000n
+
+20000000000000n / 20
+// ↪ Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions</code></pre><p>Unary minus is supported, unary plus returns an error:</p><pre  class="line-numbers"><code class="language-javascript">-2n
+// ↪ -2n
+
++2n
+// ↪ Uncaught TypeError: Cannot convert a BigInt value to a number</code></pre><h4>globalThis - a new way to access the global context</h4><p><a href="https://github.com/tc39/proposal-global">TC39 proposal reference</a></p><p>Since the implementation of the global scope is dependent on a particular engine, you had to do something like this before:</p><pre  class="line-numbers"><code class="language-javascript">var getGlobal = function () {
+    // the only reliable means to get the global object is
+    // `Function('return this')()`
+    // However, this causes CSP violations in Chrome apps.
+    if (typeof self !== 'undefined') { return self; }
+    if (typeof window !== 'undefined') { return window; }
+    if (typeof global !== 'undefined') { return global; }
+    throw new Error('unable to locate global object');
+};</code></pre><p>And even this option did not guarantee that everything will work exactly. <code>globalThis</code> is a common way for all platforms to access the global scope:</p><pre  class="line-numbers"><code class="language-javascript">// Appeal to the global array constructor
+globalThis.Array(1,2,3);
+// ↪ [1, 2, 3]
+
+// Write data to the global scope
+globalThis.myGLobalSettings = {
+    isActive: true
+};
+
+// Access data from the global scope
+globalThis.myGLobalSettings;
+// ↪ {isActive: true}</code></pre><h4>Dynamic <code>import()</code></h4><p><a href="https://github.com/tc39/proposal-dynamic-import">TC39 proposal reference</a></p><p><img src=/assets/74abc32c34cefd981393f40c865e46533464977f.png alt="Web browsers support of dynamic imports: CanIUse" ></p><p>Did you want variables in the <code>import</code> strings? With dynamic imports, this has become possible:</p><pre  class="line-numbers"><code class="language-javascript">import(`./language-packs/${navigator.language}.js`);</code></pre><p>Dynamic import is an asynchronous operation. It returns a <code>Promise</code> that, after loading a module, returns it to the callback function. Therefore, new binding would work only inside <code>async</code> functions:</p><pre  class="line-numbers"><code class="language-javascript">element.addEventListener('click', async () =&gt; {
+    const module = await import(`./eventsScripts/buttonClickEvent.js`);
+    module.clickEvent();
+});</code></pre><p>It looks like a call to the <code>import()</code> function, but is not inherited from <code>Function.prototype</code>, which means it will not be possible to call via <code>call</code> or <code>apply</code>:</p><pre  class="line-numbers"><code class="language-javascript">import.call("example this", "argument")
+// ↪ Uncaught SyntaxError: Unexpected identifier</code></pre><h4><code>import.meta</code> - meta-information about the loaded module</h4><p><a href="https://github.com/tc39/proposal-import-meta">TC39 proposal reference</a></p><p>In the code of the loadable module it became possible to obtain information on it. For now it is only the address from where the module was loaded:</p><pre  class="line-numbers"><code class="language-javascript">console.log(import.meta);
+// ↪ { url: "file:///home/user/my-module.js" }</code></pre><h4>Creating an object using <code>Object.fromEntries()</code></h4><p><a href="https://github.com/tc39/proposal-object-from-entries">TC39 proposal reference</a></p><p><code>Object.fromEntries</code> is proposed to perform the reverse of <code>Object.entries</code>: it accepts an iterable of key-value pairs and returns a new object whose own keys and corresponding values are given by those pairs.</p><pre  class="line-numbers"><code class="language-javascript">Object.fromEntries([['key1', 1], ['key2', 2]])
+// ↪ {key1: 1; key2: 2}</code></pre><p><em>Underscore</em> and <em>Lodash</em> provide a <code>_.fromPairs</code> function which constructs an object from a list of key-value pairs.</p><h4>Well-formed <code>JSON.stringify</code></h4><p><a href="https://github.com/tc39/proposal-well-formed-stringify">TC39 proposal reference</a></p><p><a href="https://tools.ietf.org/html/rfc8259#section-8.1">RFC 8259 section 8.1</a> requires JSON text exchanged outside the scope of a closed ecosystem to be encoded using UTF-8, but <a href="https://tc39.github.io/ecma262/#sec-json.stringify"><code>JSON.stringify</code></a> can return strings including code points that have no representation in UTF-8 (specifically, surrogate code points U+D800 through U+DFFF).</p><pre  class="line-numbers"><code class="language-javascript">// Non-BMP characters still serialize to surrogate pairs.
+JSON.stringify('𝌆')
+// ↪ '"𝌆"'
+JSON.stringify('uD834uDF06')
+// ↪ '"𝌆"'
+
+// Unpaired surrogate code units will serialize to escape sequences.
+JSON.stringify('uDF06uD834')
+// ↪ '"\udf06\ud834"'
+JSON.stringify('uDEAD')
+// ↪ '"\udead"'</code></pre><p>So the string <code>uDF06uD834</code> after processing with <code>JSON.stringify()</code> turns into <code>\udf06\ud834</code>. However, returning such invalid Unicode strings is unnecessary, because JSON strings can include Unicode escape sequences.</p><h4>Legacy <code>RegExp</code> features</h4><p><a href="https://github.com/tc39/proposal-regexp-legacy-features">TC39 proposal reference</a></p><p>A specification for the legacy (deprecated) <code>RegExp</code> features in JavaScript, i.e., static properties of the constructor like <code>RegExp.$1</code> as well as the <code>RegExp.prototype.compile</code> method.</p><p>The proposal includes another feature that needs consensus and implementation experience before being specced:</p><ul><li><code>RegExp</code> legacy static properties as well as <code>RegExp.prototype.compile</code> are disabled for instances of proper subclasses of <code>RegExp</code> as well as for cross-realm regexps.</li></ul><h4>String prototypes <code>.trimStart()</code> &amp; <code>.trimEnd()</code></h4><p><a href="https://github.com/tc39/proposal-string-left-right-trim">TC39 proposal reference</a></p><p>For consistency with <code>padStart</code>/<code>padEnd</code> the standard functions will be <code>trimStart</code> and <code>trimEnd</code>, however for web compatilibity <code>trimLeft</code> will alias <code>trimStart</code> and <code>trimRight</code> will alias <code>trimEnd</code>.</p><pre  class="line-numbers"><code class="language-javascript">const one = "      hello and let ";
+const two = "us begin.        ";
+console.log(one.trimStart() + two.trimEnd());
+// ↪ "hello and let us begin."</code></pre><h4>New string prototype <code>.matchAll()</code></h4><p><a href="https://github.com/tc39/proposal-string-matchall">TC39 proposal reference</a></p><p><code>matchAll()</code> connote that <em>all</em> matches would be returned, not just a single match. It works as a <code>.match()</code> method with a global flag <code>/g</code> to locate all matches in the string, but returns an iterator:</p><pre  class="line-numbers"><code class="language-javascript">const searchString = 'olololo';
+
+// it returns the first occurrence with additional information about it
+searchString.match(/o/);
+// ↪ ["o", index: 0, input: "olololo", groups: undefined]
+
+// it returns an array of all occurrences without additional information
+searchString.match(/o/g);
+// ↪ ["o", "o", "o", "o"]
+
+// it returns an iterator
+searchString.matchAll(/o/);
+// ↪ {_r: /o/g, _s: "olololo"}
+
+// The iterator returns each subsequent occurrence with detailed information,
+// as if we were using .match without a global flag.
+for (const item of searchString.matchAll(/o/)) {
+  console.log(item);
+}
+// ↪ ["o", index: 0, input: "olololo", groups: undefined]
+// ↪ ["o", index: 2, input: "olololo", groups: undefined]
+// ↪ ["o", index: 4, input: "olololo", groups: undefined]
+// ↪ ["o", index: 6, input: "olololo", groups: undefined]</code></pre><p>The argument of <code>matchAll()</code> must be a regular expression, otherwise an exception will be thrown:</p><pre  class="line-numbers"><code class="language-javascript">'olololo'.matchAll('o');
+// ↪ Uncaught TypeError: o is not a regexp!</code></pre><h4>Flatten a multi-dimensional array into a single level with <code>.flat()</code> &amp; <code>.flatMap()</code></h4><p>The array prototype got <code>.flat()</code> and <code>.flatMap()</code>, which are generally similar to the implementation in <code>lodash</code>, but still have some differences. Optional argument - sets the maximum tree traversal depth:</p><pre  class="line-numbers"><code class="language-javascript">const deepArray = [
+  '≥0 — first level',
+  [
+    '≥1 — second level',
+    [
+      '≥2 — third level',
+      [
+        '≥3 — forth level',
+        [
+          '≥4 — fifth level'
+        ]
+      ]
+    ]
+  ]
+];
+
+// 0 — returns an array without any changes
+deepArray.flat(0);
+// ↪ ["≥0 — first level", Array(2)]
+
+// 1 — default deep value
+deepArray.flat();
+// ↪ ["≥0 — first level", "≥1 — second level", Array(2)]
+
+deepArray.flat(2);
+// ↪ ["≥0 — first level", "≥1 — second level", "≥2 — third level", Array(2)]
+
+deepArray.flat(100500);
+// ↪ ["≥0 — first level", "≥1 — second level", "≥2 — third level", "≥3 — forth level", "≥4 — fifth level"]</code></pre><p><code>.flatMap()</code> is an equivalent to a sequential call of <code>.map().flat()</code>. The callback function passed to the method must return an array that will become part of a common flat array:</p><pre  class="line-numbers"><code class="language-javascript">['Hello', 'World'].flatMap(word =&gt; [...word]);
+// ↪ ["H", "e", "l", "l", "o", "W", "o", "r", "l", "d"]
+
+['Hello', 'World'].map(word =&gt; [...word]).flat()
+// ↪ ["H", "e", "l", "l", "o", "W", "o", "r", "l", "d"]</code></pre><p>Also note that <code>.flatMap()</code>, unlike <code>.flat()</code>, does not have a <code>depth</code> argument. So only the first level will be flatten.</p><hr class="default-separator page_speed_1896264382"><h3>TL;DR: Conclusion</h3><p><strong>Stage 4</strong> doesn't have huge changes, but <strong>Stage 3</strong> is of more interest. Most of the features have already been implemented in Chrome, with the exception of <code>Object.fromEntries()</code>, the presence of which is not critical. But private class properties are very much awaited.</p><p><strong>Original: </strong><i class="fa fa-fw fa-file-text link-type-icon"></i><a href="https://habr.com/ru/post/437806/" target="_blank" rel="nofollow">EcmaScript 10 — JavaScript в этом году </a> (Russian) </p><hr><div class="resources collapsable-block non-printable"><p class="collapsable"><i class="fa fa-arrow-circle-right arrow"></i><strong>Resources</strong><i class="fa fa-fw fa-info-circle info"><span class="tooltip-box">Click to expand/shrink</span></i></p><ol class="page_speed_1947972613"><li><i class="fa fa-fw fa-file-text link-type-icon"></i><a href="https://tc39.github.io/process-document/" target="_blank" rel="nofollow">ECMAScript stages - The TC39 Process | GitHub</a></li><li><i class="fa fa-fw fa-file-text link-type-icon"></i><a href="https://nitayneeman.com/posts/a-taste-from-ecmascript-2019/" target="_blank" rel="nofollow">ECMAScript - A Taste from ES2019 (ES10) </a></li><li><i class="fa fa-fw fa-file-text link-type-icon"></i><a href="https://medium.com/devschacht/javascripts-new-private-class-fields-c60daffe361b" target="_blank" rel="nofollow">Новые #приватные поля классов в JavaScript </a> (Russian) </li><li><i class="fa fa-fw fa-file-text link-type-icon"></i><a href="https://github.com/tc39/proposal-class-fields/blob/master/PRIVATE_SYNTAX_FAQ.md#why-arent-declarations-private-x" target="_blank" rel="nofollow">Why aren&#039;t declarations private x? | GitHub</a></li></ol></div></div><div class="post-meta post-footer"><span class="post-footer-tags tags"><i class="fa fa-fw fa-tags"></i><a href="#">#javascript</a><a href="#">#ecmascript</a><a href="#">#es-2019</a><a href="#">#frontend</a><a href="#">#web</a><a href="#">#programming</a><a href="#">#coding</a></span><div class="author"></div><div class="post-actions-wrap non-printable"><nav><ul class="post-actions post-action-nav"></ul></nav><ul class="post-actions post-action-share"><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//plus.google.com/share?url=/es-2015/ecmascript-10" ><i class="fa fa-google-plus"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//www.facebook.com/sharer/sharer.php?u=/es-2015/ecmascript-10&title=ECMAScript+10+-+JavaScript+this+year" ><i class="fa fa-facebook-official"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//twitter.com/intent/tweet?text=ECMAScript 10 - JavaScript this year&url=/es-2015/ecmascript-10&via=@LarapulseT" ><i class="fa fa-twitter"></i></a></li></ul></div><div id="bottom-bar" class="post-bottom-bar" data-behavior="1"><div class="post-actions-wrap non-printable"><nav><ul class="post-actions post-action-nav"></ul></nav><ul class="post-actions post-action-share"><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//plus.google.com/share?url=/es-2015/ecmascript-10" ><i class="fa fa-google-plus"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//www.facebook.com/sharer/sharer.php?u=/es-2015/ecmascript-10&title=ECMAScript+10+-+JavaScript+this+year" ><i class="fa fa-facebook-official"></i></a></li><li class="post-action"><a class="post-shares post-action-btn btn btn--default" target="_blank" href="//twitter.com/intent/tweet?text=ECMAScript 10 - JavaScript this year&url=/es-2015/ecmascript-10&via=@LarapulseT" ><i class="fa fa-twitter"></i></a></li></ul></div></div></div></article><div class="back-top-wrapper non-printable"><div class="top-btn"><i class="arrow-up"></i></div></div></section><footer id="footer" class="main-content-wrap"><nav class="non-printable"><a href="/data-protection/privacy-policy">Privacy policy</a><a href="/data-protection/cookie-policy">Cookie policy</a></nav><span class="copyrights"> Copyrights &copy; 2025 <a href="https://podgornyy.rocks" target="_blank">Sergey Podgornyy</a>. All Rights Reserved. <br> Designed by <a href="http://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/" target="_blank">Louis Barranqueiro</a></span><span class="socials"><a href="https://www.youtube.com/channel/UC3wminGFli412MBDKkdUufQ" target="_blank" title="Larapulse at YouTube"><i class="fa fa-youtube-play fa-fw"></i></a><a href="https://www.instagram.com/larapulse.technology/" target="_blank" title="Larapulse at Instagram"><i class="fa fa-instagram fa-fw"></i></a><a href="https://www.facebook.com/larapulse/" target="_blank" title="Larapulse at Facebook"><i class="fa fa-facebook-square fa-fw"></i></a><a href="https://www.linkedin.com/company/larapulse/" target="_blank" title="Larapulse at LinkedIn"><i class="fa fa-linkedin-square fa-fw"></i></a><a href="https://twitter.com/LarapulseT" target="_blank" title="Larapulse at Twitter"><i class="fa fa-twitter fa-fw"></i></a><a href="http://t.me/larapulse" target="_blank" title="Larapulse at Telegram"><i class="fa fa-telegram fa-fw"></i></a></span></footer></div></div><div id="about" class="popup-full non-printable page_speed_2082616497"><div id="about-card" class="page_speed_1317875701"><div id="about-btn-close"><i class="fa fa-remove"></i></div><img id="about-card-picture" src=/assets/larapulse_logo_250.png><h4 id="about-card-name">Larapulse Technology Blog</h4><h5 id="about-card-bio"><p> Information Technology blog and group of developers interesting in modern technologies, well-written code and further education </p></h5><h5 id="about-card-job"><i class="fa fa-university"></i><br><p>Founded at 2017</p></h5><h5 id="about-card-location"><i class="fa fa-map-marker"></i><br><p>Germany</p></h5></div></div><div id="cover"></div><script src=/assets/main.4065552450.js></script><div id="gdpr-modal" class="hidden non-printable"><div class="gdpr-modal-inner-wrap"><div class="gdpr-modal-inner"><div id="gdpr-modal-main" class=""><h2>Have a Cookie? :)</h2><img src=/assets/cookie.png alt="cookies"><p> Our site uses cookies to provide functionality and performance as well as for social media and advertising purposes. Social media and advertising cookies of third parties are used to offer you social media functionalities and personalized ads for Larapulse Technology content and offers. To get more information about these cookies and how we process personal data, check our <a href="/data-protection/privacy-policy" target="_blank">Privacy Policy</a>. Do you accept the use of cookies and the processing of personal data involved? </p><div class="button-wrap"><button class="gdpr-button button-secondary" onclick="gdpr_show_more_info()">More Information</button><button class="gdpr-button button-primary" onclick="gdpr_accept()" id="gdpr-accept-btn">Yes, I accept</button></div></div><div id="gdpr-modal-more-info" class="hidden"><h2>Your Cookie Settings</h2><form><div class="gdpr-modal-checkbox"><input type=checkbox id="gdpr-func-checkbox" value="yes" checked="checked" disabled><label for="gdpr-func-checkbox">Site functionality and performance</label></div><p> These cookies are required for Larapulse Technology site functionality and are therefore always enabled. These include cookies that allow you to be remembered as you explore the Larapulse Technology site, help make the shopping cart and checkout process possible as well as assist in security issues and conforming to regulations. To use the Larapulse Technology website, you have to consent to these cookies and the processing of personal data according to the Larapulse Technology website terms of use and privacy policy. </p><div class="gdpr-modal-checkbox"><input type=checkbox id="gdpr-social-checkbox" value="yes" checked=""><label for="gdpr-social-checkbox">Social media and advertising</label></div><p> Social media cookies offer the possibility to connect you to your social networks and share content from our website through social media. Advertising cookies (of third parties) collect information to help better tailor Larapulse Technology advertising to your interests, both within and beyond Larapulse Technology websites. De-selecting these cookies may result in seeing advertising that is not as relevant to you or you not being able to link effectively with Facebook, Twitter, or other social networks and/or not allowing you to share content on social media. </p></form><div class="button-wrap"><button onclick="gdpr_hide_more_info()" class="gdpr-button button-primary">Back</button></div></div></div></div></div><script> "use strict"; var domain = 'larapulse.com'; var GDPR, GDPR_FUNCTIONAL_COOKIE_CONSENT = "no", GDPR_SOCIAL_COOKIE_CONSENT = "no"; function gdpr_accept() { GDPR.userAccept(); } function gdpr_show_more_info() { GDPR.hideElement("gdpr-modal-main"); GDPR.showElement("gdpr-modal-more-info"); } function gdpr_hide_more_info() { GDPR.hideElement("gdpr-modal-more-info"); GDPR.showElement("gdpr-modal-main"); } function should_use_functional_cookie() { return "yes" == GDPR_FUNCTIONAL_COOKIE_CONSENT; } function should_use_social_cookie() { return "yes" == GDPR_SOCIAL_COOKIE_CONSENT; } function show_cookies_settings() { GDPR.showPopup(); gdpr_show_more_info(); } (GDPR = { functional_cookie_consent: !1, social_cookie_consent: !1, opinionGiven: !1, clickedFormObj: null, formChecked: !1, init: function() { this.checkConsent(); !0 === this.opinionGiven || this.isEuCountry() && (window.onload = function() { "/data-protection/privacy-policy" !== window.location.pathname && "/data-protection/cookie-policy" !== window.location.pathname && GDPR.showPopup() } ) }, checkConsent: function() { var o = this.getCookie("functional_cookie_consent"), t = this.getCookie("social_cookie_consent"); "" !== o || "" !== t ? ( this.opinionGiven = !0, "yes" === o && ( this.functional_cookie_consent = !0, GDPR_FUNCTIONAL_COOKIE_CONSENT = "yes" ), "yes" === t && ( this.social_cookie_consent = !0, GDPR_SOCIAL_COOKIE_CONSENT = "yes" ) ) : this.isEuCountry() || (GDPR_SOCIAL_COOKIE_CONSENT = GDPR_FUNCTIONAL_COOKIE_CONSENT = "yes") }, setConsent: function(o, t) { "yes" !== (t = void 0 === t ? "yes" : t) && "no" !== t || ("both" === o ? (this.setCookie("functional_cookie_consent", t, 129600), this.setCookie("social_cookie_consent", t, 129600), this.updateFormSocialConsentField(t), this.updateFormFunctionalConsentField(t)) : ("social" === o && (this.setCookie("social_cookie_consent", t, 129600), this.updateFormSocialConsentField(t)), "functional" === o && (this.setCookie("functional_cookie_consent", t, 129600), this.updateFormFunctionalConsentField(t))), this.checkConsent()) }, deleteConsent: function(o) { "both" === o ? (this.deleteCookie("functional_cookie_consent"), this.deleteCookie("social_cookie_consent")) : "functional " === o ? this.deleteCookie("functional_cookie_consent") : "social" === o && this.deleteCookie("social_cookie_consent") }, userAccept: function() { if (!0 === document.getElementById("gdpr-social-checkbox").checked ? this.setConsent("both", "yes") : (this.setConsent("social", "no"), this.setConsent("functional", "yes")), null !== this.clickedFormObj) { this.checkConsent(); var o = this.clickedFormObj; this.formChecked = !0, o.find(".mktf_submit_button").first().trigger("click"), this.hidePopup() } else document.getElementById("gdpr-accept-btn").disabled = !0, location.reload() }, updateFormSocialConsentField: function(o) { null !== this.clickedFormObj && this.clickedFormObj.find(".mktf_Cookie_Opt_In__c").first().val(o) }, updateFormFunctionalConsentField: function(o) { null !== this.clickedFormObj && this.clickedFormObj.find(".mktf_Functional_Cookie_Opt_In__c").first().val(o) }, showPopup: function() { "no" === this.getCookie("social_cookie_consent") && (document.getElementById("gdpr-social-checkbox").checked = !1), this.showElement("gdpr-modal") }, hidePopup: function() { this.hideElement("gdpr-modal") }, showElement: function(o) { var t = document.getElementById(o); this.removeClass(t, "hidden") }, hideElement: function(o) { var t = document.getElementById(o); this.addClass(t, "hidden") }, hasClass: function(o, t) { return o.classList ? o.classList.contains(t) : !!o.className.match(new RegExp("(\\s|^)" + t + "(\\s|$)")) }, addClass: function(o, t) { o.classList ? o.classList.add(t) : this.hasClass(o, t) || (o.className += " " + t) }, removeClass: function(o, t) { if (o.classList) o.classList.remove(t); else if (this.hasClass(o, t)) { var e = new RegExp("(\\s|^)" + t + "(\\s|$)"); o.className = o.className.replace(e, " ") } }, setCookie: function(o, t, e) { var i = ""; if (null != e) { i = "; expires=" + (i = new Date((new Date).getTime() + 36e5 * e)).toGMTString(); var n = "; path=/" } document.cookie = o + "=" + escape(t) + i + n }, getCookie: function(o) { var t = "" , e = o + "="; if (0 < document.cookie.length) { var i = document.cookie.indexOf(e); if (-1 !== i) { i += e.length; var n = document.cookie.indexOf(";", i); -1 === n && (n = document.cookie.length), t = unescape(document.cookie.substring(i, n)) } } return t }, deleteCookie: function(o) { document.cookie = o + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT; domain="+domain+";" }, isEuCountry: function(o) { /** TODO */ return true; if ("" === (o = void 0 === o ? "" : o)) { var t = GDPR.getCookie("geoip"); if ("" !== t) o = t.split(",")[0] } return "" !== o && -1 !== ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "ES", "SE", "GB"].indexOf(o) } }).init();</script></body></html>
